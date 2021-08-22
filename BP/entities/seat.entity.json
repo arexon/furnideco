@@ -141,35 +141,35 @@
 					{
 						"block": "furnideco:rustic.oak.stool",
 						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.spruce.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.birch.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.jungle.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.acacia.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.dark_oak.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.crimson.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.warped.stool",
+						"exited_block_event": { "event": "e:remove" }
 					}
-					// {
-					// 	"block": "furnideco:rustic.spruce.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.birch.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.jungle.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.acacia.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.dark_oak.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.crimson.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// },
-					// {
-					// 	"block": "furnideco:rustic.warped.stool",
-					// 	"exited_block_event": { "event": "e:remove" }
-					// }
 				]
 			}
 		},
