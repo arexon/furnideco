@@ -1,2 +1,37 @@
 pack.name=§6FurniDeco RP§r
-pack.description=Adds 48 pieces of functional, decorative and unique furniture that fit with the Minecraft vanilla style.
+pack.description=Adds 48 pieces of functional, decorative and unique furniture that fit with the Minecraft Vanilla style.
+
+
+## Items
+item.paint_brush.name=Paint Brush
+
+
+## Blocks
+tile.rustic.oak.table.name=Oak Table
+tile.rustic.spruce.table.name=Spruce Table
+tile.rustic.birch.table.name=Birch Table
+tile.rustic.jungle.table.name=Jungle Table
+tile.rustic.acacia.table.name=Acacia Table
+tile.rustic.dark_oak.table.name=Dark Oak Table
+tile.rustic.crimson.table.name=Crimson Table
+tile.rustic.warped.table.name=Warped Table
+
+tile.rustic.oak.stool.name=Oak Stool
+tile.rustic.spruce.stool.name=Spruce Stool
+tile.rustic.birch.stool.name=Birch Stool
+tile.rustic.jungle.stool.name=Jungle Stool
+tile.rustic.acacia.stool.name=Acacia Stool
+tile.rustic.dark_oak.stool.name=Dark Oak Stool
+tile.rustic.crimson.stool.name=Crimson Stool
+tile.rustic.warped.stool.name=Warped Stool
+
+
+## Entities
+entity.furnideco:seat.name=Seat
+
+
+## Interactions
+action.hint.exit.furnideco:seat=Jump to stand up.
+
+
+## UI
