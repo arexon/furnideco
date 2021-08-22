@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.player.sitting": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-45, 7, 15]
+				},
+				"rightArm": {
+					"rotation": [-45, -7, -15]
+				},
+				"leftLeg": {
+					"rotation": [-90, -4, 0]
+				},
+				"rightLeg": {
+					"rotation": [-90, 4, 0]
+				}
+			}
+		}
+	}
+}
