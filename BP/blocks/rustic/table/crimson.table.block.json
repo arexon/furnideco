@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.crimson.table"
+		},
+		"components": {
+			"tag:wood": {},
+			"tag:rustic": {},
+			"furnideco:attributes": {
+				"map_color": "crimson",
+				"strength": [ 2, 2 ],
+				"solidness": 0
+			},
+			"minecraft:geometry": "geometry.rustic.table",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.crimson.table",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [ -8, 0, -8 ],
+				"size": [ 16, 16, 16 ]
+			},
+			"minecraft:entity_collision": {
+				"origin": [ -8, 0, -8 ],
+				"size": [ 16, 16, 16 ]
+			}
+		}
+	}
+}

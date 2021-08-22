@@ -1,0 +1,53 @@
+{
+	"format_version": [ 1, 1, 0 ],
+	// Rustic Table
+	"rustic.oak.table": {
+		"sound": "wood"
+	},
+	"rustic.birch.table": {
+		"sound": "wood"
+	},
+	"rustic.spruce.table": {
+		"sound": "wood"
+	},
+	"rustic.jungle.table": {
+		"sound": "wood"
+	},
+	"rustic.acacia.table": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.table": {
+		"sound": "wood"
+	},
+	"rustic.crimson.table": {
+		"sound": "wood"
+	},
+	"rustic.warped.table": {
+		"sound": "wood"
+	},
+	// Rustic Stool
+	"rustic.oak.stool": {
+		"sound": "wood"
+	},
+	"rustic.birch.stool": {
+		"sound": "wood"
+	},
+	"rustic.spruce.stool": {
+		"sound": "wood"
+	},
+	"rustic.jungle.stool": {
+		"sound": "wood"
+	},
+	"rustic.acacia.stool": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.stool": {
+		"sound": "wood"
+	},
+	"rustic.crimson.stool": {
+		"sound": "wood"
+	},
+	"rustic.warped.stool": {
+		"sound": "wood"
+	}
+}

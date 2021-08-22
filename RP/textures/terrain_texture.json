@@ -1,0 +1,106 @@
+{
+	"resource_pack_name": "FurniDeco",
+	"texture_name": "atlas.terrain",
+	"num_mip_levels" : 4,
+	"padding" : 8,
+	"texture_data": {
+		// Rustic Table
+		"rustic.oak.table": {
+			"textures": "textures/blocks/rustic/table/oak"
+		},
+		"rustic.spruce.table": {
+			"textures": "textures/blocks/rustic/table/spruce"
+		},
+		"rustic.birch.table": {
+			"textures": "textures/blocks/rustic/table/birch"
+		},
+		"rustic.jungle.table": {
+			"textures": "textures/blocks/rustic/table/jungle"
+		},
+		"rustic.acacia.table": {
+			"textures": "textures/blocks/rustic/table/acacia"
+		},
+		"rustic.dark_oak.table": {
+			"textures": "textures/blocks/rustic/table/dark_oak"
+		},
+        "rustic.crimson.table": {
+			"textures": "textures/blocks/rustic/table/crimson"
+		},
+        "rustic.warped.table": {
+			"textures": "textures/blocks/rustic/table/warped"
+		},
+		// Rustic stool
+		"rustic.oak.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/oak"
+		},
+		"rustic.spruce.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/spruce"
+		},
+		"rustic.birch.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/birch"
+		},
+		"rustic.jungle.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/jungle"
+		},
+		"rustic.acacia.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/acacia"
+		},
+		"rustic.dark_oak.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/dark_oak"
+		},
+		"rustic.crimson.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/crimson"
+		},
+		"rustic.warped.stool": {
+			"textures": "textures/blocks/rustic/stool/wood/warped"
+		},
+		"rustic.stool.color_0": {
+			"textures": "textures/blocks/rustic/stool/colors/0"
+		},
+		"rustic.stool.color_1": {
+			"textures": "textures/blocks/rustic/stool/colors/1"
+		},
+		"rustic.stool.color_2": {
+			"textures": "textures/blocks/rustic/stool/colors/2"
+		},
+		"rustic.stool.color_3": {
+			"textures": "textures/blocks/rustic/stool/colors/3"
+		},
+		"rustic.stool.color_4": {
+			"textures": "textures/blocks/rustic/stool/colors/4"
+		},
+		"rustic.stool.color_5": {
+			"textures": "textures/blocks/rustic/stool/colors/5"
+		},
+		"rustic.stool.color_6": {
+			"textures": "textures/blocks/rustic/stool/colors/6"
+		},
+		"rustic.stool.color_7": {
+			"textures": "textures/blocks/rustic/stool/colors/7"
+		},
+		"rustic.stool.color_8": {
+			"textures": "textures/blocks/rustic/stool/colors/8"
+		},
+		"rustic.stool.color_9": {
+			"textures": "textures/blocks/rustic/stool/colors/9"
+		},
+		"rustic.stool.color_10": {
+			"textures": "textures/blocks/rustic/stool/colors/10"
+		},
+		"rustic.stool.color_11": {
+			"textures": "textures/blocks/rustic/stool/colors/11"
+		},
+		"rustic.stool.color_12": {
+			"textures": "textures/blocks/rustic/stool/colors/12"
+		},
+		"rustic.stool.color_13": {
+			"textures": "textures/blocks/rustic/stool/colors/13"
+		},
+		"rustic.stool.color_14": {
+			"textures": "textures/blocks/rustic/stool/colors/14"
+		},
+		"rustic.stool.color_15": {
+			"textures": "textures/blocks/rustic/stool/colors/15"
+		}
+	}
+}
