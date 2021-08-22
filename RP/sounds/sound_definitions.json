@@ -1,0 +1,12 @@
+{
+	"furnideco.paint": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/customization/paint",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	}
+}

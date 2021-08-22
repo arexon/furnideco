@@ -1,0 +1,8 @@
+{
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"paint_brush": {
+			"textures": "textures/items/paint_brush"
+		}
+	}
+}
