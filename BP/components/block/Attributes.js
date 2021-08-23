@@ -20,6 +20,17 @@ export default defineComponent(({ name, template, schema }) => {
 			[ 'warped', '#398382' ]
 		])
 
+		const material = new Map([
+			[ 'oak' ],
+			[ 'spruce' ],
+			[ 'birch' ],
+			[ 'jungle' ],
+			[ 'acacia' ],
+			[ 'dark_oak' ],
+			[ 'crimson' ],
+			[ 'warped' ]
+		])
+
 		if (flameable != null) {
 			create(
 				{
@@ -35,8 +46,8 @@ export default defineComponent(({ name, template, schema }) => {
 		create(
 			{
 				"minecraft:display_name": identifier.split(':')[1],
-				"minecraft:map_color": mapColors.get(map_color),
-				"minecraft:loot": "loot_tables/" + identifier.split(/[\.\:]/)[1] + "/" + identifier.split('.')[2] + "/" + identifier.split('.')[1] + "." + identifier.split('.')[2] + ".loot.json",
+				"minecraft:map_color": (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
+				"minecraft:loot": "loot_tables/" + identifier.split(/[\.\:]/)[1] + "/" + (material.has(identifier.split('.')[1]) ? identifier.split('.')[1] + '.' : '') + (material.has(identifier.split('.')[1]) ? identifier.split('.')[2] : identifier.split('.')[1]) + ".loot.json",
 				"minecraft:destroy_time": strength[0],
 				"minecraft:explosion_resistance": strength[1],
 				"minecraft:block_light_absorption": solidness,
