@@ -1,52 +1,57 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:paintable')
 	schema({
-		"color_count": "number",
-		"part_name": "string"
+		colors: 'number',
+		part: 'string'
 	})
 
-	template(({ colors_count = 7, part_name = '*' }, { create, identifier }) => {
+	template(({ colors = 0, part = '*' }, { create, identifier }) => {
 
-		for (let i = 0; i <= colors_count; i++) {
-			const color = {
-				"condition": "q.block_property('p:color') == " + i,
-				"components": {
-					"minecraft:material_instances": {
-						[part_name]: {
-							"texture": "rustic." + identifier.split('.')[2] + ".color_" + i,
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			}
-			create(
-				{
-					...color
-				},
-				"minecraft:block/permutations"
-			)
-		}
+		let colorsCount = []
+		for (let i = 0; i < colors; i++) colorsCount.push(i)
 
 		create(
 			{
-				"e:cycle_color": {
-					"sequence": [
+				'p:color': colorsCount
+			},
+			'minecraft:block/description/properties'
+		)
+
+		create(
+			{
+				permutations: colorsCount.map(i => ({
+					condition: `q.block_property('p:color') == ${i}`,
+					components: {
+						'minecraft:material_instances': {
+							[part]: {
+								texture: `rustic.${identifier.split('.')[2]}.color_${i}`,
+								render_method: 'alpha_test',
+								ambient_occlusion: false
+							}
+						}
+					}
+				}))
+			},
+			"minecraft:block"
+		)
+
+		create(
+			{
+				'e:cycle_color': {
+					sequence: [
 						{
-							"condition": "q.is_sneaking",
-							"set_block_property": {
-								"p:color": "q.block_property('p:color') == 15 ? 0 : q.block_property('p:color') + 1"
+							condition: 'q.is_sneaking',
+							set_block_property: {
+								'p:color': `q.block_property('p:color') == 15 ? 0 : q.block_property('p:color') + 1`
 							},
-							"run_command": {
-								"command": [
-									"function customization/cycle_color"
-								]
+							run_command: {
+								command: 'function customization/cycle_color'
 							}
 						}
 					]
 				}
 			},
-			"minecraft:block/events"
+			'minecraft:block/events'
 		)
 	})
 })

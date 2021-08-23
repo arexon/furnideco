@@ -2,10 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "furnideco:rustic.jungle.stool",
-			"properties": {
-				"p:color": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
-			}
+			"identifier": "furnideco:rustic.jungle.stool"
 		},
 		"permutations": [
 			{
@@ -25,8 +22,8 @@
 			"tag:wood": {},
 			"tag:rustic": {},
 			"furnideco:paintable": {
-				"colors_count": 15,
-				"part_name": "cushion"
+				"colors": 16,
+				"part": "cushion"
 			},
 			"furnideco:attributes": {
 				"map_color": "jungle",
