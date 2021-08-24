@@ -14,11 +14,17 @@
 				"input": "v.particle_age / v.particle_lifetime",
 				"horizontal_range": 1,
 				"nodes": [0, 0.9, 1, 0.96, 0.88, 0.76, 0.53, 0]
+			},
+			"variable.color": {
+				"type": "linear",
+				"input": "v.particle_random_4",
+				"horizontal_range": 1,
+				"nodes": [0, 1, 0]
 			}
 		},
 		"components": {
 			"minecraft:emitter_rate_instant": {
-				"num_particles": 24
+				"num_particles": 18
 			},
 			"minecraft:emitter_lifetime_once": {
 				"active_time": 1.2
@@ -30,10 +36,10 @@
 			"minecraft:particle_lifetime_expression": {
 				"max_lifetime": "v.particle_random_3"
 			},
-			"minecraft:particle_initial_speed": 1.2,
+			"minecraft:particle_initial_speed": 1.3,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, "v.particle_random_4 / 1", 0],
-				"linear_drag_coefficient": 5,
+				"linear_acceleration": [0, "v.particle_age * 2.75", 0],
+				"linear_drag_coefficient": 5.5,
 				"rotation_acceleration": "v.particle_random_3 * 90"
 			},
 			"minecraft:particle_appearance_billboard": {
@@ -48,7 +54,13 @@
 			},
 			"minecraft:particle_appearance_lighting": {},
 			"minecraft:particle_appearance_tinting": {
-				"color": [0.31373, 0.28235, 0.23922, 1]
+				"color": {
+					"interpolant": "v.color",
+					"gradient": {
+						"0.0": "#FF50483D",
+						"1.0": "#FF1F2F2C"
+					}
+				}
 			}
 		}
 	}
