@@ -9,6 +9,7 @@
 			"tag:rustic": {},
 			"furnideco:attributes": {
 				"map_color": "crimson",
+				"loot_table": "rustic/table/crimson.table",
 				"strength": [ 2, 2 ],
 				"solidness": 0
 			},

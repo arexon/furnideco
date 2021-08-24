@@ -27,6 +27,7 @@
 			},
 			"furnideco:attributes": {
 				"map_color": "spruce",
+				"loot_table": "rustic/stool/spruce.stool",
 				"strength": [ 2, 2 ],
 				"flameable": [ 30, 30 ],
 				"solidness": 0

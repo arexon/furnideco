@@ -27,6 +27,7 @@
 			},
 			"furnideco:attributes": {
 				"map_color": "crimson",
+				"loot_table": "rustic/stool/crimson.stool",
 				"strength": [ 2, 2 ],
 				"solidness": 0
 			},

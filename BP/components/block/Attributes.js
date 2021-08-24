@@ -2,12 +2,13 @@ export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:attributes')
 	schema({
 		map_color: 'string',
+		loot_table: 'string',
 		strength: 'array',
 		flameable: 'array',
 		solidness: 'float'
 	})
 
-	template(({ map_color = 'oak', strength = [1, 1], flameable = false, solidness = 0 }, { create, identifier }) => {
+	template(({ map_color = 'oak', loot_table = '', strength = [1, 1], flameable = false, solidness = 0 }, { create, identifier }) => {
 
 		// List of pre-set map colors
 		const mapColors = new Map([
@@ -49,7 +50,7 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				'minecraft:display_name': identifier.split(':')[1],
 				'minecraft:map_color': (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
-				'minecraft:loot': `loot_tables/${identifier.split(/[\.\:]/)[1]}/${materials.includes(identifier.split('.')[1]) ? identifier.split('.')[1] + '.' : ''}${materials.includes(identifier.split('.')[1]) ? identifier.split('.')[2] : identifier.split('.')[1]}.loot.json`,
+				...(loot_table != false && { 'minecraft:loot': `loot_tables/${loot_table}.loot.json` }),
 				'minecraft:destroy_time': strength[0],
 				'minecraft:explosion_resistance': strength[1],
 				'minecraft:block_light_absorption': solidness,
