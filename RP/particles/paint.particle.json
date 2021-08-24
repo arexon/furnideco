@@ -14,6 +14,12 @@
 				"input": "v.particle_random_3",
 				"horizontal_range": 1,
 				"nodes": [1, 0, 1, 0]
+			},
+			"variable.size": {
+				"type": "linear",
+				"input": "v.particle_age / v.particle_lifetime",
+				"horizontal_range": 1,
+				"nodes": [1, 1, 1, 0.95, 0.9, 0.83, 0.76, 0.59, 0]
 			}
 		},
 		"components": {
@@ -40,7 +46,7 @@
 				"linear_drag_coefficient": 2
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["v.particle_random_3 * 0.16", "v.particle_random_3 * 0.16"],
+				"size": ["v.size * v.particle_random_3 * 0.16", "v.size * v.particle_random_3 * 0.16"],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 16,
