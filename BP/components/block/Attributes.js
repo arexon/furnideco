@@ -34,28 +34,23 @@ export default defineComponent(({ name, template, schema }) => {
 			'warped'
 		]
 
-		if (flameable != false) {
-			create(
-				{
-					'minecraft:flammable': {
-						flame_odds: flameable[0],
-						burn_odds: flameable[1]
-					}
-				},
-				'minecraft:block/components'
-			)
-		}
-
 		create(
 			{
 				'minecraft:display_name': identifier.split(':')[1],
 				'minecraft:map_color': (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
-				...(loot_table != false && { 'minecraft:loot': `loot_tables/${loot_table}.loot.json` }),
+				...(loot_table && {
+					'minecraft:loot': `loot_tables/${loot_table}.loot.json`
+				}),
 				'minecraft:destroy_time': strength[0],
 				'minecraft:explosion_resistance': strength[1],
 				'minecraft:block_light_absorption': solidness,
 				'minecraft:breathability': (solidness > 0 ? 'solid' : 'air'),
-
+				...(flameable && {
+					'minecraft:flammable': {
+						flame_odds: flameable[0],
+						burn_odds: flameable[1]
+					}
+				})
 			},
 			'minecraft:block/components'
 		)

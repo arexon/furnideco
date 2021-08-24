@@ -31,7 +31,9 @@ export default defineComponent(({ name, template, schema }) => {
 							origin: geo.entity_collision.slice(0, 3),
 							size: geo.entity_collision.slice(3, 6)
 						}),
-						...(loot_table != false && { 'minecraft:loot': `loot_tables/${loot_table}.${key}_${i}.loot.json` }),
+						...(loot_table && {
+							'minecraft:loot': `loot_tables/${loot_table}.${key}_${i}.loot.json`
+						}),
 					}
 				}))
 			},
