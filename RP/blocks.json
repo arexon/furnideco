@@ -49,5 +49,9 @@
 	},
 	"rustic.warped.stool": {
 		"sound": "wood"
+	},
+	// Books
+	"rustic.books": {
+		"sound": "wood"
 	}
 }

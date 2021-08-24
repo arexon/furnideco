@@ -25,6 +25,8 @@ tile.rustic.dark_oak.stool.name=Dark Oak Stool
 tile.rustic.crimson.stool.name=Crimson Stool
 tile.rustic.warped.stool.name=Warped Stool
 
+tile.rustic.books.name=Books
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

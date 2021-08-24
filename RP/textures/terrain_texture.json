@@ -101,6 +101,10 @@
 		},
 		"rustic.stool.color_15": {
 			"textures": "textures/blocks/rustic/stool/colors/15"
+		},
+		// Books
+		"rustic.books": {
+			"textures": "textures/blocks/rustic/books"
 		}
 	}
 }

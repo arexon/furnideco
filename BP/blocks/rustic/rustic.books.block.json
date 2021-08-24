@@ -1,0 +1,68 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.books"
+		},
+		"permutations": [],
+		"components": {
+			"tag:wood": {},
+			"tag:rustic": {},
+			"furnideco:attributes": {
+				"map_color": "#c7d6b9",
+				"loot_table": false,
+				"strength": [ 0.1, 0.1 ],
+				"flameable": [ 50, 50 ],
+				"solidness": 0
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:mixed_geometries": {
+				"geometries": [
+					{
+						"pick_collision": [ -5, 0, -4, 10, 7, 9 ],
+						"entity_collision": [ -5, 0, -4, 10, 7, 9 ]
+					},
+					{
+						"pick_collision": [ -6, 0, -5, 11, 6, 10 ],
+						"entity_collision": [ -6, 0, -5, 11, 6, 10 ]
+					},
+					{
+						"pick_collision": [ -5, 0, -5, 10, 8, 10 ],
+						"entity_collision": [ -5, 0, -5, 10, 8, 10 ]
+					},
+					{
+						"pick_collision": [ -4, 0, -4, 7, 11, 8 ],
+						"entity_collision": [ -4, 0, -4, 7, 11, 8 ]
+					}
+				],
+				"key": "stack",
+				"loot_table": "rustic/books/books"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.books",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:on_interact": {
+				"condition": "q.block_property('p:geometry') < 3 && q.get_equipped_item_name == 'rustic.books'",
+				"event": "e:add.book"
+			}
+		},
+		"events": {
+			"e:add.book": {
+				"decrement_stack": {},
+				"set_block_property": {
+					"p:geometry": "q.block_property('p:geometry') + 1"
+				},
+				"run_command": {
+					"command": [
+						"playsound use.wood @p ~~~",
+						"particle furnideco:dust ~~~"
+					]
+				}
+			}
+		}
+	}
+}
