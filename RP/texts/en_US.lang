@@ -27,6 +27,8 @@ tile.rustic.warped.stool.name=Warped Stool
 
 tile.rustic.books.name=Books
 
+tile.rustic.radio.name=Radio
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

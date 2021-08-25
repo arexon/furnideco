@@ -105,6 +105,10 @@
 		// Books
 		"rustic.books": {
 			"textures": "textures/blocks/rustic/books"
+		},
+		// Radio
+		"rustic.radio": {
+			"textures": "textures/blocks/rustic/radio"
 		}
 	}
 }

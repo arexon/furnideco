@@ -8,5 +8,15 @@
 				"load_on_low_memory": true
 			}
 		]
+	},
+	"furnideco.aerial": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/aerial",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
 	}
 }

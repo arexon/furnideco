@@ -53,5 +53,9 @@
 	// Books
 	"rustic.books": {
 		"sound": "wood"
+	},
+	// Radio
+	"rustic.radio": {
+		"sound": "wood"
 	}
 }

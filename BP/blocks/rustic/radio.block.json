@@ -1,0 +1,92 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.radio",
+			"properties": {
+				"p:is_on": [ false, true ]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:is_on')",
+				"components": {
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [ 1, 1 ],
+						"on_tick": {
+							"event": "e:play.note"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:wood": {},
+			"tag:rustic": {},
+			"furnideco:attributes": {
+				"map_color": "#665537",
+				"loot_table": "rustic/radio",
+				"strength": [ 1, 1 ],
+				"flameable": [ 40, 40 ],
+				"solidness": 0
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:mixed_geometries": {
+				"geometries": [
+					{
+						"pick_collision": [ -7, 0, -3, 14, 9, 6 ],
+						"entity_collision": [ -7, 0, -3, 14, 9, 6 ]
+					},
+					{
+						"pick_collision": [ -7, 0, -3, 14, 9, 6 ],
+						"entity_collision": [ -7, 0, -3, 14, 9, 6 ]
+					}
+				],
+				"key": "aerial"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.radio",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:on_interact": {
+				"condition": "q.is_sneaking",
+				"event": "e:toggle"
+			}
+		},
+		"events": {
+			"e:toggle": {
+				"sequence": [
+					{
+						"condition": "q.block_property('p:is_on') == false",
+						"set_block_property": {
+							"p:is_on": true,
+							"p:geometry": 1
+						},
+						"run_command": {
+							"command": "playsound furnideco.aerial @p ~~~"
+						}
+					},
+					{
+						"condition": "q.block_property('p:is_on') == true",
+						"set_block_property": {
+							"p:is_on": false,
+							"p:geometry": 0
+						},
+						"run_command": {
+							"command": "playsound furnideco.aerial @p ~~~"
+						}
+					}
+				]
+			},
+			"e:play.note": {
+				"run_command": {
+					"command": "particle furnideco:note ~~~"
+				}
+			}
+		}
+	}
+}
