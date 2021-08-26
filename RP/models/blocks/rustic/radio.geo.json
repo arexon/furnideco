@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.rustic.radio.aerial_0",
+				"identifier": "geometry.rustic.radio.aerial_down",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -31,7 +31,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.radio.aerial_1",
+				"identifier": "geometry.rustic.radio.aerial_up",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

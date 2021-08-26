@@ -33,17 +33,23 @@
 			},
 			"furnideco:horizontal_facing": {},
 			"furnideco:mixed_geometries": {
+				"property": "p:aerial",
 				"geometries": [
 					{
-						"pick_collision": [ -7, 0, -3, 14, 9, 6 ],
-						"entity_collision": [ -7, 0, -3, 14, 9, 6 ]
+						"name": "aerial_down",
+						"hitbox": {
+							"pick": [ -7, 0, -3, 14, 9, 6 ],
+							"entity": [ -7, 0, -3, 14, 9, 6 ]
+						}
 					},
 					{
-						"pick_collision": [ -7, 0, -3, 14, 9, 6 ],
-						"entity_collision": [ -7, 0, -3, 14, 9, 6 ]
+						"name": "aerial_up",
+						"hitbox": {
+							"pick": [ -7, 0, -3, 14, 9, 6 ],
+							"entity": [ -7, 0, -3, 14, 9, 6 ]
+						}
 					}
-				],
-				"key": "aerial"
+				]
 			},
 			"minecraft:material_instances": {
 				"*": {
@@ -64,7 +70,7 @@
 						"condition": "q.block_property('p:is_on') == false",
 						"set_block_property": {
 							"p:is_on": true,
-							"p:geometry": 1
+							"p:aerial": 1
 						},
 						"run_command": {
 							"command": "playsound furnideco.aerial @p ~~~"
@@ -74,7 +80,7 @@
 						"condition": "q.block_property('p:is_on') == true",
 						"set_block_property": {
 							"p:is_on": false,
-							"p:geometry": 0
+							"p:aerial": 0
 						},
 						"run_command": {
 							"command": "playsound furnideco.aerial @p ~~~"
