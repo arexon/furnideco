@@ -109,6 +109,10 @@
 		// Radio
 		"rustic.radio": {
 			"textures": "textures/blocks/rustic/radio"
+		},
+		// Lamp
+		"rustic.lamp": {
+			"textures": "textures/blocks/rustic/lamp"
 		}
 	}
 }

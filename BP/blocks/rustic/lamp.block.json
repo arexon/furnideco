@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.lamp"
+		},
+		"permutations": [],
+		"components": {
+			"tag:glass": {},
+			"tag:rustic": {},
+			"furnideco:attributes": {
+				"map_color": "#feffdc",
+				"loot_table": "rustic/lamp",
+				"strength": [ 1.5, 1.5 ],
+				"flameable": [ 20, 20 ],
+				"solidness": 0
+			},
+			"furnideco:facing": {
+				"faces": [
+					{
+						"name": "rustic.lamp.hung",
+						"hitbox": {
+							"pick": [ -4, 0, -4, 8, 16, 8 ],
+							"entity": [ -4, 0, -4, 8, 8, 8 ]
+						}
+					},
+					{
+						"name": "rustic.lamp",
+						"hitbox": {
+							"pick": [ -4, 0, -4, 8, 12, 8 ],
+							"entity": [ -4, 0, -4, 8, 12, 8 ]
+						}
+					},
+					{
+						"name": "rustic.lamp.mounted",
+						"hitbox": {
+							"pick": [ -4, 0, -4, 8, 16, 12 ],
+							"entity": [ -4, 0, -4, 8, 8, 8 ]
+						}
+					}
+				]
+			},
+			"furnideco:lightable": {
+				"emission": 0.75
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.lamp",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		},
+		"events": {}
+	}
+}

@@ -57,5 +57,9 @@
 	// Radio
 	"rustic.radio": {
 		"sound": "wood"
+	},
+	// Lamp
+	"rustic.lamp": {
+		"sound": "glass"
 	}
 }
