@@ -61,5 +61,9 @@
 	// Lamp
 	"rustic.lamp": {
 		"sound": "glass"
+	},
+	// Trash Can
+	"rustic.trash_can": {
+		"sound": "wood"
 	}
 }

@@ -31,6 +31,8 @@ tile.rustic.radio.name=Radio
 
 tile.rustic.lamp.name=Lamp
 
+tile.rustic.trash_can.name=Trash Can
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

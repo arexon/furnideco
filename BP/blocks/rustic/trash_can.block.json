@@ -1,0 +1,51 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.trash_can"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:trash_can": {},
+			"furnideco:attributes": {
+				"map_color": "oak",
+				"loot_table": "rustic/trash_can",
+				"strength": [ 2, 2 ],
+				"flameable": [ 40, 40 ],
+				"solidness": 0
+			},
+			"minecraft:geometry": "geometry.rustic.trash_can",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.trash_can",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [ -5, 0, -5 ],
+				"size": [ 10, 14, 10 ]
+			},
+			"minecraft:entity_collision": {
+				"origin": [ -6, 0, -6 ],
+				"size": [ 12, 2, 12 ]
+			},
+			"minecraft:on_interact": {
+				"condition": "q.is_sneaking",
+				"event": "e:empty.trash"
+			}
+		},
+		"events": {
+			"e:empty.trash": {
+				"run_command": {
+					"command": [
+						"execute @e[type=item, r=0.625] ~~~ particle furnideco:dust ~~~",
+						"execute @e[type=item, r=0.625] ~~~ playsound block.blastfurnace.fire_crackle @p ~~~",
+						"execute @e[type=item, r=0.625] ~~~ kill @s"
+					]
+				}
+			}
+		}
+	}
+}

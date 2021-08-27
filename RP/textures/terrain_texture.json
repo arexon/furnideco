@@ -113,6 +113,10 @@
 		// Lamp
 		"rustic.lamp": {
 			"textures": "textures/blocks/rustic/lamp"
+		},
+		// Trash Can
+		"rustic.trash_can": {
+			"textures": "textures/blocks/rustic/trash_can"
 		}
 	}
 }
