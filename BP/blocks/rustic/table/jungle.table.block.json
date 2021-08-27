@@ -5,8 +5,8 @@
 			"identifier": "furnideco:rustic.jungle.table"
 		},
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:table": {},
 			"furnideco:attributes": {
 				"map_color": "jungle",
 				"loot_table": "rustic/table/jungle.table",

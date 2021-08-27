@@ -5,8 +5,8 @@
 			"identifier": "furnideco:rustic.acacia.table"
 		},
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:table": {},
 			"furnideco:attributes": {
 				"map_color": "acacia",
 				"loot_table": "rustic/table/acacia.stool",

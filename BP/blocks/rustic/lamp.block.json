@@ -6,8 +6,8 @@
 		},
 		"permutations": [],
 		"components": {
-			"tag:glass": {},
 			"tag:rustic": {},
+			"tag:lamp": {},
 			"furnideco:attributes": {
 				"map_color": "#feffdc",
 				"loot_table": "rustic/lamp",

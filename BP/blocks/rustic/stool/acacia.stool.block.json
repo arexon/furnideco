@@ -19,8 +19,8 @@
 			}
 		],
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:stool": {},
 			"furnideco:paintable": {
 				"colors": 16,
 				"part": "cushion"

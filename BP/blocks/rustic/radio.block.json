@@ -22,8 +22,8 @@
 			}
 		],
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:radio": {},
 			"furnideco:attributes": {
 				"map_color": "#665537",
 				"loot_table": "rustic/radio",

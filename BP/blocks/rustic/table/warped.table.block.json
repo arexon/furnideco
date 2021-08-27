@@ -5,8 +5,8 @@
 			"identifier": "furnideco:rustic.warped.table"
 		},
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:table": {},
 			"furnideco:attributes": {
 				"map_color": "warped",
 				"loot_table": "rustic/table/warped.table",

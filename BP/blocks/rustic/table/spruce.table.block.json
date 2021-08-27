@@ -5,8 +5,8 @@
 			"identifier": "furnideco:rustic.spruce.table"
 		},
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:table": {},
 			"furnideco:attributes": {
 				"map_color": "spruce",
 				"loot_table": "rustic/table/spruce.table",

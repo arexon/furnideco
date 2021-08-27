@@ -5,8 +5,8 @@
 			"identifier": "furnideco:rustic.dark_oak.table"
 		},
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:table": {},
 			"furnideco:attributes": {
 				"map_color": "dark_oak",
 				"loot_table": "rustic/table/dark_oak.table",

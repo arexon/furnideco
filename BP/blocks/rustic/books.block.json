@@ -6,8 +6,8 @@
 		},
 		"permutations": [],
 		"components": {
-			"tag:wood": {},
 			"tag:rustic": {},
+			"tag:books": {},
 			"furnideco:attributes": {
 				"map_color": "#c7d6b9",
 				"loot_table": false,
