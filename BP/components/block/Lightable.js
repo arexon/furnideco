@@ -24,7 +24,14 @@ export default defineComponent(({ name, template, schema }) => {
 				{
 					condition: `q.block_property('p:is_lit')`,
 					components: {
-						'minecraft:block_light_emission': emission
+						'minecraft:block_light_emission': emission,
+						'minecraft:ticking': {
+							looping: true,
+							range: [ 1, 1 ],
+							on_tick: {
+								event: 'e:play.sparkles'
+							}
+						}
 					}
 				}
 			],
@@ -49,6 +56,11 @@ export default defineComponent(({ name, template, schema }) => {
 					},
 					run_command: {
 						command: 'playsound furnideco.switch @p ~~~'
+					}
+				},
+				'e:play.sparkles': {
+					run_command: {
+						command: 'particle furnideco:sparkles ~~~'
 					}
 				}
 			},
