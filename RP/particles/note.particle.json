@@ -25,7 +25,7 @@
 		"components": {
 			"minecraft:emitter_rate_steady": {
 				"spawn_rate": 2,
-				"max_particles": 5
+				"max_particles": 2
 			},
 			"minecraft:emitter_lifetime_looping": {
 				"active_time": 1
@@ -33,6 +33,7 @@
 			"minecraft:emitter_shape_box": {
 				"offset": [0, 0.25, 0],
 				"half_dimensions": [0.5, 0.25, 0.5],
+				"surface_only": true,
 				"direction": "outwards"
 			},
 			"minecraft:particle_lifetime_expression": {
