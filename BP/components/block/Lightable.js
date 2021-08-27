@@ -46,6 +46,9 @@ export default defineComponent(({ name, template, schema }) => {
 				'e:toggle': {
 					set_block_property: {
 						'p:is_lit': `q.block_property('p:is_lit') ? false : true`
+					},
+					run_command: {
+						command: 'playsound furnideco.switch @p ~~~'
 					}
 				}
 			},

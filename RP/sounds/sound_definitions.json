@@ -9,11 +9,41 @@
 			}
 		]
 	},
+	"furnideco.switch": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/switch",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
 	"furnideco.aerial": {
-		"category": "neutral",
+		"category": "block",
 		"sounds": [
 			{
 				"name": "sounds/interactivity/aerial",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"furnideco.books.stack": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/books/stack1",
+				"volume": 1,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/interactivity/books/stack2",
+				"volume": 1,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/interactivity/books/stack3",
 				"volume": 1,
 				"load_on_low_memory": true
 			}
