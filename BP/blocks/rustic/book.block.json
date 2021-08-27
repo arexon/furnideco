@@ -2,12 +2,12 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "furnideco:rustic.books"
+			"identifier": "furnideco:rustic.book"
 		},
 		"permutations": [],
 		"components": {
 			"tag:rustic": {},
-			"tag:books": {},
+			"tag:book": {},
 			"furnideco:attributes": {
 				"map_color": "#c7d6b9",
 				"loot_table": false,
@@ -18,31 +18,38 @@
 			"furnideco:horizontal_facing": {},
 			"furnideco:mixed_geometries": {
 				"property": "p:books",
-				"loot_table": "rustic/books",
+				"loot_table": "rustic/book",
 				"geometries": [
 					{
 						"name": "stack_0",
+						"hitbox": {
+							"pick": [ -3, 0, -4, 7, 2, 9 ],
+							"entity": [ -4, 0, -4, 7, 2, 9 ]
+						}
+					},
+					{
+						"name": "stack_1",
 						"hitbox": {
 							"pick": [ -5, 0, -4, 10, 7, 9 ],
 							"entity": [ -5, 0, -4, 10, 7, 9 ]
 						}
 					},
 					{
-						"name": "stack_1",
+						"name": "stack_2",
 						"hitbox": {
 							"pick": [ -6, 0, -5, 11, 6, 10 ],
 							"entity": [ -6, 0, -5, 11, 6, 10 ]
 						}
 					},
 					{
-						"name": "stack_2",
+						"name": "stack_3",
 						"hitbox": {
 							"pick": [ -5, 0, -5, 10, 8, 10 ],
 							"entity": [ -5, 0, -5, 10, 8, 10 ]
 						}
 					},
 					{
-						"name": "stack_3",
+						"name": "stack_4",
 						"hitbox": {
 							"pick": [ -4, 0, -4, 7, 11, 8 ],
 							"entity": [ -4, 0, -4, 7, 11, 8 ]
@@ -52,13 +59,13 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "rustic.books",
+					"texture": "rustic.book",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
 			},
 			"minecraft:on_interact": {
-				"condition": "q.block_property('p:books') < 3 && q.get_equipped_item_name == 'rustic.books'",
+				"condition": "q.block_property('p:books') < 4 && q.get_equipped_item_name == 'rustic.book'",
 				"event": "e:add.book"
 			}
 		},

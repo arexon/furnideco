@@ -103,8 +103,8 @@
 			"textures": "textures/blocks/rustic/stool/colors/15"
 		},
 		// Books
-		"rustic.books": {
-			"textures": "textures/blocks/rustic/books"
+		"rustic.book": {
+			"textures": "textures/blocks/rustic/book"
 		},
 		// Radio
 		"rustic.radio": {

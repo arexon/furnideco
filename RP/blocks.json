@@ -51,7 +51,7 @@
 		"sound": "wood"
 	},
 	// Books
-	"rustic.books": {
+	"rustic.book": {
 		"sound": "wood"
 	},
 	// Radio
