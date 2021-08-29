@@ -117,6 +117,10 @@
 		// Trash Can
 		"rustic.trash_can": {
 			"textures": "textures/blocks/rustic/trash_can"
+		},
+		// Clock
+		"rustic.clock": {
+			"textures": "textures/blocks/rustic/clock"
 		}
 	}
 }

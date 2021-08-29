@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.clock"
+		},
+		"permutations": [
+		],
+		"components": {
+			"tag:rustic": {},
+			"tag:clock": {},
+			"furnideco:attributes": {
+				"map_color": "#805f3a",
+				"loot_table": "rustic/clock",
+				"strength": [ 1, 1 ],
+				"flameable": [ 40, 40 ],
+				"solidness": 0
+			},
+			"furnideco:horizontal_facing": {},
+			"minecraft:geometry": "geometry.rustic.clock",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.clock",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [ -5.5, 2.5, 6 ],
+				"size": [ 11, 11, 2 ]
+			},
+			"minecraft:entity_collision": {
+				"origin": [ -5.5, 2.5, 6 ],
+				"size": [ 11, 11, 2 ]
+			}
+		},
+		"events": {
+		}
+	}
+}

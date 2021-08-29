@@ -65,5 +65,9 @@
 	// Trash Can
 	"rustic.trash_can": {
 		"sound": "wood"
+	},
+	// Clock
+	"rustic.clock": {
+		"sound": "wood"
 	}
 }
