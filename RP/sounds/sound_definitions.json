@@ -48,5 +48,15 @@
 				"load_on_low_memory": true
 			}
 		]
+	},
+	"furnideco.tick": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/ambient/tick",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
 	}
 }

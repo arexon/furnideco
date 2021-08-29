@@ -4,8 +4,6 @@
 		"description": {
 			"identifier": "furnideco:rustic.clock"
 		},
-		"permutations": [
-		],
 		"components": {
 			"tag:rustic": {},
 			"tag:clock": {},
@@ -32,9 +30,21 @@
 			"minecraft:entity_collision": {
 				"origin": [ -5.5, 2.5, 6 ],
 				"size": [ 11, 11, 2 ]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [ 1, 1 ],
+				"on_tick": {
+					"event": "e:tick"
+				}
 			}
 		},
 		"events": {
+			"e:tick": {
+				"run_command": {
+					"command": "playsound furnideco.tick @p[r=5] ~~~"
+				}
+			}
 		}
 	}
 }
