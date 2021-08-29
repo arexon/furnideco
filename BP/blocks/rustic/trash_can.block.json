@@ -32,7 +32,6 @@
 				"size": [ 12, 2, 12 ]
 			},
 			"minecraft:on_interact": {
-				"condition": "q.is_sneaking",
 				"event": "e:empty.trash"
 			}
 		},

@@ -41,7 +41,6 @@ export default defineComponent(({ name, template, schema }) => {
 		create(
 			{
 				'minecraft:on_interact': {
-					condition: 'q.is_sneaking',
 					event: 'e:toggle'
 				}
 			},
