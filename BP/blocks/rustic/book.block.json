@@ -77,7 +77,7 @@
 				},
 				"run_command": {
 					"command": [
-						"playsound furnideco.books.stack @p ~~~",
+						"playsound furnideco.book.stack @p ~~~",
 						"particle furnideco:dust ~~~"
 					]
 				}

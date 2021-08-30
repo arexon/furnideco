@@ -22,18 +22,6 @@ export default defineComponent(({ name, template, schema }) => {
 			[ 'warped', '#398382' ]
 		])
 
-		// List of known materials
-		const materials = [
-			'oak',
-			'spruce',
-			'birch',
-			'jungle',
-			'acacia',
-			'dark_oak',
-			'crimson',
-			'warped'
-		]
-
 		create(
 			{
 				'minecraft:display_name': identifier.split(':')[1],
@@ -54,6 +42,5 @@ export default defineComponent(({ name, template, schema }) => {
 			},
 			'minecraft:block/components'
 		)
-
 	})
 })

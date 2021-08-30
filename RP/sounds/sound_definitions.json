@@ -29,21 +29,21 @@
 			}
 		]
 	},
-	"furnideco.books.stack": {
+	"furnideco.book.stack": {
 		"category": "block",
 		"sounds": [
 			{
-				"name": "sounds/interactivity/books/stack1",
+				"name": "sounds/interactivity/book/stack1",
 				"volume": 1,
 				"load_on_low_memory": true
 			},
 			{
-				"name": "sounds/interactivity/books/stack2",
+				"name": "sounds/interactivity/book/stack2",
 				"volume": 1,
 				"load_on_low_memory": true
 			},
 			{
-				"name": "sounds/interactivity/books/stack3",
+				"name": "sounds/interactivity/book/stack3",
 				"volume": 1,
 				"load_on_low_memory": true
 			}
