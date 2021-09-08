@@ -16,7 +16,7 @@ export default defineComponent(({ name, template, schema }) => {
 
 		create(
 			{
-				permutations: colorsCount.map(i => ({
+				permutations: [...Array(colors).keys()].map(i => ({
 					condition: `q.block_property('p:color') == ${i}`,
 					components: {
 						'minecraft:material_instances': {
@@ -36,7 +36,7 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				'e:cycle_color': {
 					set_block_property: {
-						'p:color': `q.block_property('p:color') == 15 ? 0 : q.block_property('p:color') + 1`
+						'p:color': `q.block_property('p:color') == ${colors - 1} ? 0 : q.block_property('p:color') + 1`
 					},
 					run_command: {
 						command: 'function customization/cycle_color'
