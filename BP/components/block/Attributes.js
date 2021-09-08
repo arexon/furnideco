@@ -25,6 +25,10 @@ export default defineComponent(({ name, template, schema }) => {
 		create(
 			{
 				'minecraft:display_name': identifier.split(':')[1],
+				'minecraft:creative_category': {
+					category: 'Construction',
+					group: 'itemGroup.name.Construction'
+				},
 				'minecraft:map_color': (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
 				...(loot_table && {
 					'minecraft:loot': `loot_tables/${loot_table}.loot.json`
