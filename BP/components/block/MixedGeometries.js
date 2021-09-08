@@ -8,11 +8,9 @@ export default defineComponent(({ name, template, schema }) => {
 
 	template(({ geometries = [], property = 'p:geometry', loot_table = false }, { create, identifier }) => {
 
-		let geosCount = []
-		for (let i = 0; i < geometries.length; i++) geosCount.push(i)
 		create(
 			{
-				[property]: geosCount
+				[property]: [...Array(geometries.length).keys()]
 			},
 			'minecraft:block/description/properties'
 		)

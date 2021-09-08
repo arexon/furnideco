@@ -7,12 +7,9 @@ export default defineComponent(({ name, template, schema }) => {
 
 	template(({ colors = 0, part = '*' }, { create, identifier }) => {
 
-		let colorsCount = []
-		for (let i = 0; i < colors; i++) colorsCount.push(i)
-
 		create(
 			{
-				'p:color': colorsCount
+				'p:color': [...Array(colors).keys()]
 			},
 			'minecraft:block/description/properties'
 		)
