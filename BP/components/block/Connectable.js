@@ -1,10 +1,15 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:connectable')
 	schema({
-		tag: 'string'
+		properties: {
+			tag: {
+				description: `Block's tags to use.`,
+				type: 'string'
+			}
+		}
 	})
 
-	template(({ tag = '' }, { }) => {
+	template(({ tag = '' }, {}) => {
 
 		const createNeighbors = (north, east, south, west) => {
 			const properties = [

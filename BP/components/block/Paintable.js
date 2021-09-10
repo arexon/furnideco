@@ -1,12 +1,23 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:paintable')
 	schema({
-		colors: 'number',
-		part: 'string'
+		description: 'Allows the block to be painted.',
+		type: 'object',
+		properties: {
+			colors: {
+				description: 'Amount of colors that can be painted on the block.',
+				type: 'number'
+			},
+			part: {
+				description: 'Material instance part name.',
+				type: 'string'
+			}
+		}
 	})
 
 	template(({ colors = 0, part = '*' }, { create, identifier }) => {
 
+		// Creates a number property based on colors value
 		create(
 			{
 				'p:color': [...Array(colors).keys()]
@@ -14,6 +25,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
+		// Creates a number array and loops through it creating a permutation for each entry
 		create(
 			{
 				permutations: [...Array(colors).keys()].map(i => ({

@@ -1,7 +1,14 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:lightable')
 	schema({
-		emission: 'number'
+		description: 'Makes the block conditionally glow',
+		type: 'object',
+		properties: {
+			emission: {
+				description: 'The light level.',
+				type: 'number'
+			}
+		}
 	})
 
 	template(({ emission = 1 }, { create }) => {

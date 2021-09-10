@@ -1,10 +1,23 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:sittable')
 	schema({
-		directional: 'boolean'
+		description: 'Allows the player to sit on the block.',
+		type: 'object',
+		properties: {
+			directional: {
+				description: 'Specifies if the seat is directional.',
+				type: 'boolean'
+			}
+		}
 	})
 
 	template(({ directional = false }, { create, identifier }) => {
+
+		const directions = [
+			'e:set.direction.east',
+			'e:set.direction.south',
+			'e:set.direction.west'
+		]
 
 		create(
 			{
@@ -19,11 +32,6 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/components'
 		)
 
-		const directions = [
-			'e:set.direction.east',
-			'e:set.direction.south',
-			'e:set.direction.west'
-		]
 		create(
 			{
 				'e:add.seat': (

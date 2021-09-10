@@ -1,14 +1,35 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:attributes')
 	schema({
-		map_color: 'string',
-		loot_table: 'string',
-		strength: 'array',
-		flameable: 'array',
-		solidness: 'float'
+		description: 'Sets the general properties of the block.',
+		type: 'object',
+		properties: {
+			map_color: {
+				description: 'Material or hex color to use for map color.',
+				type: 'string'
+			},
+			loot_table: {
+				description: 'Loot table path to use.',
+				type: 'string'
+			},
+			strength: {
+				description: 'Sets hardness & resistance.',
+				type: 'array',
+				items: { type: 'number' }
+			},
+			flameable: {
+				description: 'Sets how resistant the block to fire is.',
+				type: 'array',
+				items: { type: 'number' }
+			},
+			solidness: {
+				description: 'Specifies whether the block is solid or not.',
+				type: 'number'
+			}
+		}
 	})
 
-	template(({ map_color = 'oak', loot_table = '', strength = [1, 1], flameable = false, solidness = 0 }, { create, identifier }) => {
+	template(({ map_color = '', loot_table = false, strength = [1, 1], flameable = false, solidness = 0 }, { create, identifier }) => {
 
 		// List of pre-set map colors
 		const mapColors = new Map([

@@ -1,13 +1,44 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:mixed_geometries')
 	schema({
-		geometries: 'array',
-		property: 'string',
-		loot_table: 'boolean'
+		description: 'Makes the block switch between geometries based on a property value.',
+		type: 'object',
+		properties: {
+			geometries: {
+				description: 'An array of geometries to use.',
+				type: 'array',
+				items: {
+					type: 'object',
+					properties: {
+						name: {
+							description: 'Key name of the geometry.',
+							type: 'string'
+						},
+						hitbox: {
+							description: 'Hitbox of the block.',
+							type: 'object',
+							properties: {
+								pick: { type: 'array' },
+								entity: { type: 'array' }
+							}
+						}
+					}
+				}
+			},
+			property: {
+				description: `Property to use. Default: 'p:geometry'.`,
+				type: 'string'
+			},
+			loot_table: {
+				description: 'Loot table path to use for each geometry.',
+				type: 'string'
+			}
+		}
 	})
 
 	template(({ geometries = [], property = 'p:geometry', loot_table = false }, { create, identifier }) => {
 
+		// Creates a number property based on geometries length
 		create(
 			{
 				[property]: [...Array(geometries.length).keys()]
@@ -15,6 +46,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
+		// Loops through geometries and creates permutations for each geomtery
 		create(
 			{
 				permutations: geometries.map((geo, i) => ({
