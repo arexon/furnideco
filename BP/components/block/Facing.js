@@ -15,7 +15,7 @@ export default defineComponent(({ name, template, schema }) => {
 
 		const directions = [ 0, 180, 90, 270 ]
 		for (let i = 0; i < 6; i++) {
-			let face = faces[i > 1 ? 2 : i]
+			const face = faces[i > 1 ? 2 : i]
 			create(
 				{
 					condition: `q.block_property('p:facing') == ${i}`,
