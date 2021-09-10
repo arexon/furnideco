@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.clock"
 		},
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:clock": {},

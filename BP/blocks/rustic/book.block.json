@@ -10,7 +10,6 @@
 			"tag:book": {},
 			"furnideco:attributes": {
 				"map_color": "#c7d6b9",
-				"loot_table": false,
 				"strength": [ 0.1, 0.1 ],
 				"flameable": [ 50, 50 ],
 				"solidness": 0
