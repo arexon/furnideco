@@ -46,7 +46,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Loops through geometries and creates permutations for each geomtery
+		// Loops through geometries and creates a permutation for each entry
 		create(
 			{
 				permutations: geometries.map((geo, i) => ({

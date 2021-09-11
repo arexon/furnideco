@@ -1,9 +1,11 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:connectable')
 	schema({
+		description: 'Allows the block to connect to neighbor blocks.',
+		type: 'object',
 		properties: {
 			tag: {
-				description: `Block's tags to use.`,
+				description: `The block's tag.`,
 				type: 'string'
 			}
 		}

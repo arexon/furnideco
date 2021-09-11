@@ -1,10 +1,10 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:horizontal_facing')
 	schema({
-		description: 'Makes the block horizontally directional on placing.'
+		description: 'Makes the block horizontally face the player on placing.'
 	})
 
-	template(({ }, { create }) => {
+	template(({}, { create }) => {
 
 		const directions = [ 180, 0, 270, 90 ]
 
@@ -15,7 +15,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Loop through directions and create permutations for each entry
+		// Loop through directions and create a permutation for each entry
 		create(
 			{
 				permutations: directions.map((direction, i) => ({

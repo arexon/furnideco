@@ -1,7 +1,7 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:facing')
 	schema({
-		description: 'Makes the block directional on placing.',
+		description: 'Makes the block face the direction its placed.',
 		type: 'object',
 		properties: {
 			faces: {
@@ -37,7 +37,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Loop and create 6 permutations for faces
+		// Loops and create 6 permutations for faces
 		for (let i = 0; i < 6; i++) {
 			const directions = [ 0, 180, 90, 270 ]
 			const face = faces[i > 1 ? 2 : i]
