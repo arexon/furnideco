@@ -1,7 +1,7 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:facing')
 	schema({
-		description: 'Makes the block face the direction its placed.',
+		description: 'Makes the block face the direction its placed on.',
 		type: 'object',
 		properties: {
 			faces: {
