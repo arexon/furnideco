@@ -5,7 +5,7 @@ export default defineComponent(({ name, template, schema }) => {
 		type: 'object',
 		properties: {
 			faces: {
-				description: 'Array of faces to apply.',
+				description: 'Defines faces to use.',
 				type: 'array',
 				items: {
 					type: 'object',
@@ -14,8 +14,8 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Name of the geometry to use.',
 							type: 'string'
 						},
-						hitbox: {
-							description: 'Hitbox of the block.',
+						collision: {
+							description: 'Collision of the geometry.',
 							type: 'object',
 							properties: {
 								pick: { type: 'array' },
@@ -47,12 +47,12 @@ export default defineComponent(({ name, template, schema }) => {
 					components: {
 						'minecraft:geometry': `geometry.${face.name}`,
 						'minecraft:pick_collision': {
-							origin: face.hitbox.pick.slice(0, 3),
-							size: face.hitbox.pick.slice(3, 6)
+							origin: face.collision.pick.slice(0, 3),
+							size: face.collision.pick.slice(3, 6)
 						},
-						'minecraft:entity_collision': (face.hitbox.entity == false ? false : {
-							origin: face.hitbox.entity.slice(0, 3),
-							size: face.hitbox.entity.slice(3, 6)
+						'minecraft:entity_collision': (face.collision.entity == false ? false : {
+							origin: face.collision.entity.slice(0, 3),
+							size: face.collision.entity.slice(3, 6)
 						}),
 						...(i > 1 && {
 							'minecraft:rotation': [ 0, directions[i - 2], 0 ]

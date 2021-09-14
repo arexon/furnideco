@@ -1,21 +1,21 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:mixed_geometries')
 	schema({
-		description: 'Makes the block switch between geometries based on a property value.',
+		description: 'Makes the block cycle between geometries based on a property value.',
 		type: 'object',
 		properties: {
 			geometries: {
-				description: 'An array of geometries to use.',
+				description: 'Defines geometries to use.',
 				type: 'array',
 				items: {
 					type: 'object',
 					properties: {
 						name: {
-							description: 'Key name of the geometry.',
+							description: 'Name of the geometry.',
 							type: 'string'
 						},
-						hitbox: {
-							description: 'Hitbox of the block.',
+						collision: {
+							description: 'Collision of the geometry.',
 							type: 'object',
 							properties: {
 								pick: { type: 'array' },
@@ -38,10 +38,12 @@ export default defineComponent(({ name, template, schema }) => {
 
 	template(({ geometries = [], property = 'p:geometry', loot_table = false }, { create, identifier }) => {
 
-		// Creates a number property based on geometries length
+		const createNumberArray = value => [...Array(value).keys()]
+
+		// Creates an integer property based on geometries length
 		create(
 			{
-				[property]: [...Array(geometries.length).keys()]
+				[property]: createNumberArray(geometries.length)
 			},
 			'minecraft:block/description/properties'
 		)
@@ -54,12 +56,12 @@ export default defineComponent(({ name, template, schema }) => {
 					components: {
 						'minecraft:geometry': `geometry.${identifier.split(/[\.\:]/)[1]}.${identifier.split('.')[1]}.${geo.name}`,
 						'minecraft:pick_collision': {
-							origin: geo.hitbox.pick.slice(0, 3),
-							size: geo.hitbox.pick.slice(3, 6)
+							origin: geo.collision.pick.slice(0, 3),
+							size: geo.collision.pick.slice(3, 6)
 						},
-						'minecraft:entity_collision': (geo.hitbox.entity == false ? false : {
-							origin: geo.hitbox.entity.slice(0, 3),
-							size: geo.hitbox.entity.slice(3, 6)
+						'minecraft:entity_collision': (geo.collision.entity == false ? false : {
+							origin: geo.collision.entity.slice(0, 3),
+							size: geo.collision.entity.slice(3, 6)
 						}),
 						...(loot_table && {
 							'minecraft:loot': `loot_tables/${loot_table}/${geo.name}.loot.json`

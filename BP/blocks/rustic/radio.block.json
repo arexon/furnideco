@@ -37,14 +37,14 @@
 				"geometries": [
 					{
 						"name": "aerial_down",
-						"hitbox": {
+						"collision": {
 							"pick": [ -7, 0, -3, 14, 9, 6 ],
 							"entity": [ -7, 0, -3, 14, 9, 6 ]
 						}
 					},
 					{
 						"name": "aerial_up",
-						"hitbox": {
+						"collision": {
 							"pick": [ -7, 0, -3, 14, 9, 6 ],
 							"entity": [ -7, 0, -3, 14, 9, 6 ]
 						}

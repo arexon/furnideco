@@ -19,21 +19,21 @@
 				"faces": [
 					{
 						"name": "rustic.lamp.hung",
-						"hitbox": {
+						"collision": {
 							"pick": [ -4, 0, -4, 8, 16, 8 ],
 							"entity": [ -4, 0, -4, 8, 8, 8 ]
 						}
 					},
 					{
 						"name": "rustic.lamp",
-						"hitbox": {
+						"collision": {
 							"pick": [ -4, 0, -4, 8, 12, 8 ],
 							"entity": [ -4, 0, -4, 8, 12, 8 ]
 						}
 					},
 					{
 						"name": "rustic.lamp.mounted",
-						"hitbox": {
+						"collision": {
 							"pick": [ -4, 0, -4, 8, 16, 12 ],
 							"entity": [ -4, 0, -4, 8, 8, 8 ]
 						}
