@@ -17,10 +17,12 @@ export default defineComponent(({ name, template, schema }) => {
 
 	template(({ colors = 0, part = '*' }, { create, identifier }) => {
 
+		const createNumberArray = value => [...Array(value).keys()]
+
 		// Creates a number property based on colors value
 		create(
 			{
-				'p:color': [...Array(colors).keys()]
+				'p:color': createNumberArray(colors)
 			},
 			'minecraft:block/description/properties'
 		)
@@ -28,7 +30,7 @@ export default defineComponent(({ name, template, schema }) => {
 		// Creates a number array and loops through it creating a permutation for each entry
 		create(
 			{
-				permutations: [...Array(colors).keys()].map(i => ({
+				permutations: createNumberArray(colors).map(i => ({
 					condition: `q.block_property('p:color') == ${i}`,
 					components: {
 						'minecraft:material_instances': {
