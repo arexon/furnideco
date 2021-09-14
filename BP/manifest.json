@@ -19,5 +19,15 @@
 			"uuid": "425e64ac-5918-4eed-bc28-6a5891c609e3",
 			"version": [ 1, 0, 0 ]
 		}
-	]
+	],
+	"metadata": {
+		"authors": [ "Arexon" ],
+		"license": "Apache 2.0",
+		"url": "https://arexon.dev/project/furnideco/",
+		"generated_with": {
+			"bridge": [
+				"2.1.0"
+			]
+		}
+	}
 }
