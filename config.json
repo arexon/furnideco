@@ -2,12 +2,11 @@
 	"type": "minecraftBedrock",
 	"name": "FurniDeco",
 	"namespace": "furnideco",
-	"targetVersion": "1.17.20",
+	"authors": [
+		"Arexon"
+	],
+	"targetVersion": "1.17.30",
 	"description": "Adds 50 pieces of functional, decorative and unique furniture that fit with the Minecraft vanilla style.",
-	"packs": {
-		"behaviorPack": "./BP",
-		"resourcePack": "./RP"
-	},
 	"experimentalGameplay": {
 		"enableGameTestFramework": false,
 		"additionalModdingCapabilities": false,
@@ -18,7 +17,25 @@
 		"experimentalMolangFeatures": true,
 		"educationEdition": false
 	},
-	"authors": [
-		"Arexon"
-	]
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			[
+				"simpleRewrite",
+				{
+					"packName": "FurniDeco"
+				}
+			]
+		]
+	}
 }
