@@ -2,7 +2,5 @@ Desktop.ini
 .DS_Store 
 !.bridge/
 .bridge/*
-!.bridge/compiler/
 !.bridge/extensions
-!.bridge/config.json
 builds
