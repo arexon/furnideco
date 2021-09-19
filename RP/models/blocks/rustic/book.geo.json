@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.rustic.book.stack_0",
+				"identifier": "geometry.rustic.book.stack_1",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -27,7 +27,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.book.stack_1",
+				"identifier": "geometry.rustic.book.stack_2",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -60,7 +60,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.book.stack_2",
+				"identifier": "geometry.rustic.book.stack_3",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -101,7 +101,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.book.stack_3",
+				"identifier": "geometry.rustic.book.stack_4",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -151,7 +151,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.book.stack_4",
+				"identifier": "geometry.rustic.book.stack_5",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,

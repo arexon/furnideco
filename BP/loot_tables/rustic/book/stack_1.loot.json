@@ -6,13 +6,7 @@
 				{
 					"type": "item",
 					"name": "furnideco:rustic.book",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": 2
-						}
-					]
+					"weight": 1
 				}
 			]
 		}

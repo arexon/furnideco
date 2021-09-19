@@ -20,35 +20,35 @@
 				"loot_table": "rustic/book",
 				"geometries": [
 					{
-						"name": "stack_0",
+						"name": "stack_1",
 						"collision": {
 							"pick": [ -3, 0, -4, 7, 2, 9 ],
 							"entity": [ -4, 0, -4, 7, 2, 9 ]
 						}
 					},
 					{
-						"name": "stack_1",
+						"name": "stack_2",
 						"collision": {
 							"pick": [ -5, 0, -4, 10, 7, 9 ],
 							"entity": [ -5, 0, -4, 10, 7, 9 ]
 						}
 					},
 					{
-						"name": "stack_2",
+						"name": "stack_3",
 						"collision": {
 							"pick": [ -6, 0, -5, 11, 6, 10 ],
 							"entity": [ -6, 0, -5, 11, 6, 10 ]
 						}
 					},
 					{
-						"name": "stack_3",
+						"name": "stack_4",
 						"collision": {
 							"pick": [ -5, 0, -5, 10, 8, 10 ],
 							"entity": [ -5, 0, -5, 10, 8, 10 ]
 						}
 					},
 					{
-						"name": "stack_4",
+						"name": "stack_5",
 						"collision": {
 							"pick": [ -4, 0, -4, 7, 11, 8 ],
 							"entity": [ -4, 0, -4, 7, 11, 8 ]
