@@ -6,7 +6,7 @@
 		"Arexon"
 	],
 	"targetVersion": "1.17.30",
-	"description": "Adds 50 pieces of functional, decorative and unique furniture that fit with the Minecraft vanilla style.",
+	"description": "Adds 25 pieces of functional, decorative and unique furniture that fit with the Minecraft vanilla style.",
 	"experimentalGameplay": {
 		"enableGameTestFramework": false,
 		"additionalModdingCapabilities": false,
