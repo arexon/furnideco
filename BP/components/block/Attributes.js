@@ -5,8 +5,15 @@ export default defineComponent(({ name, template, schema }) => {
 		type: 'object',
 		properties: {
 			map_color: {
-				description: 'Material or hex color to use for map color.',
-				type: 'string'
+				description: 'Material name or hex color to use for the map color.',
+				anyOf: [
+					{
+						enum: [ 'oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped' ]
+					},
+					{
+						type: 'string'
+					}
+				]
 			},
 			loot_table: {
 				description: 'Loot table path to use.',
@@ -15,16 +22,21 @@ export default defineComponent(({ name, template, schema }) => {
 			strength: {
 				description: 'Sets hardness & resistance.',
 				type: 'array',
+				minItems: 2,
+				maxItems: 2,
 				items: { type: 'number' }
 			},
 			flameable: {
 				description: 'Sets how resistant the block to fire is.',
 				type: 'array',
+				minItems: 2,
+				maxItems: 2,
 				items: { type: 'number' }
 			},
 			solidness: {
 				description: 'Specifies whether the block is solid or not.',
-				type: 'number'
+				type: 'number',
+				maximum: 1
 			}
 		}
 	})

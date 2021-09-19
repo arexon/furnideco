@@ -6,7 +6,8 @@ export default defineComponent(({ name, template, schema }) => {
 		properties: {
 			emission: {
 				description: 'The light level.',
-				type: 'number'
+				type: 'number',
+				maximum: 1
 			}
 		}
 	})
