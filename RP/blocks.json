@@ -69,5 +69,9 @@
 	// Clock
 	"rustic.clock": {
 		"sound": "wood"
+	},
+	// Bottle
+	"rustic.bottle": {
+		"sound": "glass"
 	}
 }

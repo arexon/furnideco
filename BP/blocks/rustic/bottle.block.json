@@ -1,0 +1,72 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.bottle"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:bottle": {},
+			"furnideco:attributes": {
+				"map_color": "#2a623d",
+				"strength": [ 0.2, 0.2 ],
+				"flameable": [ 10, 0 ],
+				"solidness": 0
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:mixed_geometries": {
+				"property": "p:bottles",
+				"loot_table": "rustic/bottle",
+				"geometries": [
+					{
+						"name": "stack_1",
+						"collision": {
+							"pick": [ -1.5, 0, -1.5, 3, 10, 3 ],
+							"entity": [ -1.5, 0, -1.5, 3, 10, 3 ]
+						}
+					},
+					{
+						"name": "stack_2",
+						"collision": {
+							"pick": [ -3, 0, -3, 7, 10, 5 ],
+							"entity": [ -3, 0, -3, 7, 10, 5 ]
+						}
+					},
+					{
+						"name": "stack_3",
+						"collision": {
+							"pick": [ -5, 0, -5, 10, 9, 8 ],
+							"entity": [ -5, 0, -5, 10, 9, 8 ]
+						}
+					}
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.bottle",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:on_interact": {
+				"condition": "q.block_property('p:bottles') < 2 && q.get_equipped_item_name == 'rustic.bottle'",
+				"event": "e:add.bottle"
+			}
+		},
+		"events": {
+			"e:add.bottle": {
+				"decrement_stack": {},
+				"set_block_property": {
+					"p:bottles": "q.block_property('p:bottles') + 1"
+				},
+				"run_command": {
+					"command": [
+						"playsound furnideco.bottle.stack @p ~~~",
+						"particle furnideco:dust ~~~"
+					]
+				}
+			}
+		}
+	}
+}

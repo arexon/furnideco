@@ -121,6 +121,10 @@
 		// Clock
 		"rustic.clock": {
 			"textures": "textures/blocks/rustic/clock"
+		},
+		// Bottle
+		"rustic.bottle": {
+			"textures": "textures/blocks/rustic/bottle"
 		}
 	}
 }

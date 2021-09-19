@@ -35,6 +35,8 @@ tile.rustic.trash_can.name=Trash Can
 
 tile.rustic.clock.name=Clock
 
+tile.rustic.bottle.name=Bottle
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

@@ -29,6 +29,16 @@
 			}
 		]
 	},
+	"furnideco.tick": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/ambient/tick",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
 	"furnideco.book.stack": {
 		"category": "block",
 		"sounds": [
@@ -49,11 +59,16 @@
 			}
 		]
 	},
-	"furnideco.tick": {
+	"furnideco.bottle.stack": {
 		"category": "block",
 		"sounds": [
 			{
-				"name": "sounds/ambient/tick",
+				"name": "sounds/interactivity/bottle/stack1",
+				"volume": 1,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/interactivity/bottle/stack2",
 				"volume": 1,
 				"load_on_low_memory": true
 			}
