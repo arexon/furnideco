@@ -76,7 +76,7 @@
 	},
 	// Vase
 	"rustic.vase": {
-		"sound": "stone"
+		"sound": "glass"
 	},
 	// Curtain
 	"rustic.curtain": {
