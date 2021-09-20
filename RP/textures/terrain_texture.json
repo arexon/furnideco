@@ -150,6 +150,58 @@
 		},
 		"rustic.vase.color_7": {
 			"textures": "textures/blocks/rustic/vase/7"
+		},
+		// Curtain
+		"rustic.curtain": {
+			"textures": "textures/blocks/rustic/curtain/base"
+		},
+		"rustic.curtain.color_0": {
+			"textures": "textures/blocks/rustic/curtain/colors/0"
+		},
+		"rustic.curtain.color_1": {
+			"textures": "textures/blocks/rustic/curtain/colors/1"
+		},
+		"rustic.curtain.color_2": {
+			"textures": "textures/blocks/rustic/curtain/colors/2"
+		},
+		"rustic.curtain.color_3": {
+			"textures": "textures/blocks/rustic/curtain/colors/3"
+		},
+		"rustic.curtain.color_4": {
+			"textures": "textures/blocks/rustic/curtain/colors/4"
+		},
+		"rustic.curtain.color_5": {
+			"textures": "textures/blocks/rustic/curtain/colors/5"
+		},
+		"rustic.curtain.color_6": {
+			"textures": "textures/blocks/rustic/curtain/colors/6"
+		},
+		"rustic.curtain.color_7": {
+			"textures": "textures/blocks/rustic/curtain/colors/7"
+		},
+		"rustic.curtain.color_8": {
+			"textures": "textures/blocks/rustic/curtain/colors/8"
+		},
+		"rustic.curtain.color_9": {
+			"textures": "textures/blocks/rustic/curtain/colors/9"
+		},
+		"rustic.curtain.color_10": {
+			"textures": "textures/blocks/rustic/curtain/colors/10"
+		},
+		"rustic.curtain.color_11": {
+			"textures": "textures/blocks/rustic/curtain/colors/11"
+		},
+		"rustic.curtain.color_12": {
+			"textures": "textures/blocks/rustic/curtain/colors/12"
+		},
+		"rustic.curtain.color_13": {
+			"textures": "textures/blocks/rustic/curtain/colors/13"
+		},
+		"rustic.curtain.color_14": {
+			"textures": "textures/blocks/rustic/curtain/colors/14"
+		},
+		"rustic.curtain.color_15": {
+			"textures": "textures/blocks/rustic/curtain/colors/15"
 		}
 	}
 }

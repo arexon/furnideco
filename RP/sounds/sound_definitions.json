@@ -73,5 +73,25 @@
 				"load_on_low_memory": true
 			}
 		]
+	},
+	"furnideco.tie": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/curtain/tie",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"furnideco.untie": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/curtain/untie",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
 	}
 }

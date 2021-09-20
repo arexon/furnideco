@@ -1,0 +1,89 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.curtain"
+		},
+		"permutations": [
+			{
+				"condition": "(1.0)",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "rustic.curtain",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:rustic": {},
+			"tag:curtain": {},
+			"furnideco:attributes": {
+				"map_color": "#5c3e33",
+				"loot_table": "rustic/curtain",
+				"strength": [ 0.8, 0.8 ],
+				"flameable": [ 50, 40 ],
+				"solidness": 0
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:mixed_geometries": {
+				"property": "p:is_tied",
+				"name": "rustic.curtain",
+				"geometries": [
+					{
+						"name": "untied",
+						"collision": {
+							"pick": [ -8, 0, 6, 16, 16, 2 ],
+							"entity": false
+						}
+					},
+					{
+						"name": "tied",
+						"collision": {
+							"pick": [ -8, 0, 6, 16, 16, 2 ],
+							"entity": false
+						}
+					}
+				]
+			},
+			"furnideco:paintable": {
+				"colors": 16,
+				"texture": "rustic.curtain",
+				"part": "curtain"
+			},
+			"minecraft:on_interact": {
+				"condition": "q.is_sneaking",
+				"event": "e:switch.tie"
+			}
+		},
+		"events": {
+			"e:switch.tie": {
+				"sequence": [
+					{
+						"condition": "q.block_property('p:is_tied')",
+						"run_command": {
+							"command": "playsound furnideco.tie @p ~~~"
+						}
+					},
+					{
+						"condition": "!q.block_property('p:is_tied')",
+						"run_command": {
+							"command": [
+								"playsound furnideco.untie @p ~~~",
+								"particle furnideco:dust ~ ~-0.75 ~"
+							]
+						}
+					},
+					{
+						"set_block_property": {
+							"p:is_tied": "q.block_property('p:is_tied') ? 0 : 1"
+						}
+					}
+				]
+			}
+		}
+	}
+}
