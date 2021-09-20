@@ -23,8 +23,8 @@
 			"tag:stool": {},
 			"furnideco:paintable": {
 				"colors": 16,
-				"geometry_name": "rustic.stool",
-				"part_name": "cushion"
+				"texture": "rustic.stool",
+				"part": "cushion"
 			},
 			"furnideco:attributes": {
 				"map_color": "dark_oak",

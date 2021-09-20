@@ -23,7 +23,7 @@
 			"furnideco:horizontal_facing": {},
 			"furnideco:paintable": {
 				"colors": 8,
-				"geometry_name": "rustic.vase"
+				"texture": "rustic.vase"
 			}
 		}
 	}
