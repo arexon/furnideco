@@ -8,14 +8,18 @@ export default defineComponent(({ name, template, schema }) => {
 				description: 'Amount of colors that can be painted on the block.',
 				type: 'number'
 			},
-			part: {
+			geometry_name: {
+				description: 'The geometry definition name.',
+				type: 'string'
+			},
+			part_name: {
 				description: 'Material instance part name.',
 				type: 'string'
 			}
 		}
 	})
 
-	template(({ colors = 0, part = '*' }, { create, identifier }) => {
+	template(({ colors = 0, geometry_name, part_name = '*' }, { create }) => {
 
 		const createNumberArray = value => [...Array(value).keys()]
 
@@ -34,8 +38,8 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('p:color') == ${i}`,
 					components: {
 						'minecraft:material_instances': {
-							[part]: {
-								texture: `rustic.${identifier.split('.')[2]}.color_${i}`,
+							[part_name]: {
+								texture: `${geometry_name}.color_${i}`,
 								render_method: 'alpha_test',
 								ambient_occlusion: false
 							}

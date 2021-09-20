@@ -16,8 +16,9 @@
 			},
 			"furnideco:horizontal_facing": {},
 			"furnideco:mixed_geometries": {
-				"property": "p:books",
 				"loot_table": "rustic/book",
+				"property": "p:books",
+				"name": "rustic.book",
 				"geometries": [
 					{
 						"name": "stack_1",

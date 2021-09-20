@@ -16,8 +16,9 @@
 			},
 			"furnideco:horizontal_facing": {},
 			"furnideco:mixed_geometries": {
-				"property": "p:bottles",
 				"loot_table": "rustic/bottle",
+				"property": "p:bottles",
+				"name": "rustic.bottle",
 				"geometries": [
 					{
 						"name": "stack_1",

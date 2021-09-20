@@ -4,6 +4,10 @@ export default defineComponent(({ name, template, schema }) => {
 		description: 'Allows the player to sit on the block.',
 		type: 'object',
 		properties: {
+			name: {
+				description: 'The identifier of the block without a namespace.',
+				type: 'string'
+			},
 			directional: {
 				description: 'Specifies if the seat is directional.',
 				type: 'boolean'
@@ -11,7 +15,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ directional = false }, { create, identifier }) => {
+	template(({ name, directional = false }, { create }) => {
 
 		const directions = [
 			'e:set.direction.east',
@@ -39,12 +43,12 @@ export default defineComponent(({ name, template, schema }) => {
 						sequence: directions.map((direction, i) => ({
 							condition: `q.block_property('p:direction') == ${i}`,
 							run_command: {
-								command: `summon furnideco:seat.${identifier.split(/[\.\:]/)[1]}_${identifier.split(/[\.\:]/)[3]} ~~~ ${direction}`
+								command: `summon furnideco:seat.${name} ~~~ ${direction}`
 							}
 						}))
 					} : {
 						run_command: {
-							command: `summon furnideco:seat.${identifier.split(/[\.\:]/)[1]}_${identifier.split(/[\.\:]/)[3]} ~~~`
+							command: `summon furnideco:seat.${name} ~~~`
 						}
 					}
 				)

@@ -34,6 +34,7 @@
 			"furnideco:horizontal_facing": {},
 			"furnideco:mixed_geometries": {
 				"property": "p:aerial",
+				"name": "rustic.radio",
 				"geometries": [
 					{
 						"name": "aerial_down",

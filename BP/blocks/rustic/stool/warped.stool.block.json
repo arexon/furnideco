@@ -23,7 +23,8 @@
 			"tag:stool": {},
 			"furnideco:paintable": {
 				"colors": 16,
-				"part": "cushion"
+				"geometry_name": "rustic.stool",
+				"part_name": "cushion"
 			},
 			"furnideco:attributes": {
 				"map_color": "warped",
@@ -36,7 +37,9 @@
 					"entity": [ -7, 0, -7, 14, 11, 14 ]
 				}
 			},
-			"furnideco:sittable": {}
+			"furnideco:sittable": {
+				"name": "rustic_stool"
+			}
 		}
 	}
 }

@@ -11,15 +11,41 @@ export default defineComponent(({ name, template, schema }) => {
 					type: 'object',
 					properties: {
 						name: {
-							description: 'Name of the geometry to use.',
+							description: 'The geometry definition name.',
 							type: 'string'
 						},
 						collision: {
 							description: 'Collision of the geometry.',
 							type: 'object',
 							properties: {
-								pick: { type: 'array' },
-								entity: { type: 'array' }
+								pick: {
+									description: 'The pick collision. Gets disabled if set to false.',
+									anyOf: [
+										{
+											type: 'array',
+											minItems: 6,
+											maxItems: 6,
+											items: { type: 'number' }
+										},
+										{
+											enum: [ false ]
+										}
+									]
+								},
+								entity: {
+									description: 'The entity collision. Gets disabled if set to false.',
+									anyOf: [
+										{
+											type: 'array',
+											minItems: 6,
+											maxItems: 6,
+											items: { type: 'number' }
+										},
+										{
+											enum: [ false ]
+										}
+									]
+								}
 							}
 						}
 					}
@@ -46,10 +72,10 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('p:facing') == ${i}`,
 					components: {
 						'minecraft:geometry': `geometry.${face.name}`,
-						'minecraft:pick_collision': {
+						'minecraft:pick_collision': (face.collision.pick == false ? false : {
 							origin: face.collision.pick.slice(0, 3),
 							size: face.collision.pick.slice(3, 6)
-						},
+						}),
 						'minecraft:entity_collision': (face.collision.entity == false ? false : {
 							origin: face.collision.entity.slice(0, 3),
 							size: face.collision.entity.slice(3, 6)
