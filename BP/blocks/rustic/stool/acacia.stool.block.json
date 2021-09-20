@@ -30,18 +30,14 @@
 				"loot_table": "rustic/stool/acacia.stool",
 				"strength": [ 2, 2 ],
 				"flameable": [ 30, 30 ],
-				"solidness": 0
+				"solidness": 0,
+				"geometry": "rustic.stool",
+				"collision": {
+					"pick": [ -7, 0, -7, 14, 11, 14 ],
+					"entity": [ -7, 0, -7, 14, 11, 14 ]
+				}
 			},
-			"furnideco:sittable": {},
-			"minecraft:geometry": "geometry.rustic.stool",
-			"minecraft:pick_collision": {
-				"origin": [ -7, 0, -7 ],
-				"size": [ 14, 11, 14 ]
-			},
-			"minecraft:entity_collision": {
-				"origin": [ -7, 0, -7 ],
-				"size": [ 14, 11, 14 ]
-			}
+			"furnideco:sittable": {}
 		}
 	}
 }

@@ -13,24 +13,20 @@
 				"loot_table": "rustic/clock",
 				"strength": [ 1, 1 ],
 				"flameable": [ 40, 40 ],
-				"solidness": 0
+				"solidness": 0,
+				"geometry": "rustic.clock",
+				"collision": {
+					"pick": [ -5.5, 2.5, 6, 11, 11, 2 ],
+					"entity": [ -5.5, 2.5, 6, 11, 11, 2 ]
+				}
 			},
 			"furnideco:horizontal_facing": {},
-			"minecraft:geometry": "geometry.rustic.clock",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "rustic.clock",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
-			},
-			"minecraft:pick_collision": {
-				"origin": [ -5.5, 2.5, 6 ],
-				"size": [ 11, 11, 2 ]
-			},
-			"minecraft:entity_collision": {
-				"origin": [ -5.5, 2.5, 6 ],
-				"size": [ 11, 11, 2 ]
 			},
 			"minecraft:ticking": {
 				"looping": true,

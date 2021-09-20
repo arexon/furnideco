@@ -37,11 +37,49 @@ export default defineComponent(({ name, template, schema }) => {
 				description: 'Specifies whether the block is solid or not.',
 				type: 'number',
 				maximum: 1
+			},
+			geometry: {
+				description: 'Defines the geometry to use.',
+				type: 'string'
+			},
+			collision: {
+				description: 'Sets the collision of the block.',
+				type: 'object',
+				properties: {
+					pick: {
+						description: 'The pick collision. Disabled if set to false.',
+						anyOf: [
+							{
+								type: 'array',
+								minItems: 6,
+								maxItems: 6,
+								items: { type: 'number' }
+							},
+							{
+								enum: [ false ]
+							}
+						]
+					},
+					entity: {
+						description: 'The entity collision. Disabled if set to false.',
+						anyOf: [
+							{
+								type: 'array',
+								minItems: 6,
+								maxItems: 6,
+								items: { type: 'number' }
+							},
+							{
+								enum: [ false ]
+							}
+						]
+					}
+				}
 			}
 		}
 	})
 
-	template(({ map_color = '', loot_table = false, strength = [1, 1], flameable = false, solidness = 0 }, { create, identifier }) => {
+	template(({ map_color, loot_table = false, strength = [1, 1], flameable = false, solidness, geometry, collision = {} }, { create, identifier }) => {
 
 		// List of pre-set map colors
 		const mapColors = new Map([
@@ -75,6 +113,21 @@ export default defineComponent(({ name, template, schema }) => {
 						flame_odds: flameable[0],
 						burn_odds: flameable[1]
 					}
+				}),
+				...(geometry && {
+					'minecraft:geometry': `geometry.${geometry}`
+				}),
+				...(collision.pick && {
+					'minecraft:pick_collision': (collision.pick === false ? false : {
+						origin: collision.pick.slice(0, 3),
+						size: collision.pick.slice(3, 6)
+					})
+				}),
+				...(collision.entity && {
+					'minecraft:entity_collision': (collision.entity === false ? false : {
+						origin: collision.entity.slice(0, 3),
+						size: collision.entity.slice(3, 6)
+					})
 				})
 			},
 			'minecraft:block/components'
