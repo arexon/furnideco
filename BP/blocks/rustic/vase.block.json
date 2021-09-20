@@ -7,7 +7,7 @@
 		"permutations": [],
 		"components": {
 			"tag:rustic": {},
-			"tag:stool": {},
+			"tag:vase": {},
 			"furnideco:attributes": {
 				"map_color": "#61371f",
 				"loot_table": "rustic/vase",
