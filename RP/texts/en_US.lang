@@ -37,6 +37,8 @@ tile.rustic.clock.name=Clock
 
 tile.rustic.bottle.name=Bottle
 
+tile.rustic.vase.name=Vase
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

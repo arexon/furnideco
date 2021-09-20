@@ -73,5 +73,9 @@
 	// Bottle
 	"rustic.bottle": {
 		"sound": "glass"
+	},
+	// Vase
+	"rustic.vase": {
+		"sound": "stone"
 	}
 }

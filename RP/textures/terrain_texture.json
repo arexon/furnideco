@@ -125,6 +125,31 @@
 		// Bottle
 		"rustic.bottle": {
 			"textures": "textures/blocks/rustic/bottle"
+		},
+		// Vase
+		"rustic.vase.color_0": {
+			"textures": "textures/blocks/rustic/vase/0"
+		},
+		"rustic.vase.color_1": {
+			"textures": "textures/blocks/rustic/vase/1"
+		},
+		"rustic.vase.color_2": {
+			"textures": "textures/blocks/rustic/vase/2"
+		},
+		"rustic.vase.color_3": {
+			"textures": "textures/blocks/rustic/vase/3"
+		},
+		"rustic.vase.color_4": {
+			"textures": "textures/blocks/rustic/vase/4"
+		},
+		"rustic.vase.color_5": {
+			"textures": "textures/blocks/rustic/vase/5"
+		},
+		"rustic.vase.color_6": {
+			"textures": "textures/blocks/rustic/vase/6"
+		},
+		"rustic.vase.color_7": {
+			"textures": "textures/blocks/rustic/vase/7"
 		}
 	}
 }
