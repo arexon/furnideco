@@ -202,6 +202,10 @@
 		},
 		"rustic.curtain.color_15": {
 			"textures": "textures/blocks/rustic/curtain/colors/15"
+		},
+		// Step Ladder
+		"rustic.step_ladder": {
+			"textures": "textures/blocks/rustic/step_ladder"
 		}
 	}
 }

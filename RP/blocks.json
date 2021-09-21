@@ -81,5 +81,9 @@
 	// Curtain
 	"rustic.curtain": {
 		"sound": "cloth"
+	},
+	// Step Ladder
+	"rustic.step_ladder": {
+		"sound": "wood"
 	}
 }

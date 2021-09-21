@@ -41,6 +41,8 @@ tile.rustic.vase.name=Vase
 
 tile.rustic.curtain.name=Curtain
 
+tile.rustic.step_ladder.name=Step Ladder
+
 
 ## Entities
 entity.furnideco:seat.name=Seat
