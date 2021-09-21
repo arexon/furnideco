@@ -66,9 +66,9 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ name, geometries = [], property = 'p:geometry', loot_table = false }, { create }) => {
+	template(({ name = '', geometries = [], property = 'p:geometry', loot_table = false }, { create }) => {
 
-		const createNumberArray = value => [...Array(value).keys()]
+		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
 		// Creates an integer property based on geometries length
 		create(
@@ -85,11 +85,11 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('${property}') == ${i}`,
 					components: {
 						'minecraft:geometry': `geometry.${name}.${geo.name}`,
-						'minecraft:pick_collision': (geo.collision.pick == false ? false : {
+						'minecraft:pick_collision': (!geo.collision.pick ? false : {
 							origin: geo.collision.pick.slice(0, 3),
 							size: geo.collision.pick.slice(3, 6)
 						}),
-						'minecraft:entity_collision': (geo.collision.entity == false ? false : {
+						'minecraft:entity_collision': (!geo.collision.entity ? false : {
 							origin: geo.collision.entity.slice(0, 3),
 							size: geo.collision.entity.slice(3, 6)
 						}),

@@ -15,7 +15,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ name, directional = false }, { create }) => {
+	template(({ name = '', directional = false }, { create }) => {
 
 		const directions = [
 			'e:set.direction.east',

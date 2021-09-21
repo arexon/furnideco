@@ -66,17 +66,17 @@ export default defineComponent(({ name, template, schema }) => {
 		// Loops and create 6 permutations for faces
 		for (let i = 0; i < 6; i++) {
 			const directions = [ 0, 180, 90, 270 ]
-			const face = faces[i > 1 ? 2 : i]
+			const face: any = faces[i > 1 ? 2 : i]
 			create(
 				{
 					condition: `q.block_property('p:facing') == ${i}`,
 					components: {
 						'minecraft:geometry': `geometry.${face.name}`,
-						'minecraft:pick_collision': (face.collision.pick == false ? false : {
+						'minecraft:pick_collision': (!face.collision.pick ? false : {
 							origin: face.collision.pick.slice(0, 3),
 							size: face.collision.pick.slice(3, 6)
 						}),
-						'minecraft:entity_collision': (face.collision.entity == false ? false : {
+						'minecraft:entity_collision': (!face.collision.entity ? false : {
 							origin: face.collision.entity.slice(0, 3),
 							size: face.collision.entity.slice(3, 6)
 						}),

@@ -79,7 +79,23 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ map_color, loot_table = false, strength = [1, 1], flameable = false, solidness, geometry, collision = {} }, { create, identifier }) => {
+	template(({
+		map_color = '',
+		loot_table = false,
+		strength = [1, 1],
+		flameable = false,
+		solidness = 0,
+		geometry = '',
+		collision = {}
+	}:{
+		map_color: string,
+		loot_table: boolean|string,
+		strength: number[]
+		flameable: boolean
+		solidness: number
+		geometry: string
+		collision: any
+	}, { create, identifier }) => {
 
 		// List of pre-set map colors
 		const mapColors = new Map([
@@ -117,14 +133,14 @@ export default defineComponent(({ name, template, schema }) => {
 				...(geometry && {
 					'minecraft:geometry': `geometry.${geometry}`
 				}),
-				...(collision.pick && {
-					'minecraft:pick_collision': (collision.pick === false ? false : {
+				...(collision.pick !== undefined && {
+					'minecraft:pick_collision': (!collision.pick ? false : {
 						origin: collision.pick.slice(0, 3),
 						size: collision.pick.slice(3, 6)
 					})
 				}),
-				...(collision.entity && {
-					'minecraft:entity_collision': (collision.entity === false ? false : {
+				...(collision.entity !== undefined && {
+					'minecraft:entity_collision': (!collision.entity ? false : {
 						origin: collision.entity.slice(0, 3),
 						size: collision.entity.slice(3, 6)
 					})
@@ -132,5 +148,6 @@ export default defineComponent(({ name, template, schema }) => {
 			},
 			'minecraft:block/components'
 		)
+		console.log(collision.entity)
 	})
 })

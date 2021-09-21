@@ -19,9 +19,9 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ colors = 0, texture, part = '*' }, { create }) => {
+	template(({ colors = 0, texture = '', part = '*' }, { create }) => {
 
-		const createNumberArray = value => [...Array(value).keys()]
+		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
 		// Creates a number property based on colors value
 		create(
