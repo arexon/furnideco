@@ -28,6 +28,13 @@
 					"ambient_occlusion": false
 				}
 			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [ "side" ]
+					}
+				]
+			},
 			"minecraft:ticking": {
 				"looping": true,
 				"range": [ 1, 1 ],

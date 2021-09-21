@@ -54,6 +54,13 @@
 				"texture": "rustic.curtain",
 				"part": "curtain"
 			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [ "side" ]
+					}
+				]
+			},
 			"minecraft:on_interact": {
 				"condition": "q.is_sneaking",
 				"event": "e:switch.tie"
