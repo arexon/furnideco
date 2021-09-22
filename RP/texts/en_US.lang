@@ -43,6 +43,8 @@ tile.rustic.curtain.name=Curtain
 
 tile.rustic.step_ladder.name=Step Ladder
 
+tile.rustic.plant_pot.name=Plant Pot
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

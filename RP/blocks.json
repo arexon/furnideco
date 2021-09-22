@@ -85,5 +85,9 @@
 	// Step Ladder
 	"rustic.step_ladder": {
 		"sound": "wood"
+	},
+	// Plant Pot
+	"rustic.plant_pot": {
+		"sound": "wood"
 	}
 }

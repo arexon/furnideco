@@ -1,0 +1,61 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.plant_pot"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:plant_pot": {},
+			"furnideco:attributes": {
+				"map_color": "#937131",
+				"loot_table": "rustic/plant_pot",
+				"strength": [ 1, 1 ],
+				"flameable": [ 40, 50 ],
+				"solidness": 0,
+				"collision": {
+					"pick": [ -5, 0, -5, 10, 11, 10 ],
+					"entity": [ -5, 0, -5, 10, 11, 10 ]
+				}
+			},
+			"furnideco:plantable": {
+				"part": "plant",
+				"geometry": "rustic.plant_pot",
+				"plants": [
+					{
+						"geometry": "empty",
+						"loot_table": "rustic/plant_pot/empty"
+					},
+					{
+						"name": "cactus",
+						"geometry": "cactus",
+						"loot_table": "rustic/plant_pot/cactus"
+					},
+					{
+						"name": "sweet_berries",
+						"geometry": "berries",
+						"loot_table": "rustic/plant_pot/berries"
+					},
+					{
+						"name": "bamboo",
+						"geometry": "bamboo",
+						"loot_table": "rustic/plant_pot/bamboo"
+					},
+					{
+						"name": "deadbush",
+						"geometry": "deadbush",
+						"loot_table": "rustic/plant_pot/deadbush"
+					}
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.plant_pot",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

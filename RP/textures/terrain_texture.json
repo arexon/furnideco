@@ -206,6 +206,10 @@
 		// Step Ladder
 		"rustic.step_ladder": {
 			"textures": "textures/blocks/rustic/step_ladder"
+		},
+		// Plant Pot
+		"rustic.plant_pot": {
+			"textures": "textures/blocks/rustic/plant_pot"
 		}
 	}
 }

@@ -1,0 +1,163 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rustic.plant_pot.empty",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 2, 6], "uv": [0, 19]},
+						{"origin": [-5, 2, -5], "size": [10, 9, 10], "uv": [0, 0]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.rustic.plant_pot.cactus",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 2, 6], "uv": [0, 19]},
+						{"origin": [-5, 2, -5], "size": [10, 9, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "cacti1",
+					"parent": "root",
+					"pivot": [1, 11, -1],
+					"rotation": [-15, 0, -10],
+					"cubes": [
+						{"origin": [-3, 11, -1], "size": [4, 12, 4], "uv": [0, 27]}
+					]
+				},
+				{
+					"name": "cacti2",
+					"parent": "root",
+					"pivot": [0, 11, 2],
+					"rotation": [0, 0, 10],
+					"cubes": [
+						{"origin": [0, 11, -1], "size": [3, 10, 3], "uv": [32, 19]}
+					]
+				},
+				{
+					"name": "cacti3",
+					"parent": "root",
+					"pivot": [2, 11, 1],
+					"rotation": [15, 0, -7.5],
+					"cubes": [
+						{"origin": [-2, 11, -3], "size": [4, 7, 4], "uv": [16, 27]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.rustic.plant_pot.berries",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 2, 6], "uv": [0, 19]},
+						{"origin": [-5, 2, -5], "size": [10, 9, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "berry_bush",
+					"parent": "root",
+					"pivot": [0, 11, 0],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [0, 11, -8], "size": [0, 12, 16], "uv": [0, 27]},
+						{"origin": [-8, 11, 0], "size": [16, 12, 0], "uv": [0, 43]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.rustic.plant_pot.bamboo",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 2, 6], "uv": [0, 19]},
+						{"origin": [-5, 2, -5], "size": [10, 9, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bamboo",
+					"parent": "root",
+					"pivot": [0, 11, 0],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [-1, 11, -1], "size": [2, 13, 2], "uv": [40, 0]},
+						{"origin": [0, 11, -6], "size": [0, 13, 12], "uv": [32, 33]},
+						{"origin": [-6, 11, 0], "size": [12, 13, 0], "uv": [32, 45]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.rustic.plant_pot.deadbush",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 2, 6], "uv": [0, 19]},
+						{"origin": [-5, 2, -5], "size": [10, 9, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "deadbush",
+					"parent": "root",
+					"pivot": [0, 11, 0],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [0, 11, -8], "size": [0, 13, 16], "uv": [32, 16]},
+						{"origin": [-8, 11, 0], "size": [16, 13, 0], "uv": [32, 32]}
+					]
+				}
+			]
+		}
+	]
+}
