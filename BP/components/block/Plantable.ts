@@ -1,7 +1,7 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:plantable')
 	schema({
-		description: 'Allows the player to interactivly place/remove plants.',
+		description: 'Allows the player to interactively place/remove plants.',
 		type: 'object',
 		properties: {
 			plants: {
@@ -14,8 +14,8 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Identifier of the plant.',
 							type: 'string'
 						},
-						texture: {
-							description: 'The corresponding texture definition name to the plant.',
+						geometry: {
+							description: 'The corresponding geometry definition name to the plant.',
 							type: 'string'
 						},
 						loot_table: {
@@ -25,18 +25,14 @@ export default defineComponent(({ name, template, schema }) => {
 					}
 				}
 			},
-			texture: {
-				description: 'The first part of the texture definition name.',
-				type: 'string'
-			},
-			part: {
-				description: 'Material instance part name.',
+			geometry: {
+				description: 'The first part of the geometry definition name.',
 				type: 'string'
 			}
 		}
 	})
 
-	template(({ plants = {}, texture = '', part = '*' }:{ plants: any, part: string, texture: string }, { create }) => {
+	template(({ plants = {}, geometry = '' }:{ plants: any, geometry: string }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
@@ -48,73 +44,61 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
+		// Maps plants array and creates the necessary permutations and events for each plant
 		plants.map((plant: any, i: number) => {
-			const isDefault: boolean = i === 0
-
 			create(
 				{
 					condition: `q.block_property('p:plant') == ${i}`,
 					components: {
-						'minecraft:material_instances': {
-							[part]: {
-								texture: `${texture}.${plant.texture}`,
-								render_method: 'alpha_test',
-								ambient_occlusion: false
-							}
-						},
-						...(isDefault && {
+						'minecraft:geometry': `geometry.${geometry}.${plant.geometry}`,
+						...(i === 0 && {
 							'minecraft:on_interact': {
 								condition: '!q.is_sneaking',
 								event: 'e:add.plant'
 							}
 						}),
-						...(!isDefault && {
+						...(i > 0 && {
 							'minecraft:on_interact': {
 								condition: 'q.is_sneaking',
 								event: `e:remove.${plant.name}`
 							}
 						}),
-						...(!isDefault && {
+						...(i > 0 && {
 							'minecraft:loot': `loot_tables/${plant.loot_table}.loot.json`
 						})
 					}
 				},
 				"minecraft:block/permutations"
 			)
+		})
 
-			create(
-				{
-					...(isDefault && {
-						'e:add.plant': {
-							sequence: plants.slice(1).map((plant: any, i: number) => ({
-								condition: `q.get_equipped_item_name == '${plant.name}'`,
-								decrement_stack: {},
-								set_block_property: {
-									'p:plant': i + 1
-								}
-							}))
+		// Creates the remove plant event
+		create(
+			{
+				'e:add.plant': {
+					sequence: plants.slice(1).map((plant: any, i: number) => ({
+						condition: `q.get_equipped_item_name == '${plant.name}'`,
+						decrement_stack: {},
+						set_block_property: {
+							'p:plant': i + 1
 						}
-					}),
-					...(!isDefault && {
-						[`e:remove.${plant.name}`]: {
+					}))
+				},
+				'e:remove.plant': {
+					sequence: plants.map((plant: any, i: number) => ({
+						...(i === 0 && {
+							set_block_property: {
+								'p:plant': 0
+							}
+						}),
+						...(i > 0 && {
+							condition: `q.block_property('p:plant') == ${i}`,
 							run_command: {
 								command: `give @s minecraft:${plant.name}`,
 								target: 'other'
-							},
-							trigger: 'e:remove.plant'
-						}
-					})
-				},
-				'minecraft:block/events'
-			)
-		}),
-
-		create(
-			{
-				'e:remove.plant': {
-					set_block_property: {
-						'p:plant': 0
-					}
+							}
+						})
+					}))
 				}
 			},
 			'minecraft:block/events'
