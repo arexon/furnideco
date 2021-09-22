@@ -57,7 +57,10 @@ export default defineComponent(({ name, template, schema }) => {
 						'p:color': `q.block_property('p:color') == ${colors - 1} ? 0 : q.block_property('p:color') + 1`
 					},
 					run_command: {
-						command: 'function customization/cycle_color'
+						command: [
+							'playsound furnideco.paint @p ~~~',
+							'particle furnideco:paint ~~~'
+						]
 					}
 				}
 			},
