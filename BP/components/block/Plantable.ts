@@ -60,7 +60,7 @@ export default defineComponent(({ name, template, schema }) => {
 						...(i > 0 && {
 							'minecraft:on_interact': {
 								condition: 'q.is_sneaking',
-								event: `e:remove.${plant.name}`
+								event: 'e:remove.plant'
 							}
 						}),
 						...(i > 0 && {
@@ -68,7 +68,7 @@ export default defineComponent(({ name, template, schema }) => {
 						})
 					}
 				},
-				"minecraft:block/permutations"
+				'minecraft:block/permutations'
 			)
 		})
 
@@ -81,6 +81,12 @@ export default defineComponent(({ name, template, schema }) => {
 						decrement_stack: {},
 						set_block_property: {
 							'p:plant': i + 1
+						},
+						run_command: {
+							command: [
+								'playsound block.sweet_berry_bush.place @p ~~~',
+								'particle furnideco:green_sparkles ~ ~0.75 ~'
+							]
 						}
 					}))
 				},
@@ -89,6 +95,12 @@ export default defineComponent(({ name, template, schema }) => {
 						...(i === 0 && {
 							set_block_property: {
 								'p:plant': 0
+							},
+							run_command: {
+								command: [
+									'playsound block.sweet_berry_bush.break @p ~~~',
+									'particle furnideco:dust ~ ~0.75 ~'
+								]
 							}
 						}),
 						...(i > 0 && {
