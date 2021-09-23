@@ -33,8 +33,8 @@
 					},
 					{
 						"name": "sweet_berries",
-						"geometry": "berries",
-						"loot_table": "rustic/plant_pot/berries"
+						"geometry": "sweet_berries",
+						"loot_table": "rustic/plant_pot/sweet_berries"
 					},
 					{
 						"name": "bamboo",

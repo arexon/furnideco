@@ -70,7 +70,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.rustic.plant_pot.berries",
+				"identifier": "geometry.rustic.plant_pot.sweet_berries",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
