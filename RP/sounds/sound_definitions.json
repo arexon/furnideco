@@ -39,6 +39,16 @@
 			}
 		]
 	},
+	"furnideco.tick2": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/ambient/tick2",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
 	"furnideco.book.stack": {
 		"category": "block",
 		"sounds": [

@@ -89,5 +89,9 @@
 	// Plant Pot
 	"rustic.plant_pot": {
 		"sound": "wood"
+	},
+	// Grandfather Clock
+	"rustic.grandfather_clock": {
+		"sound": "wood"
 	}
 }

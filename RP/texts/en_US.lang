@@ -45,6 +45,8 @@ tile.rustic.step_ladder.name=Step Ladder
 
 tile.rustic.plant_pot.name=Plant Pot
 
+tile.rustic.grandfather_clock.name=Grandfather Clock
+
 
 ## Entities
 entity.furnideco:seat.name=Seat

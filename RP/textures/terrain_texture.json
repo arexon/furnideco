@@ -210,6 +210,34 @@
 		// Plant Pot
 		"rustic.plant_pot": {
 			"textures": "textures/blocks/rustic/plant_pot"
+		},
+		// Grandfather Clock
+		"rustic.grandfather_clock": {
+			"textures": "textures/blocks/rustic/grandfather_clock/base"
+		},
+		"rustic.grandfather_clock.frame_0": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/0"
+		},
+		"rustic.grandfather_clock.frame_1": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/1"
+		},
+		"rustic.grandfather_clock.frame_2": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/2"
+		},
+		"rustic.grandfather_clock.frame_3": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/3"
+		},
+		"rustic.grandfather_clock.frame_4": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/4"
+		},
+		"rustic.grandfather_clock.frame_5": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/5"
+		},
+		"rustic.grandfather_clock.frame_6": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/6"
+		},
+		"rustic.grandfather_clock.frame_7": {
+			"textures": "textures/blocks/rustic/grandfather_clock/frames/7"
 		}
 	}
 }

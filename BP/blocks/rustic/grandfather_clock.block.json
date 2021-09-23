@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.grandfather_clock"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:grandfather_clock": {},
+			"furnideco:attributes": {
+				"map_color": "#937131",
+				"loot_table": "rustic/grandfather_clock",
+				"strength": [ 1.5, 1.5 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.grandfather_clock",
+				"collision": {
+					"pick": [ -7, 0, 2, 14, 12, 6 ],
+					"entity": [ -7, 0, 2, 14, 12, 6 ]
+				}
+			},
+			"furnideco:animate": {
+				"duration": 0.25,
+				"frames": 7,
+				"texture": "rustic.grandfather_clock",
+				"part": "pendulum",
+				"run_command": {
+					"frame": 7,
+					"command": [
+						"playsound furnideco.tick2 @p[r=8] ~~~"
+					]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [ "side" ]
+					}
+				]
+			}
+		}
+	}
+}
