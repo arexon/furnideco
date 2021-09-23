@@ -63,7 +63,7 @@ export default defineComponent(({ name, template, schema }) => {
 								event: 'e:remove.plant'
 							}
 						}),
-						'minecraft:loot': `loot_tables/${plant.loot_table}.loot.json`
+						'minecraft:loot': `loot_tables/block/${plant.loot_table}.loot.json`
 					}
 				},
 				'minecraft:block/permutations'

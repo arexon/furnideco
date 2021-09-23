@@ -118,7 +118,7 @@ export default defineComponent(({ name, template, schema }) => {
 				},
 				'minecraft:map_color': (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
 				...(loot_table && {
-					'minecraft:loot': `loot_tables/${loot_table}.loot.json`
+					'minecraft:loot': `loot_tables/block/${loot_table}.loot.json`
 				}),
 				'minecraft:destroy_time': strength[0],
 				'minecraft:explosion_resistance': strength[1],
