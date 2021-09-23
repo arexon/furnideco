@@ -10,7 +10,6 @@
 			"tag:plant_pot": {},
 			"furnideco:attributes": {
 				"map_color": "#937131",
-				"loot_table": "rustic/plant_pot",
 				"strength": [ 1, 1 ],
 				"flameable": [ 40, 50 ],
 				"solidness": 0,
