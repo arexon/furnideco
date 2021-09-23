@@ -4,7 +4,7 @@
 			"furnideco:seat": {
 				"volume": 0
 			},
-			"furnideco:loot": {
+			"furnideco:spawn_item": {
 				"volume": 0
 			}
 		}
