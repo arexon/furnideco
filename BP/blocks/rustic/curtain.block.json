@@ -70,13 +70,12 @@
 			"e:switch.tie": {
 				"sequence": [
 					{
-						"condition": "q.block_property('p:is_tied')",
-						"run_command": {
-							"command": "playsound furnideco.tie @p ~~~"
+						"set_block_property": {
+							"p:is_tied": "q.block_property('p:is_tied') ? 0 : 1"
 						}
 					},
 					{
-						"condition": "!q.block_property('p:is_tied')",
+						"condition": "q.block_property('p:is_tied')",
 						"run_command": {
 							"command": [
 								"playsound furnideco.untie @p ~~~",
@@ -85,8 +84,9 @@
 						}
 					},
 					{
-						"set_block_property": {
-							"p:is_tied": "q.block_property('p:is_tied') ? 0 : 1"
+						"condition": "!q.block_property('p:is_tied')",
+						"run_command": {
+							"command": "playsound furnideco.tie @p ~~~"
 						}
 					}
 				]
