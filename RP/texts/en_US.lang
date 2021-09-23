@@ -50,6 +50,7 @@ tile.rustic.grandfather_clock.name=Grandfather Clock
 
 ## Entities
 entity.furnideco:seat.name=Seat
+entity.furnideco:spawn_item.name=Spawn Item
 
 
 ## Interactions

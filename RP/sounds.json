@@ -3,6 +3,9 @@
 		"entities": {
 			"furnideco:seat": {
 				"volume": 0
+			},
+			"furnideco:loot": {
+				"volume": 0
 			}
 		}
 	}

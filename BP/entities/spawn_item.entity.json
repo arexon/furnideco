@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "furnideco:spawn_item",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"components": {
+			"furnideco:spawn_item": {
+				"items": [
+					"cactus",
+					"bamboo",
+					"sweet_berries",
+					"deadbush"
+				]
+			}
+		}
+	}
+}

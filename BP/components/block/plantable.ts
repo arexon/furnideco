@@ -104,8 +104,7 @@ export default defineComponent(({ name, template, schema }) => {
 						...(i > 0 && {
 							condition: `q.block_property('p:plant') == ${i}`,
 							run_command: {
-								command: `give @s minecraft:${plant.name}`,
-								target: 'other'
+								command: `summon furnideco:spawn_item.${plant.name} ~ ~0.6875 ~`
 							}
 						})
 					}))
