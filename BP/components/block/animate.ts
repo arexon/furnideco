@@ -4,6 +4,10 @@ export default defineComponent(({ name, template, schema }) => {
 		description: 'Allows the block to animate through a set of defined frames.',
 		type: 'object',
 		properties: {
+			conditional: {
+				description: 'Only plays the animation if this condition is true.',
+				type: 'string'
+			},
 			duration: {
 				description: 'Duration between each frame.',
 				type: 'number'
@@ -41,7 +45,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ duration = 0, frames = 0, texture = '', part = '*', run_command = {} }:{ duration: number, frames: number, texture: string, part: string, run_command: any }, { create }) => {
+	template(({ conditional = '', duration = 0, frames = 0, texture = '', part = '*', run_command = {} }:{ conditional: string, duration: number, frames: number, texture: string, part: string, run_command: any }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 		const isEmptyObject = (object: any): boolean => !(Object.keys(object).length === 0 && object.constructor === Object)
@@ -90,19 +94,33 @@ export default defineComponent(({ name, template, schema }) => {
 			)
 		})
 
-		// Creates time loop
-		create(
-			{
-				'minecraft:ticking': {
-					looping: true,
-					range: [ duration, duration ],
-					on_tick: {
-						event: 'e:play.frame'
-					}
+		const tickComponent = {
+			'minecraft:ticking': {
+				looping: true,
+				range: [ duration, duration ],
+				on_tick: {
+					event: 'e:play.frame'
 				}
-			},
-			'minecraft:block/components'
-		)
+			}
+		}
+		if (conditional) {
+			create(
+				{
+					condition: conditional,
+					components: {
+						...tickComponent
+					}
+				},
+				'minecraft:block/permutations'
+			)
+		} else {
+			create(
+				{
+					...tickComponent
+				},
+				'minecraft:block/components'
+			)
+		}
 
 		// Creates the frame event
 		create(
