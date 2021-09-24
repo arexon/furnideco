@@ -45,7 +45,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ conditional = '', duration = 0, frames = 0, texture = '', part = '*', run_command = {} }:{ conditional: string, duration: number, frames: number, texture: string, part: string, run_command: any }, { create }) => {
+	template(({ conditional, duration, frames, texture, part, run_command = {} }:{ conditional: string, duration: number, frames: number, texture: string, part: string, run_command: any }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 		const isEmptyObject = (object: any): boolean => !(Object.keys(object).length === 0 && object.constructor === Object)

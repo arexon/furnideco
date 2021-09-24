@@ -19,7 +19,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ colors = 0, texture = '', part = '*' }, { create }) => {
+	template(({ colors, texture, part }:{ colors: number, texture: string, part: string }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 

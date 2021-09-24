@@ -54,7 +54,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ faces = [] }, { create }) => {
+	template(({ faces = [] }:{ faces: any[] }, { create }) => {
 
 		create(
 			{

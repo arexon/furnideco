@@ -12,7 +12,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ emission = 1 }, { create }) => {
+	template(({ emission }:{ emission: number }, { create }) => {
 
 		create(
 			{

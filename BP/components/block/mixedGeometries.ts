@@ -66,7 +66,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ name = '', geometries = [], property = 'p:geometry', loot_table = false }, { create }) => {
+	template(({ name, geometries = [], property = 'p:geometry', loot_table = false }:{ name: string, geometries: any, property: string, loot_table: boolean|string }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 

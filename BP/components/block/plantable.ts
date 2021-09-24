@@ -32,7 +32,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ plants = {}, geometry = '' }:{ plants: any, geometry: string }, { create }) => {
+	template(({ plants = {}, geometry }:{ plants: any, geometry: string }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 

@@ -80,12 +80,12 @@ export default defineComponent(({ name, template, schema }) => {
 	})
 
 	template(({
-		map_color = '',
+		map_color,
 		loot_table = false,
-		strength = [1, 1],
+		strength,
 		flameable = false,
-		solidness = 0,
-		geometry = '',
+		solidness,
+		geometry,
 		collision = {}
 	}:{
 		map_color: string,
@@ -148,6 +148,5 @@ export default defineComponent(({ name, template, schema }) => {
 			},
 			'minecraft:block/components'
 		)
-		console.log(collision.entity)
 	})
 })
