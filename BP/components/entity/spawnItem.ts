@@ -24,7 +24,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:entity/description/properties/p:item_type'
 		)
 
-		// Creates an aliase for each item
+		// Maps through items and creates an aliase for each item
 		items.map((item: any) => {
 			create(
 				{
@@ -36,7 +36,7 @@ export default defineComponent(({ name, template, schema }) => {
 			)
 		})
 
-		// Creates a permutation for each item
+		// Maps through items and creates a permutation for each item
 		create(
 			{
 				permutations: items.map((item: any) => ({

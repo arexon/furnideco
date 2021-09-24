@@ -23,7 +23,7 @@ export default defineComponent(({ name, template, schema }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
-		// Creates a number property based on colors value
+		// Creates a number property from colors length
 		create(
 			{
 				'p:color': createNumberArray(colors)
@@ -31,7 +31,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Creates a number array and loops through it creating a permutation for each entry
+		// Creates a number array from colors length and maps through it creating a permutation for texture
 		create(
 			{
 				permutations: createNumberArray(colors).map(i => ({

@@ -36,7 +36,7 @@ export default defineComponent(({ name, template, schema }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
-		// Creates an integer property based on plants.length
+		// Creates an integer property from plants length
 		create(
 			{
 				'p:plant': createNumberArray(plants.length)
@@ -44,7 +44,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Maps plants array and creates the necessary permutations and events for each plant
+		// Maps through plants array and creates a permutation for each plant
 		plants.map((plant: any, i: number) => {
 			create(
 				{
@@ -70,7 +70,6 @@ export default defineComponent(({ name, template, schema }) => {
 			)
 		})
 
-		// Creates the remove plant event
 		create(
 			{
 				'e:add.plant': {

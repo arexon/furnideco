@@ -50,7 +50,7 @@ export default defineComponent(({ name, template, schema }) => {
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 		const isEmptyObject = (object: any): boolean => !(Object.keys(object).length === 0 && object.constructor === Object)
 
-		// Creates an integer property based on frames length
+		// Creates an integer property from frames length
 		create(
 			{
 				'p:frame': createNumberArray(frames)
@@ -58,7 +58,6 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Creates the base texture
 		create(
 			{
 				condition: '(1.0)',
@@ -122,7 +121,6 @@ export default defineComponent(({ name, template, schema }) => {
 			)
 		}
 
-		// Creates the frame event
 		create(
 			{
 				'e:play.frame': {

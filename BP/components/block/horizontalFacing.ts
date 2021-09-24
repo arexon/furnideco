@@ -15,7 +15,7 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/description/properties'
 		)
 
-		// Loop through directions and create a permutation for each entry
+		// Maps through directions and creates a permutation for each direction
 		create(
 			{
 				permutations: directions.map((direction, i) => ({
