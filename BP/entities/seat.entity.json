@@ -5,7 +5,6 @@
 			"identifier": "furnideco:seat",
 			"is_spawnable": false,
 			"is_summonable": true,
-			"is_experimental": false,
 			"properties": {
 				"p:seat_type": {
 					"values": [
