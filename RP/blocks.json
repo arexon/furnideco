@@ -93,5 +93,9 @@
 	// Grandfather Clock
 	"rustic.grandfather_clock": {
 		"sound": "wood"
+	},
+	// Ceiling Fan
+	"rustic.ceiling_fan": {
+		"sound": "wood"
 	}
 }

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.ceiling_fan",
+			"properties": {
+				"p:is_on": [ false, true ]
+			}
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:ceiling_fan": {},
+			"furnideco:attributes": {
+				"map_color": "#937131",
+				"loot_table": "rustic/stool/ceiling_fan",
+				"strength": [ 2, 2 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.ceiling_fan",
+				"collision": {
+					"pick": [ -4, 2, -4, 8, 14, 8 ],
+					"entity": [ -4, 2, -4, 8, 14, 8 ]
+				}
+			},
+			"furnideco:animate": {
+				"conditional": "q.block_property('p:is_on')",
+				"duration": 0.1,
+				"frames": 4,
+				"texture": "rustic.ceiling_fan",
+				"part": "blades",
+				"run_command": {
+					"frame": 4,
+					"command": [
+						"playsound furnideco.fan @p ~~~"
+					]
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "e:switch"
+			}
+		},
+		"events": {
+			"e:switch": {
+				"set_block_property": {
+					"p:is_on": "!q.block_property('p:is_on')"
+				},
+				"run_command": {
+					"command": "playsound furnideco.switch2 @p ~~~"
+				}
+			}
+		}
+	}
+}

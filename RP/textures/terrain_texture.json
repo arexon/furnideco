@@ -238,6 +238,22 @@
 		},
 		"rustic.grandfather_clock.frame_7": {
 			"textures": "textures/blocks/rustic/grandfather_clock/frames/7"
+		},
+		// Ceiling Fan
+		"rustic.ceiling_fan": {
+			"textures": "textures/blocks/rustic/ceiling_fan/base"
+		},
+		"rustic.ceiling_fan.frame_0": {
+			"textures": "textures/blocks/rustic/ceiling_fan/frames/0"
+		},
+		"rustic.ceiling_fan.frame_1": {
+			"textures": "textures/blocks/rustic/ceiling_fan/frames/1"
+		},
+		"rustic.ceiling_fan.frame_2": {
+			"textures": "textures/blocks/rustic/ceiling_fan/frames/2"
+		},
+		"rustic.ceiling_fan.frame_3": {
+			"textures": "textures/blocks/rustic/ceiling_fan/frames/3"
 		}
 	}
 }

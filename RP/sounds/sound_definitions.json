@@ -19,6 +19,16 @@
 			}
 		]
 	},
+	"furnideco.switch2": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/switch2",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
 	"furnideco.aerial": {
 		"category": "block",
 		"sounds": [
@@ -44,6 +54,16 @@
 		"sounds": [
 			{
 				"name": "sounds/ambient/tick2",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"furnideco.fan": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/ambient/fan",
 				"volume": 1,
 				"load_on_low_memory": true
 			}

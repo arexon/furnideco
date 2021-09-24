@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rustic.ceiling_fan",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 13, -2], "size": [4, 3, 4], "uv": [0, 13]},
+						{"origin": [-1, 7, -1], "size": [2, 6, 2], "uv": [0, 0]},
+						{"origin": [-4, 2, -4], "size": [8, 5, 8], "uv": [0, 0]},
+						{"origin": [-2, 0, -2], "size": [4, 2, 4], "uv": [12, 16]},
+						{
+							"origin": [-16, 1, -16],
+							"size": [32, 0, 32],
+							"uv": {
+								"up": {"uv": [0, 22], "uv_size": [32, 32], "material_instance": "blades"},
+								"down": {"uv": [32, 54], "uv_size": [32, -32], "material_instance": "blades"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
