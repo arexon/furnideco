@@ -71,7 +71,7 @@
 				"sequence": [
 					{
 						"set_block_property": {
-							"p:is_tied": "q.block_property('p:is_tied') ? 0 : 1"
+							"p:is_tied": "!q.block_property('p:is_tied')"
 						}
 					},
 					{
