@@ -36,6 +36,13 @@
 					]
 				}
 			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [ "down" ]
+					}
+				]
+			},
 			"minecraft:on_interact": {
 				"event": "e:switch"
 			}
