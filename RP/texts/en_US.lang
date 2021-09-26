@@ -15,7 +15,6 @@ tile.rustic.acacia.table.name=Acacia Table
 tile.rustic.dark_oak.table.name=Dark Oak Table
 tile.rustic.crimson.table.name=Crimson Table
 tile.rustic.warped.table.name=Warped Table
-
 tile.rustic.oak.stool.name=Oak Stool
 tile.rustic.spruce.stool.name=Spruce Stool
 tile.rustic.birch.stool.name=Birch Stool
@@ -24,30 +23,19 @@ tile.rustic.acacia.stool.name=Acacia Stool
 tile.rustic.dark_oak.stool.name=Dark Oak Stool
 tile.rustic.crimson.stool.name=Crimson Stool
 tile.rustic.warped.stool.name=Warped Stool
-
 tile.rustic.book.name=Book
-
 tile.rustic.radio.name=Radio
-
 tile.rustic.lamp.name=Lamp
-
 tile.rustic.trash_can.name=Trash Can
-
 tile.rustic.clock.name=Clock
-
 tile.rustic.bottle.name=Bottle
-
 tile.rustic.vase.name=Vase
-
 tile.rustic.curtain.name=Curtain
-
 tile.rustic.step_ladder.name=Step Ladder
-
 tile.rustic.plant_pot.name=Plant Pot
-
 tile.rustic.grandfather_clock.name=Grandfather Clock
-
 tile.rustic.ceiling_fan.name=Ceiling Fan
+tile.rustic.mounted_goat_horn.name=Mounted Goat Horn
 
 
 ## Entities

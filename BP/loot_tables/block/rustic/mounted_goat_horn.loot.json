@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "furnideco:rustic.mounted_goat_horn",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

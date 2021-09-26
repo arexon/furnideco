@@ -97,5 +97,9 @@
 	// Ceiling Fan
 	"rustic.ceiling_fan": {
 		"sound": "wood"
+	},
+	// Mounted Goat Horn
+	"rustic.mounted_goat_horn": {
+		"sound": "wood"
 	}
 }

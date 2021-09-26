@@ -254,6 +254,10 @@
 		},
 		"rustic.ceiling_fan.frame_3": {
 			"textures": "textures/blocks/rustic/ceiling_fan/frames/3"
+		},
+		// Mounted Goat Horn
+		"rustic.mounted_goat_horn": {
+			"textures": "textures/blocks/rustic/mounted_goat_horn"
 		}
 	}
 }
