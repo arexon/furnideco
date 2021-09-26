@@ -39,12 +39,12 @@
 				"looping": true,
 				"range": [ 1, 1 ],
 				"on_tick": {
-					"event": "e:tick"
+					"event": "e:play.tick"
 				}
 			}
 		},
 		"events": {
-			"e:tick": {
+			"e:play.tick": {
 				"run_command": {
 					"command": "playsound furnideco.tick @p[r=5] ~~~"
 				}
