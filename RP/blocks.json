@@ -101,5 +101,9 @@
 	// Mounted Goat Horn
 	"rustic.mounted_goat_horn": {
 		"sound": "wood"
+	},
+	// Chandelier
+	"rustic.chandelier": {
+		"sound": "wood"
 	}
 }

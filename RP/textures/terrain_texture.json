@@ -258,6 +258,10 @@
 		// Mounted Goat Horn
 		"rustic.mounted_goat_horn": {
 			"textures": "textures/blocks/rustic/mounted_goat_horn"
+		},
+		// Chandelier
+		"rustic.chandelier": {
+			"textures": "textures/blocks/rustic/chandelier"
 		}
 	}
 }
