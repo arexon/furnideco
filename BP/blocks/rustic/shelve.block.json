@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.shelve"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:shelve": {},
+			"furnideco:attributes": {
+				"map_color": "#937131",
+				"loot_table": "rustic/shelve",
+				"strength": [ 1, 1 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.shelve",
+				"collision": {
+					"pick": [ -8, 11, -4, 16, 5, 12 ],
+					"entity": [ -8, 11, -4, 16, 5, 12 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.shelve",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [ "side" ]
+					}
+				]
+			}
+		}
+	}
+}

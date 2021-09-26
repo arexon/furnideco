@@ -262,6 +262,10 @@
 		// Chandelier
 		"rustic.chandelier": {
 			"textures": "textures/blocks/rustic/chandelier"
+		},
+		// Shelve
+		"rustic.shelve": {
+			"textures": "textures/blocks/rustic/shelve"
 		}
 	}
 }

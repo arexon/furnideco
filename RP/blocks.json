@@ -105,5 +105,9 @@
 	// Chandelier
 	"rustic.chandelier": {
 		"sound": "wood"
+	},
+	// Shelve
+	"rustic.shelve": {
+		"sound": "wood"
 	}
 }
