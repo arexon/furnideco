@@ -23,7 +23,7 @@ export default defineComponent(({ name, template, schema }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
-		// Creates a number property from colors length
+		// Creates an integer property from colors length
 		create(
 			{
 				'p:color': createNumberArray(colors)

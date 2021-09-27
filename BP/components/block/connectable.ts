@@ -58,7 +58,7 @@ export default defineComponent(({ name, template, schema }) => {
 			[ 'down', [ 0, -1, 0 ] ]
 		])
 
-		// Maps through faces and creates property for each face
+		// Maps through faces and creates a property for each face
 		faces.map((face: string) => {
 			create(
 				{
