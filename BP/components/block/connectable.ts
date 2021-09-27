@@ -22,7 +22,7 @@ export default defineComponent(({ name, template, schema }) => {
 				additionalProperties: false,
 				patternProperties: {
 					'^[a-z0-9_-]+$': {
-						
+						enum: [ 'north', 'east', 'south', 'west', 'up', 'down' ]
 					}
 				}
 			},
