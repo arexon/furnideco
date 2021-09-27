@@ -15,7 +15,15 @@
 					"name": "root",
 					"pivot": [0, 0, 0],
 					"cubes": [
-						{"origin": [-8, 14, 6], "size": [16, 2, 2], "uv": [0, 22]},
+						{"origin": [-8, 14, 6], "size": [16, 2, 2], "uv": [0, 22]}
+					]
+				}, 
+				{
+					"name": "curtain",
+					"parent": "root",
+					"pivot": [0, 14, 7],
+					"rotation": [-5, 0, 0],
+					"cubes": [
 						{
 							"origin": [-8, -8, 7],
 							"size": [16, 22, 0],
@@ -26,7 +34,7 @@
 					]
 				}
 			]
-		},
+		}, 
 		{
 			"description": {
 				"identifier": "geometry.rustic.curtain.tied",
@@ -41,7 +49,15 @@
 					"name": "root",
 					"pivot": [0, 0, 0],
 					"cubes": [
-						{"origin": [-8, 14, 6], "size": [16, 2, 2], "uv": [0, 22]},
+						{"origin": [-8, 14, 6], "size": [16, 2, 2], "uv": [0, 22]}	
+					]
+				},
+				{
+					"name": "curtain",
+					"parent": "root",
+					"pivot": [0, 14, 7],
+					"rotation": [-5, 0, 0],
+					"cubes": [
 						{
 							"origin": [-8, -8, 7],
 							"size": [16, 22, 0],
