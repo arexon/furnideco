@@ -4,27 +4,15 @@
 		"description": {
 			"identifier": "furnideco:rustic.jungle.stool"
 		},
-		"permutations": [
-			{
-				"condition": "(1.0)",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "rustic.jungle.stool",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			}
-		],
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:stool": {},
 			"furnideco:paintable": {
 				"colors": 16,
 				"texture": "rustic.stool",
-				"part": "cushion"
+				"part": "cushion",
+				"base": "rustic.jungle.stool"
 			},
 			"furnideco:attributes": {
 				"map_color": "jungle",

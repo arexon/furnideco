@@ -15,11 +15,15 @@ export default defineComponent(({ name, template, schema }) => {
 			part: {
 				description: 'Material instance part name.',
 				type: 'string'
+			},
+			base: {
+				description: 'Specifies the block base texture',
+				type: 'string'
 			}
 		}
 	})
 
-	template(({ colors, texture, part = '*' }:{ colors: number, texture: string, part: string }, { create }) => {
+	template(({ colors, texture, part = '*', base }:{ colors: number, texture: string, part: string, base: string }, { create }) => {
 
 		const createNumberArray = (value: number): number[] => [...Array(value).keys()]
 
@@ -30,6 +34,24 @@ export default defineComponent(({ name, template, schema }) => {
 			},
 			'minecraft:block/description/properties'
 		)
+
+		if (base) {
+			create(
+				{
+					condition: '(1.0)',
+					components: {
+						'minecraft:material_instances': {
+							'*': {
+								texture: base,
+								render_method: 'alpha_test',
+								ambient_occlusion: false
+							}
+						}
+					}
+				},
+				'minecraft:block/permutations'
+			)
+		}
 
 		// Creates a number array from colors length and maps through it creating a permutation for texture
 		create(
