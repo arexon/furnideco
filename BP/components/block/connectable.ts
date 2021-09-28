@@ -5,11 +5,11 @@ export default defineComponent(({ name, template, schema }) => {
 		type: 'object',
 		properties: {
 			tag: {
-				description: `The block's tag.`,
+				description: 'The neighbor block tag.',
 				type: 'string'
 			},
-			faces: {
-				description: 'Defines the faces in which neighboring blocks are allowed to connect.',
+			directions: {
+				description: 'Outlines which directions can be connected to.',
 				type: 'array',
 				items: {
 					type: 'string',
@@ -17,7 +17,7 @@ export default defineComponent(({ name, template, schema }) => {
 				}
 			},
 			parts: {
-				description: 'Defines which parts to show/hide.',
+				description: 'part_visiblity method | Defines when to hide specific parts of the geometry. Not compatible with the "geometries" method.',
 				type: 'object',
 				additionalProperties: false,
 				patternProperties: {
@@ -27,7 +27,7 @@ export default defineComponent(({ name, template, schema }) => {
 				}
 			},
 			geometries: {
-				description: 'Defines a list of geometries to show/hide.',
+				description: 'geometries method | Defines a list of geometries and when to hide each one. Not compatible with the "part_visiblity" method.',
 				type: 'array',
 				items: {
 					type: 'object',
@@ -47,7 +47,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ tag, faces, parts = {}, geometries = [] }:{ tag: string, faces: string[], parts: any, geometries: any }, { create, identifier }) => {
+	template(({ tag, directions, parts = {}, geometries = [] }:{ tag: string, directions: string[], parts: any, geometries: any }, { create, identifier }) => {
 
 		const positions = new Map([
 			[ 'north', [ 0, 0, -1 ] ],
@@ -58,11 +58,11 @@ export default defineComponent(({ name, template, schema }) => {
 			[ 'down', [ 0, -1, 0 ] ]
 		])
 
-		// Maps through faces and creates a property for each face
-		faces.map((face: string) => {
+		// Maps through directions and creates a property for each direction
+		directions.map((dir: string) => {
 			create(
 				{
-					[`p:${face}_neighbor`]: [ false, true ]
+					[`p:${dir}_neighbor`]: [ false, true ]
 				},
 				'minecraft:block/description/properties'
 			)
@@ -70,10 +70,10 @@ export default defineComponent(({ name, template, schema }) => {
 
 		// Loops through parts and creates part visibility rules for each part
 		if (parts) {
-			for (const [bone, face] of Object.entries(parts)) {
+			for (const [bone, dir] of Object.entries(parts)) {
 				create(
 					{
-						[bone]: `q.block_property('p:${face}_neighbor')`
+						[bone]: `q.block_property('p:${dir}_neighbor')`
 					},
 					'minecraft:block/components/minecraft:part_visibility/rules'
 				)
@@ -111,11 +111,11 @@ export default defineComponent(({ name, template, schema }) => {
 			'minecraft:block/components'
 		)
 
-		// Maps through faces and creates a set_block_property entry for each face
-		faces.map((face: string) => {
+		// Maps through directions and creates a set_block_property entry for each direction
+		directions.map((dir: string) => {
 			create(
 				{
-					[`p:${face}_neighbor`]: `q.block_neighbor_has_any_tag(${positions.get(face)}, '${tag}') ? true : false`
+					[`p:${dir}_neighbor`]: `q.block_neighbor_has_any_tag(${positions.get(dir)}, '${tag}') ? true : false`
 				},
 				'minecraft:block/events/e:update.neighbors/set_block_property'
 			)
