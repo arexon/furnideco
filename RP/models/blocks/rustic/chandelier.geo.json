@@ -37,14 +37,102 @@
 					"cubes": [
 						{"origin": [-10, 0, -10], "size": [20, 2, 20], "uv": [0, 0]}, 
 						{"origin": [-8, 0, -8], "size": [16, 2, 16], "uv": [0, 22]}, 
-						{"origin": [-5, 1, -5], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [-9.5, 2, -0.5], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [-5, 1, 4], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [-0.5, 2, 8.5], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [4, 1, 4], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [8.5, 2, -0.5], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [4, 1, -5], "size": [1, 5, 1], "uv": [0, 0]}, 
-						{"origin": [-0.5, 2, -9.5], "size": [1, 5, 1], "uv": [0, 0]}
+						{
+							"origin": [-5, 1, -5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [-9.5, 2, -0.5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [-5, 1, 4],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [-0.5, 2, 8.5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [4, 1, 4],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [8.5, 2, -0.5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [4, 1, -5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}, 
+						{
+							"origin": [-0.5, 2, -9.5],
+							"size": [1, 5, 1],
+							"uv": {
+								"north": {"uv": [1, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"east": {"uv": [0, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"south": {"uv": [3, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"west": {"uv": [2, 1], "uv_size": [1, 5], "material_instance": "torch"},
+								"up": {"uv": [1, 0], "uv_size": [1, 1], "material_instance": "torch"},
+								"down": {"uv": [2, 1], "uv_size": [1, -1], "material_instance": "torch"}
+							}
+						}
 					]
 				}
 			]

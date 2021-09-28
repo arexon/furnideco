@@ -8,11 +8,19 @@ export default defineComponent(({ name, template, schema }) => {
 				description: 'The light level.',
 				type: 'number',
 				maximum: 1
+			},
+			part: {
+				description: 'Material instance part name.',
+				type: 'string'
+			},
+			texture: {
+				description: 'Definition name of a texture.',
+				type: 'string'
 			}
 		}
 	})
 
-	template(({ emission }:{ emission: number }, { create }) => {
+	template(({ emission, part, texture }:{ emission: number, part: string, texture: string }, { create }) => {
 
 		create(
 			{
@@ -24,6 +32,18 @@ export default defineComponent(({ name, template, schema }) => {
 		create(
 			[
 				{
+					condition: '(1.0)',
+					components: {
+						'minecraft:material_instances': {
+							'*': {
+								texture: texture,
+								render_method: 'alpha_test',
+								ambient_occlusion: false
+							}
+						}
+					}
+				},
+				{
 					condition: `!q.block_property('p:is_lit')`,
 					components: {
 						'minecraft:block_light_emission': 0
@@ -33,6 +53,13 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('p:is_lit')`,
 					components: {
 						'minecraft:block_light_emission': emission,
+						'minecraft:material_instances': {
+							[part]: {
+								texture: texture,
+								render_method: 'alpha_test',
+								face_dimming: false
+							}
+						},
 						'minecraft:ticking': {
 							looping: true,
 							range: [ 1, 1 ],

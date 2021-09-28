@@ -41,14 +41,9 @@
 				]
 			},
 			"furnideco:lightable": {
-				"emission": 0.75
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "rustic.lamp",
-					"render_method": "alpha_test",
-					"ambient_occlusion": false
-				}
+				"emission": 0.75,
+				"part": "lamp",
+				"texture": "rustic.lamp"
 			}
 		},
 		"events": {}
