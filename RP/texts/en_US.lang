@@ -38,6 +38,14 @@ tile.rustic.ceiling_fan.name=Ceiling Fan
 tile.rustic.mounted_goat_horn.name=Mounted Goat Horn
 tile.rustic.chandelier.name=Chandelier
 tile.rustic.shelve.name=Shelve
+tile.rustic.oak.rocking_chair.name=Oak Rocking Chair
+tile.rustic.spruce.rocking_chair.name=Spruce Rocking Chair
+tile.rustic.birch.rocking_chair.name=Birch Rocking Chair
+tile.rustic.jungle.rocking_chair.name=Jungle Rocking Chair
+tile.rustic.acacia.rocking_chair.name=Acacia Rocking Chair
+tile.rustic.dark_oak.rocking_chair.name=Dark Oak Rocking Chair
+tile.rustic.crimson.rocking_chair.name=Crimson Rocking Chair
+tile.rustic.warped.rocking_chair.name=Warped Rocking Chair
 
 
 ## Entities

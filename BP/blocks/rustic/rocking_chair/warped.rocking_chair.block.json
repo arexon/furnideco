@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.warped.rocking_chair"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:rocking_chair": {},
+			"furnideco:attributes": {
+				"map_color": "warped",
+				"loot_table": "rustic/rocking_chair/warped.rocking_chair",
+				"strength": [ 2, 2 ],
+				"solidness": 0,
+				"geometry": "rustic.rocking_chair",
+				"collision": {
+					"pick": [ -7, 0, -7, 14, 15, 14 ],
+					"entity": [ -7, 0, -7, 14, 7, 12 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:paintable": {
+				"colors": 4,
+				"texture": "rustic.rocking_chair",
+				"part": "cloth",
+				"base": "rustic.warped.rocking_chair"
+			},
+			"furnideco:sittable": {
+				"name": "rustic_rocking_chair",
+				"directional": true
+			}
+		}
+	}
+}

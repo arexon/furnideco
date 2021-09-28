@@ -57,7 +57,7 @@
 						"family_types": [ "player" ],
 						"seats": [
 							{
-								"position": [ 0, -0.07, -0.12 ]
+								"position": [ 0, -0.2, -0.12 ]
 							}
 						]
 					}
@@ -167,6 +167,38 @@
 					},
 					{
 						"block": "furnideco:rustic.warped.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.oak.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.spruce.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.birch.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.jungle.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.acacia.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.dark_oak.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.crimson.rocking_chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.warped.rocking_chair",
 						"exited_block_event": { "event": "e:remove" }
 					}
 				]

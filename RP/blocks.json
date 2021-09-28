@@ -109,5 +109,30 @@
 	// Shelve
 	"rustic.shelve": {
 		"sound": "wood"
+	},
+	// Rocking Chair
+	"rustic.oak.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.spruce.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.birch.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.jungle.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.acacia.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.crimson.rocking_chair": {
+		"sound": "wood"
+	},
+	"rustic.warped.rocking_chair": {
+		"sound": "wood"
 	}
 }

@@ -266,6 +266,43 @@
 		// Shelve
 		"rustic.shelve": {
 			"textures": "textures/blocks/rustic/shelve"
+		},
+		// Rocking Chair
+		"rustic.oak.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/oak"
+		},
+		"rustic.spruce.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/spruce"
+		},
+		"rustic.birch.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/birch"
+		},
+		"rustic.jungle.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/jungle"
+		},
+		"rustic.acacia.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/acacia"
+		},
+		"rustic.dark_oak.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/dark_oak"
+		},
+		"rustic.crimson.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/crimson"
+		},
+		"rustic.warped.rocking_chair": {
+			"textures": "textures/blocks/rustic/rocking_chair/wood/warped"
+		},
+		"rustic.rocking_chair.color_0": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/0"
+		},
+		"rustic.rocking_chair.color_1": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/1"
+		},
+		"rustic.rocking_chair.color_2": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/2"
+		},
+		"rustic.rocking_chair.color_3": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/3"
 		}
 	}
 }
