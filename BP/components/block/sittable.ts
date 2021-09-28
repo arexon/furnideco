@@ -18,6 +18,7 @@ export default defineComponent(({ name, template, schema }) => {
 	template(({ name, directional = false }:{ name: string, directional: boolean }, { create }) => {
 
 		const directions = [
+			'e:set.direction.north',
 			'e:set.direction.east',
 			'e:set.direction.south',
 			'e:set.direction.west'
@@ -41,7 +42,7 @@ export default defineComponent(({ name, template, schema }) => {
 				'e:add.seat': (
 					directional ? {
 						sequence: directions.map((direction, i) => ({
-							condition: `q.block_property('p:direction') == ${i}`,
+							condition: `q.block_property('p:facing') == ${i}`,
 							run_command: {
 								command: `summon furnideco:seat.${name} ~~~ ${direction}`
 							}

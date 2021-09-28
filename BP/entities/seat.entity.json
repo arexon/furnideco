@@ -173,19 +173,24 @@
 			}
 		},
 		"events": {
-			"e:set.direction.east": {
+			"e:set.direction.north": {
 				"run_command": {
-					"command": "tp ~~~ 90"
+					"command": "tp ~~~ 0"
 				}
 			},
-			"e:set.direction.south": {
+			"e:set.direction.east": {
 				"run_command": {
 					"command": "tp ~~~ 180"
 				}
 			},
-			"e:set.direction.west": {
+			"e:set.direction.south": {
 				"run_command": {
 					"command": "tp ~~~ 270"
+				}
+			},
+			"e:set.direction.west": {
+				"run_command": {
+					"command": "tp ~~~ 90"
 				}
 			},
 			"e:add.rider": {
