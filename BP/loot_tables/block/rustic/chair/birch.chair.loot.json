@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "furnideco:rustic.birch.chair",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

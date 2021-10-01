@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rustic.chair",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -6], "size": [2, 7, 2], "uv": [0, 0]}, 
+						{"origin": [4, 0, -6], "size": [2, 7, 2], "uv": [0, 0], "mirror": true}, 
+						{"origin": [-6, 0, 4], "size": [2, 22, 2], "uv": [0, 20]}, 
+						{"origin": [4, 0, 4], "size": [2, 22, 2], "uv": [0, 20], "mirror": true}, 
+						{"origin": [-7, 22, 4], "size": [14, 2, 2], "uv": [0, 16]}, 
+						{"origin": [-4, 9, 5], "size": [8, 13, 0], "uv": [24, 20]}, 
+						{"origin": [5, 1, -4], "size": [0, 5, 8], "uv": [8, 12], "mirror": true}, 
+						{"origin": [-5, 1, -4], "size": [0, 5, 8], "uv": [8, 12]}, 
+						{"origin": [-7, 7, -7], "size": [14, 2, 14], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

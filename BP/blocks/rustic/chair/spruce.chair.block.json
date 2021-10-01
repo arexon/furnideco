@@ -1,0 +1,37 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.spruce.chair"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:chair": {},
+			"furnideco:attributes": {
+				"map_color": "spruce",
+				"loot_table": "rustic/chair/spruce.chair",
+				"strength": [ 2, 2 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.chair",
+				"collision": {
+					"pick": [ -7, 0, -7, 14, 9, 14 ],
+					"entity": [ -7, 0, -7, 14, 9, 14 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:sittable": {
+				"name": "rustic_chair",
+				"directional": true
+			},
+            "minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.spruce.chair",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

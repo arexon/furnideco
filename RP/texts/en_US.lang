@@ -46,6 +46,14 @@ tile.rustic.acacia.rocking_chair.name=Acacia Rocking Chair
 tile.rustic.dark_oak.rocking_chair.name=Dark Oak Rocking Chair
 tile.rustic.crimson.rocking_chair.name=Crimson Rocking Chair
 tile.rustic.warped.rocking_chair.name=Warped Rocking Chair
+tile.rustic.oak.chair.name=Oak Chair
+tile.rustic.spruce.chair.name=Spruce Chair
+tile.rustic.birch.chair.name=Birch Chair
+tile.rustic.jungle.chair.name=Jungle Chair
+tile.rustic.acacia.chair.name=Acacia Chair
+tile.rustic.dark_oak.chair.name=Dark Oak Chair
+tile.rustic.crimson.chair.name=Crimson Chair
+tile.rustic.warped.chair.name=Warped Chair
 
 
 ## Entities

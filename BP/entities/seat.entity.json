@@ -200,6 +200,38 @@
 					{
 						"block": "furnideco:rustic.warped.rocking_chair",
 						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.oak.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.spruce.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.birch.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.jungle.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.acacia.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.dark_oak.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.crimson.chair",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.warped.chair",
+						"exited_block_event": { "event": "e:remove" }
 					}
 				]
 			}

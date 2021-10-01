@@ -303,6 +303,31 @@
 		},
 		"rustic.rocking_chair.color_3": {
 			"textures": "textures/blocks/rustic/rocking_chair/cloth/3"
+		},
+		// Chair
+		"rustic.oak.chair": {
+			"textures": "textures/blocks/rustic/chair/oak"
+		},
+		"rustic.spruce.chair": {
+			"textures": "textures/blocks/rustic/chair/spruce"
+		},
+		"rustic.birch.chair": {
+			"textures": "textures/blocks/rustic/chair/birch"
+		},
+		"rustic.jungle.chair": {
+			"textures": "textures/blocks/rustic/chair/jungle"
+		},
+		"rustic.acacia.chair": {
+			"textures": "textures/blocks/rustic/chair/acacia"
+		},
+		"rustic.dark_oak.chair": {
+			"textures": "textures/blocks/rustic/chair/dark_oak"
+		},
+        "rustic.crimson.chair": {
+			"textures": "textures/blocks/rustic/chair/crimson"
+		},
+        "rustic.warped.chair": {
+			"textures": "textures/blocks/rustic/chair/warped"
 		}
 	}
 }

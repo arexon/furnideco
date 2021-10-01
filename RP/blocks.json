@@ -4,10 +4,10 @@
 	"rustic.oak.table": {
 		"sound": "wood"
 	},
-	"rustic.birch.table": {
+	"rustic.spruce.table": {
 		"sound": "wood"
 	},
-	"rustic.spruce.table": {
+	"rustic.birch.table": {
 		"sound": "wood"
 	},
 	"rustic.jungle.table": {
@@ -29,10 +29,10 @@
 	"rustic.oak.stool": {
 		"sound": "wood"
 	},
-	"rustic.birch.stool": {
+	"rustic.spruce.stool": {
 		"sound": "wood"
 	},
-	"rustic.spruce.stool": {
+	"rustic.birch.stool": {
 		"sound": "wood"
 	},
 	"rustic.jungle.stool": {
@@ -133,6 +133,31 @@
 		"sound": "wood"
 	},
 	"rustic.warped.rocking_chair": {
+		"sound": "wood"
+	},
+	// Chair
+	"rustic.oak.chair": {
+		"sound": "wood"
+	},
+	"rustic.spruce.chair": {
+		"sound": "wood"
+	},
+	"rustic.birch.chair": {
+		"sound": "wood"
+	},
+	"rustic.jungle.chair": {
+		"sound": "wood"
+	},
+	"rustic.acacia.chair": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.chair": {
+		"sound": "wood"
+	},
+	"rustic.crimson.chair": {
+		"sound": "wood"
+	},
+	"rustic.warped.chair": {
 		"sound": "wood"
 	}
 }
