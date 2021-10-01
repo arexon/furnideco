@@ -5,11 +5,11 @@ export default defineComponent(({ name, template, schema }) => {
 		type: 'object',
 		properties: {
 			tag: {
-				description: 'The neighbor block tag.',
+				description: 'The neighbor block tag which the component will test.',
 				type: 'string'
 			},
 			directions: {
-				description: 'Outlines which directions can be connected to.',
+				description: 'Specifies which direction the component will use & create block properties for.',
 				type: 'array',
 				items: {
 					type: 'string',
@@ -17,17 +17,25 @@ export default defineComponent(({ name, template, schema }) => {
 				}
 			},
 			parts: {
-				description: 'part_visiblity method | Defines when to hide specific parts of the geometry. Not compatible with the "geometries" method.',
-				type: 'object',
-				additionalProperties: false,
-				patternProperties: {
-					'^[a-z0-9_-]+$': {
-						enum: [ 'north', 'east', 'south', 'west', 'up', 'down' ]
+				description: 'The part_visiblity method | Defines when to hide specific parts of the geometry. Not compatible with the "geometries" method.',
+				type: 'array',
+				items: {
+					type: 'object',
+					properties: {
+						name: {
+							description: 'Name of the bone.',
+							type: 'string'
+						},
+						directions: {
+							description: 'Specifies when to show the part. Multiple directions can be passed.',
+							type: 'array',
+							items: { enum: [ 'north', 'east', 'south', 'west', 'up', 'down' ] }
+						}
 					}
 				}
 			},
 			geometries: {
-				description: 'geometries method | Defines a list of geometries and when to hide each one. Not compatible with the "part_visiblity" method.',
+				description: 'The geometries method | Defines a list of geometries and when to hide each one. Not compatible with the "part_visiblity" method.',
 				type: 'array',
 				items: {
 					type: 'object',
@@ -36,7 +44,7 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Definition name of the geometry.',
 							type: 'string'
 						},
-						conditions: {
+						directions: {
 							description: 'When to show the geometry',
 							type: 'array',
 							items: { enum: [ 'north', 'east', 'south', 'west', 'up', 'down' ] }
@@ -47,7 +55,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ tag, directions, parts = {}, geometries = [] }:{ tag: string, directions: string[], parts: any, geometries: any }, { create, identifier }) => {
+	template(({ tag, directions, parts = [], geometries = [] }:{ tag: string, directions: string[], parts: any, geometries: any }, { create }) => {
 
 		const positions = new Map([
 			[ 'north', [ 0, 0, -1 ] ],
@@ -70,24 +78,29 @@ export default defineComponent(({ name, template, schema }) => {
 
 		// Loops through parts and creates part visibility rules for each part
 		if (parts) {
-			for (const [bone, dir] of Object.entries(parts)) {
+			parts.map(part => {
 				create(
 					{
-						[bone]: `q.block_property('p:${dir}_neighbor')`
+						...(part.directions.length === 1 ? {
+							[part.name]: `q.block_property('bridge:${part.directions}_neighbor')`
+						} : {
+							[part.name]: `${part.directions.map((dir: string) => `q.block_property('bridge:${dir}_neighbor')`).join('&&')}`
+						})
 					},
 					'minecraft:block/components/minecraft:part_visibility/rules'
 				)
-			}
+			})
 		}
+
 		// Maps through geometries and creates a permutations for each geo
 		if (geometries) {
 			create(
 				{
 					permutations: geometries.map(geo => ({
-						...(geo.conditions.length === 1 ? {
-							condition: `q.block_property('p:${geo.conditions}_neighbor')`
+						...(geo.directions.length === 1 ? {
+							condition: `q.block_property('p:${geo.directions}_neighbor')`
 						} : {
-							condition: `${geo.conditions.map((condition: string) => `q.block_property('p:${condition}_neighbor')`).join('&&')}`
+							condition: `${geo.directions.map((dir: string) => `q.block_property('p:${dir}_neighbor')`).join('&&')}`
 						}),
 						components: {
 							'minecraft:geometry': `geometry.${geo.name}`
