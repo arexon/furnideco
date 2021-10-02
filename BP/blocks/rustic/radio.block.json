@@ -29,29 +29,14 @@
 				"loot_table": "rustic/radio",
 				"strength": [ 1, 1 ],
 				"flameable": [ 40, 40 ],
-				"solidness": 0
+				"solidness": 0,
+				"geometry": "rustic.radio",
+				"collision": {
+					"pick": [ -7, 0, -3, 14, 9, 6 ],
+					"entity": [ -7, 0, -3, 14, 9, 6 ]
+				}
 			},
 			"furnideco:horizontal_facing": {},
-			"furnideco:mixed_geometries": {
-				"property": "p:aerial",
-				"name": "rustic.radio",
-				"geometries": [
-					{
-						"name": "aerial_down",
-						"collision": {
-							"pick": [ -7, 0, -3, 14, 9, 6 ],
-							"entity": [ -7, 0, -3, 14, 9, 6 ]
-						}
-					},
-					{
-						"name": "aerial_up",
-						"collision": {
-							"pick": [ -7, 0, -3, 14, 9, 6 ],
-							"entity": [ -7, 0, -3, 14, 9, 6 ]
-						}
-					}
-				]
-			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "rustic.radio",
@@ -61,13 +46,17 @@
 			},
 			"minecraft:on_interact": {
 				"event": "e:toggle"
+			},
+			"minecraft:part_visibility": {
+				"rules": {
+					"aerial": "q.block_property('p:is_on')"
+				}
 			}
 		},
 		"events": {
 			"e:toggle": {
 				"set_block_property": {
-					"p:is_on": "!q.block_property('p:is_on')",
-					"p:aerial": "!q.block_property('p:aerial')"
+					"p:is_on": "!q.block_property('p:is_on')"
 				},
 				"run_command": {
 					"command": "playsound furnideco.aerial @p ~~~"
