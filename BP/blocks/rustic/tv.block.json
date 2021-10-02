@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.tv"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:tv": {},
+			"furnideco:attributes": {
+				"map_color": "#926138",
+				"loot_table": "rustic/tv",
+				"strength": [ 2, 2 ],
+				"flameable": [ 10, 20 ],
+				"solidness": 0,
+				"geometry": "rustic.tv",
+				"collision": {
+					"pick": [ -8, 0, -5, 16, 13, 10 ],
+					"entity": [ -8, 0, -5, 16, 13, 10 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.tv",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

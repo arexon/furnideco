@@ -159,5 +159,9 @@
 	},
 	"rustic.warped.chair": {
 		"sound": "wood"
+	},
+	// TV
+	"rustic.tv": {
+		"sound": "stone"
 	}
 }
