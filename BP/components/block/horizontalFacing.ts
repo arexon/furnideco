@@ -1,7 +1,8 @@
 export default defineComponent(({ name, template, schema }) => {
 	name('furnideco:horizontal_facing')
 	schema({
-		description: 'Makes the block horizontally face the player on placing.'
+		description: 'Makes the block horizontally face the player on placing.',
+		type: 'object'
 	})
 
 	template(({}, { create }) => {
