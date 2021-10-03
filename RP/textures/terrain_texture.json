@@ -332,6 +332,31 @@
 		// TV
 		"rustic.tv": {
 			"textures": "textures/blocks/rustic/tv"
+		},
+		// Coffee Table
+		"rustic.oak.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/oak"
+		},
+		"rustic.spruce.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/spruce"
+		},
+		"rustic.birch.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/birch"
+		},
+		"rustic.jungle.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/jungle"
+		},
+		"rustic.acacia.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/acacia"
+		},
+		"rustic.dark_oak.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/dark_oak"
+		},
+        "rustic.crimson.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/crimson"
+		},
+        "rustic.warped.coffee_table": {
+			"textures": "textures/blocks/rustic/coffee_table/warped"
 		}
 	}
 }

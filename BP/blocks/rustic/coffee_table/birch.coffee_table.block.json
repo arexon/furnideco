@@ -1,0 +1,83 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.birch.coffee_table"
+		},
+		"components": {
+			"tag:rustic": {},
+			"tag:birch.coffee_table": {},
+			"furnideco:attributes": {
+				"map_color": "birch",
+				"loot_coffee_table": "rustic/coffee_table/birch.coffee_table",
+				"strength": [ 2, 2 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.coffee_table",
+				"collision": {
+					"pick": [ -8, 0, -7, 16, 9, 14 ],
+					"entity": [ -8, 0, -7, 16, 9, 14 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:connectable": {
+				"tag": "birch.coffee_table",
+				"directions": [ "north", "east", "south", "west" ],
+				"rotation_property": "p:facing",
+				"parts": [
+					{
+						"name": "legs1",
+						"rules": [
+							{
+								"directions": [ "!west" ],
+								"rotation": 0
+							},
+							{
+								"directions": [ "!east" ],
+								"rotation": 1
+							},
+							{
+								"directions": [ "!south" ],
+								"rotation": 2
+							},
+							{
+								"directions": [ "!north" ],
+								"rotation": 3
+							}
+						],
+						"use_rotation": true
+					},
+					{
+						"name": "legs2",
+						"rules": [
+							{
+								"directions": [ "!east" ],
+								"rotation": 0
+							},
+							{
+								"directions": [ "!west" ],
+								"rotation": 1
+							},
+							{
+								"directions": [ "!north" ],
+								"rotation": 2
+							},
+							{
+								"directions": [ "!south" ],
+								"rotation": 3
+							}
+						],
+						"use_rotation": true
+					}
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.birch.coffee_table",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

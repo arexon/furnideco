@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "furnideco:rustic.acacia.coffee_table",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

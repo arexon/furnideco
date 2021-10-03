@@ -55,6 +55,14 @@ tile.rustic.dark_oak.chair.name=Dark Oak Chair
 tile.rustic.crimson.chair.name=Crimson Chair
 tile.rustic.warped.chair.name=Warped Chair
 tile.rustic.tv.name=TV
+tile.rustic.oak.coffee_table.name=Oak Coffee Table
+tile.rustic.spruce.coffee_table.name=Spruce Coffee Table
+tile.rustic.birch.coffee_table.name=Birch Coffee Table
+tile.rustic.jungle.coffee_table.name=Jungle Coffee Table
+tile.rustic.acacia.coffee_table.name=Acacia Coffee Table
+tile.rustic.dark_oak.coffee_table.name=Dark Oak Coffee Table
+tile.rustic.crimson.coffee_table.name=Crimson Coffee Table
+tile.rustic.warped.coffee_table.name=Warped Coffee Table
 
 
 ## Entities

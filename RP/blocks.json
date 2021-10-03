@@ -163,5 +163,30 @@
 	// TV
 	"rustic.tv": {
 		"sound": "stone"
+	},
+	// Coffee Table
+	"rustic.oak.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.spruce.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.birch.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.jungle.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.acacia.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.crimson.coffee_table": {
+		"sound": "wood"
+	},
+	"rustic.warped.coffee_table": {
+		"sound": "wood"
 	}
 }
