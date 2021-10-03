@@ -5,7 +5,7 @@ export default defineComponent(({ name, template, schema }) => {
 		type: 'object',
 		properties: {
 			tag: {
-				description: 'The neighbor block tag which the component will test.',
+				description: 'The neighbor block tag which the component will test for.',
 				type: 'string'
 			},
 			directions: {
@@ -15,6 +15,10 @@ export default defineComponent(({ name, template, schema }) => {
 					type: 'string',
 					enum: [ 'north', 'east', 'south', 'west', 'up', 'down' ]
 				}
+			},
+			rotation_property: {
+				description: 'Specifies if the block uses rotations. Takes a block property. (Requires to define "use_rotation" in parts or geometries).',
+				type: 'string'
 			},
 			parts: {
 				description: 'The part_visiblity method | Defines when to hide specific parts of the geometry. Not compatible with the "geometries" method.',
@@ -26,14 +30,55 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Name of the bone.',
 							type: 'string'
 						},
-						directions: {
-							description: 'Specifies when to show the part. Multiple directions can be passed.',
-							type: 'array',
-							items: {
-								enum: [
-									'north', 'east', 'south', 'west', 'up', 'down',
-									'!north', '!east', '!south', '!west', '!up', '!down'
-								]
+						use_rotation: {
+							description: 'Allows to use rotations.',
+							type: 'boolean'
+						}
+					},
+					if: {
+						properties: {
+							use_rotation: {
+								const: false
+							}
+						}
+					},
+					then: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the part using directions.',
+								type: 'array',
+								items: {
+									enum: [
+										'north', 'east', 'south', 'west', 'up', 'down',
+										'!north', '!east', '!south', '!west', '!up', '!down'
+									]
+								}
+							}
+						}
+					},
+					else: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the part using directions & rotations.',
+								type: 'array',
+								items: {
+									type: 'object',
+									properties: {
+										directions: {
+											type: 'array',
+											items: {
+												enum: [
+													'north', 'east', 'south', 'west', 'up', 'down',
+													'!north', '!east', '!south', '!west', '!up', '!down'
+												]
+											}
+										},
+										rotation: {
+											type: 'number',
+											enum: [ 0, 1, 2, 3 ]
+										}
+									}
+								}
 							}
 						}
 					}
@@ -49,14 +94,55 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Definition name of the geometry.',
 							type: 'string'
 						},
-						directions: {
-							description: 'Specifies when to show the geometry. Multiple directions can be passed.',
-							type: 'array',
-							items: {
-								enum: [
-									'north', 'east', 'south', 'west', 'up', 'down',
-									'!north', '!east', '!south', '!west', '!up', '!down'
-								]
+						use_rotation: {
+							description: 'Allows to use rotations.',
+							type: 'boolean'
+						}
+					},
+					if: {
+						properties: {
+							use_rotation: {
+								const: false
+							}
+						}
+					},
+					then: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the geometry using directions.',
+								type: 'array',
+								items: {
+									enum: [
+										'north', 'east', 'south', 'west', 'up', 'down',
+										'!north', '!east', '!south', '!west', '!up', '!down'
+									]
+								}
+							}
+						}
+					},
+					else: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the geometry using directions & rotations.',
+								type: 'array',
+								items: {
+									type: 'object',
+									properties: {
+										directions: {
+											type: 'array',
+											items: {
+												enum: [
+													'north', 'east', 'south', 'west', 'up', 'down',
+													'!north', '!east', '!south', '!west', '!up', '!down'
+												]
+											}
+										},
+										rotation: {
+											type: 'number',
+											enum: [ 0, 1, 2, 3 ]
+										}
+									}
+								}
 							}
 						}
 					}
@@ -65,7 +151,7 @@ export default defineComponent(({ name, template, schema }) => {
 		}
 	})
 
-	template(({ tag, directions, parts = [], geometries = [] }:{ tag: string, directions: string[], parts: any, geometries: any }, { create }) => {
+	template(({ tag, directions, rotation_property, parts = [], geometries = [] }:{ tag: string, directions: string[], rotation_property: string, parts: any, geometries: any }, { create }) => {
 
 		const positions = new Map([
 			[ 'north', [ 0, 0, -1 ] ],
@@ -75,7 +161,11 @@ export default defineComponent(({ name, template, schema }) => {
 			[ 'up', [ 0, 1, 0 ] ],
 			[ 'down', [ 0, -1, 0 ] ]
 		])
-		const createNeighborProperty = (dir: string) => `q.block_property('p:${dir}_neighbor')`
+
+		const toStringFirstChar = value => value.toString().charAt(0)
+
+		const createNeighborProperty = dir => toStringFirstChar(dir) === '!' ? `!q.block_property('p:${dir.toString().substring(1)}_neighbor')` : `q.block_property('p:${dir}_neighbor')`
+		const createRotationProperty = (rotation: number|boolean = false) => rotation !== false ? `q.block_property('${rotation_property}') == ${rotation}` : ''
 
 		// Maps through directions and creates a property for each direction
 		directions.map((dir: string) => {
@@ -92,10 +182,10 @@ export default defineComponent(({ name, template, schema }) => {
 			parts.map(part => {
 				create(
 					{
-						...(part.directions.length === 1 ? {
-							[part.name]: part.directions.toString().charAt(0) === '!' ? `!${createNeighborProperty(part.directions.toString().substring(1))}` : createNeighborProperty(part.directions)
+						...(part.use_rotation ? {
+							[part.name]: `${part.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 						} : {
-							[part.name]: `${part.directions.map((dir: string) => dir.charAt(0) === '!' ? `!${createNeighborProperty(dir.substring(1))}` : createNeighborProperty(dir)).join('&&')}`
+							[part.name]: `${part.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 						})
 					},
 					'minecraft:block/components/minecraft:part_visibility/rules'
@@ -108,10 +198,10 @@ export default defineComponent(({ name, template, schema }) => {
 			create(
 				{
 					permutations: geometries.map(geo => ({
-						...(geo.directions.length === 1 ? {
-							condition: geo.directions.toString().charAt(0) === '!' ? `!${createNeighborProperty(geo.directions.toString().substring(1))}` : createNeighborProperty(geo.directions)
+						...(geo.use_rotation ? {
+							condition: `${geo.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 						} : {
-							condition: `${geo.directions.map((dir: string) => dir.charAt(0) === '!' ? `!${createNeighborProperty(dir.substring(1))}` : createNeighborProperty(dir)).join('&&')}`
+							condition: `${geo.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 						}),
 						components: {
 							'minecraft:geometry': `geometry.${geo.name}`
