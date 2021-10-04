@@ -30,19 +30,19 @@
 						"rules": [
 							{
 								"directions": [ "!west" ],
-								"rotation": 0
+								"rotations": [ 0 ]
 							},
 							{
 								"directions": [ "!east" ],
-								"rotation": 1
+								"rotations": [ 1 ]
 							},
 							{
 								"directions": [ "!south" ],
-								"rotation": 2
+								"rotations": [ 2 ]
 							},
 							{
 								"directions": [ "!north" ],
-								"rotation": 3
+								"rotations": [ 3 ]
 							}
 						],
 						"use_rotation": true
@@ -52,19 +52,19 @@
 						"rules": [
 							{
 								"directions": [ "!east" ],
-								"rotation": 0
+								"rotations": [ 0 ]
 							},
 							{
 								"directions": [ "!west" ],
-								"rotation": 1
+								"rotations": [ 1 ]
 							},
 							{
 								"directions": [ "!north" ],
-								"rotation": 2
+								"rotations": [ 2 ]
 							},
 							{
 								"directions": [ "!south" ],
-								"rotation": 3
+								"rotations": [ 3 ]
 							}
 						],
 						"use_rotation": true
