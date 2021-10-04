@@ -73,9 +73,12 @@ export default defineComponent(({ name, template, schema }) => {
 												]
 											}
 										},
-										rotation: {
-											type: 'number',
-											enum: [ 0, 1, 2, 3 ]
+										rotations: {
+											type: 'array',
+											items: {
+												type: 'number',
+												enum: [ 0, 1, 2, 3 ]
+											}
 										}
 									}
 								}
@@ -137,9 +140,12 @@ export default defineComponent(({ name, template, schema }) => {
 												]
 											}
 										},
-										rotation: {
-											type: 'number',
-											enum: [ 0, 1, 2, 3 ]
+										rotations: {
+											type: 'array',
+											items: {
+												type: 'number',
+												enum: [ 0, 1, 2, 3 ]
+											}
 										}
 									}
 								}
@@ -199,9 +205,12 @@ export default defineComponent(({ name, template, schema }) => {
 												]
 											}
 										},
-										rotation: {
-											type: 'number',
-											enum: [ 0, 1, 2, 3 ]
+										rotations: {
+											type: 'array',
+											items: {
+												type: 'number',
+												enum: [ 0, 1, 2, 3 ]
+											}
 										}
 									}
 								}
@@ -227,7 +236,7 @@ export default defineComponent(({ name, template, schema }) => {
 		const toStringFirstChar = value => value.toString().charAt(0)
 
 		const createNeighborProperty = dir => toStringFirstChar(dir) === '!' ? `!q.block_property('p:${dir.toString().substring(1)}_neighbor')` : `q.block_property('p:${dir}_neighbor')`
-		const createRotationProperty = (rotation: number|boolean = false) => rotation !== false ? `q.block_property('${rotation_property}') == ${rotation}` : ''
+		const createRotationProperty = (rotations: number[] = []) => rotations ? `${rotations.map(rotation => `q.block_property('${rotation_property}') == ${rotation}`).join('||')}` : ''
 
 		// Maps through directions and creates a property for each direction
 		directions.map((dir: string) => {
@@ -245,7 +254,7 @@ export default defineComponent(({ name, template, schema }) => {
 				create(
 					{
 						...(part.use_rotation ? {
-							[part.name]: `${part.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
+							[part.name]: `${part.rules.map(rule => `(${createRotationProperty(rule.rotations)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 						} : {
 							[part.name]: `${part.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 						})
@@ -261,7 +270,7 @@ export default defineComponent(({ name, template, schema }) => {
 				{
 					permutations: geometries.map(geo => ({
 						...(geo.use_rotation ? {
-							condition: `${geo.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
+							condition: `${geo.rules.map(rule => `(${createRotationProperty(rule.rotations}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 						} : {
 							condition: `${geo.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 						}),
@@ -278,7 +287,7 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				permutations: material_instances.map(texture => ({
 					...(texture.use_rotation ? {
-						condition: `${texture.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
+						condition: `${texture.rules.map(rule => `(${createRotationProperty(rule.rotations)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 					} : {
 						condition: `${texture.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 					}),
