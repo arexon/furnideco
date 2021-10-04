@@ -188,5 +188,30 @@
 	},
 	"rustic.warped.coffee_table": {
 		"sound": "wood"
+	},
+	// Cabinet
+	"rustic.oak.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.spruce.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.birch.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.jungle.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.acacia.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.crimson.cabinet": {
+		"sound": "wood"
+	},
+	"rustic.warped.cabinet": {
+		"sound": "wood"
 	}
 }

@@ -1,0 +1,168 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.dark_oak.cabinet"
+		},
+		"permutations": [
+			{
+				"condition": "(1.0)",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "rustic.dark_oak.cabinet",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:rustic": {},
+			"tag:dark_oak.cabinet": {},
+			"furnideco:attributes": {
+				"map_color": "dark_oak",
+				"loot_cabinet": "rustic/cabinet/dark_oak.cabinet",
+				"strength": [ 2, 2 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"geometry": "rustic.cabinet",
+				"collision": {
+					"pick": [ -8, 2, -4, 16, 14, 12 ],
+					"entity": [ -8, 2, -4, 16, 14, 12 ]
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"furnideco:connectable": {
+				"tag": "dark_oak.cabinet",
+				"directions": [ "north", "east", "south", "west" ],
+				"rotation_property": "p:facing",
+				"parts": [
+					{
+						"name": "legs1",
+						"use_rotation": true,
+						"rules": [
+							{
+								"directions": [ "!west" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "!east" ],
+								"rotations": [ 1 ]
+							},
+							{
+								"directions": [ "!south" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "!north" ],
+								"rotations": [ 3 ]
+							}
+						]
+					},
+					{
+						"name": "legs2",
+						"use_rotation": true,
+						"rules": [
+							{
+								"directions": [ "!east" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "!west" ],
+								"rotations": [ 1 ]
+							},
+							{
+								"directions": [ "!north" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "!south" ],
+								"rotations": [ 3 ]
+							}
+						]
+					}
+				],
+				"material_instances": [
+					{
+						"use_rotation": true,
+						"instances": {
+							"*": {
+								"texture": "rustic.dark_oak.cabinet.left",
+								"render_method": "alpha_test",
+								"ambient_occlusion": false
+							}
+						},
+						"rules": [
+							{
+								"directions": [ "east" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "west" ],
+								"rotations": [ 1 ]
+							},
+							{
+								"directions": [ "north" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "south" ],
+								"rotations": [ 3 ]
+							}
+						]
+					},
+					{
+						"use_rotation": true,
+						"instances": {
+							"*": {
+								"texture": "rustic.dark_oak.cabinet.right",
+								"render_method": "alpha_test",
+								"ambient_occlusion": false
+							}
+						},
+						"rules": [
+							{
+								"directions": [ "west" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "east" ],
+								"rotations": [ 1 ]
+							},
+							{
+								"directions": [ "south" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "north" ],
+								"rotations": [ 3 ]
+							}
+						]
+					},
+					{
+						"use_rotation": true,
+						"instances": {
+							"*": {
+								"texture": "rustic.dark_oak.cabinet.middle",
+								"render_method": "alpha_test",
+								"ambient_occlusion": false
+							}
+						},
+						"rules": [
+							{
+								"directions": [ "east", "west" ],
+								"rotations": [ 0, 1 ]
+							},
+							{
+								"directions": [ "north", "south" ],
+								"rotations": [ 2, 3 ]
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

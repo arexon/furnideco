@@ -357,6 +357,103 @@
 		},
         "rustic.warped.coffee_table": {
 			"textures": "textures/blocks/rustic/coffee_table/warped"
+		},
+		// Cabinet
+		"rustic.oak.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/oak/base"
+		},
+		"rustic.oak.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/oak/left"
+		},
+		"rustic.oak.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/oak/middle"
+		},
+		"rustic.oak.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/oak/right"
+		},
+		"rustic.spruce.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/spruce/base"
+		},
+		"rustic.spruce.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/spruce/left"
+		},
+		"rustic.spruce.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/spruce/middle"
+		},
+		"rustic.spruce.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/spruce/right"
+		},
+		"rustic.birch.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/birch/base"
+		},
+		"rustic.birch.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/birch/left"
+		},
+		"rustic.birch.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/birch/middle"
+		},
+		"rustic.birch.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/birch/right"
+		},
+		"rustic.jungle.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/jungle/base"
+		},
+		"rustic.jungle.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/jungle/left"
+		},
+		"rustic.jungle.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/jungle/middle"
+		},
+		"rustic.jungle.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/jungle/right"
+		},
+		"rustic.acacia.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/acacia/base"
+		},
+		"rustic.acacia.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/acacia/left"
+		},
+		"rustic.acacia.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/acacia/middle"
+		},
+		"rustic.acacia.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/acacia/right"
+		},
+		"rustic.dark_oak.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/dark_oak/base"
+		},
+		"rustic.dark_oak.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/dark_oak/left"
+		},
+		"rustic.dark_oak.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/dark_oak/middle"
+		},
+		"rustic.dark_oak.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/dark_oak/right"
+		},
+		"rustic.crimson.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/crimson/base"
+		},
+		"rustic.crimson.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/crimson/left"
+		},
+		"rustic.crimson.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/crimson/middle"
+		},
+		"rustic.crimson.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/crimson/right"
+		},
+		"rustic.warped.cabinet": {
+			"textures": "textures/blocks/rustic/cabinet/warped/base"
+		},
+		"rustic.warped.cabinet.left": {
+			"textures": "textures/blocks/rustic/cabinet/warped/left"
+		},
+		"rustic.warped.cabinet.middle": {
+			"textures": "textures/blocks/rustic/cabinet/warped/middle"
+		},
+		"rustic.warped.cabinet.right": {
+			"textures": "textures/blocks/rustic/cabinet/warped/right"
 		}
 	}
 }

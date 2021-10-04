@@ -63,6 +63,14 @@ tile.rustic.acacia.coffee_table.name=Acacia Coffee Table
 tile.rustic.dark_oak.coffee_table.name=Dark Oak Coffee Table
 tile.rustic.crimson.coffee_table.name=Crimson Coffee Table
 tile.rustic.warped.coffee_table.name=Warped Coffee Table
+tile.rustic.oak.cabinet.name=Oak Cabinet
+tile.rustic.spruce.cabinet.name=Spruce Cabinet
+tile.rustic.birch.cabinet.name=Birch Cabinet
+tile.rustic.jungle.cabinet.name=Jungle Cabinet
+tile.rustic.acacia.cabinet.name=Acacia Cabinet
+tile.rustic.dark_oak.cabinet.name=Dark Oak Cabinet
+tile.rustic.crimson.cabinet.name=Crimson Cabinet
+tile.rustic.warped.cabinet.name=Warped Cabinet
 
 
 ## Entities
