@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.trash_can"
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:trash_can": {},

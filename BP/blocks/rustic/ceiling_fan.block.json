@@ -7,7 +7,7 @@
 				"p:is_on": [ false, true ]
 			}
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:ceiling_fan": {},

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.lamp"
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:lamp": {},

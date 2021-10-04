@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.vase"
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:vase": {},

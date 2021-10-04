@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.acacia.chair"
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:chair": {},

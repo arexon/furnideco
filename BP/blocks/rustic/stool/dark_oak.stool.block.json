@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.dark_oak.stool"
 		},
-		"permutations": [],
+		
 		"components": {
 			"tag:rustic": {},
 			"tag:stool": {},
