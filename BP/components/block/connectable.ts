@@ -270,7 +270,7 @@ export default defineComponent(({ name, template, schema }) => {
 				{
 					permutations: geometries.map(geo => ({
 						...(geo.use_rotation ? {
-							condition: `${geo.rules.map(rule => `(${createRotationProperty(rule.rotations}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
+							condition: `${geo.rules.map(rule => `(${createRotationProperty(rule.rotations)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
 						} : {
 							condition: `${geo.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
 						}),
