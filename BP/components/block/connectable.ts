@@ -147,11 +147,73 @@ export default defineComponent(({ name, template, schema }) => {
 						}
 					}
 				}
+			},
+			material_instances: {
+				type: 'array',
+				items: {
+					type: 'object',
+					properties: {
+						use_rotation: {
+							description: 'Allows to use rotations.',
+							type: 'boolean'
+						},
+						instances: {
+							$ref: '/data/packages/minecraftBedrock/schema/block/v1.16.100/components/material_instances.json'
+						}
+					},
+					if: {
+						properties: {
+							use_rotation: {
+								const: false
+							}
+						}
+					},
+					then: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the texture using directions.',
+								type: 'array',
+								items: {
+									enum: [
+										'north', 'east', 'south', 'west', 'up', 'down',
+										'!north', '!east', '!south', '!west', '!up', '!down'
+									]
+								}
+							}
+						}
+					},
+					else: {
+						properties: {
+							rules: {
+								description: 'Specifies when to show the texture using directions & rotations.',
+								type: 'array',
+								items: {
+									type: 'object',
+									properties: {
+										directions: {
+											type: 'array',
+											items: {
+												enum: [
+													'north', 'east', 'south', 'west', 'up', 'down',
+													'!north', '!east', '!south', '!west', '!up', '!down'
+												]
+											}
+										},
+										rotation: {
+											type: 'number',
+											enum: [ 0, 1, 2, 3 ]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	})
 
-	template(({ tag, directions, rotation_property, parts = [], geometries = [] }:{ tag: string, directions: string[], rotation_property: string, parts: any, geometries: any }, { create }) => {
+	template(({ tag, directions, rotation_property, parts = [], geometries = [], material_instances = [] }:{ tag: string, directions: string[], rotation_property: string, parts: any, geometries: any, material_instances: any }, { create }) => {
 
 		const positions = new Map([
 			[ 'north', [ 0, 0, -1 ] ],
@@ -211,6 +273,22 @@ export default defineComponent(({ name, template, schema }) => {
 				'minecraft:block'
 			)
 		}
+
+		create(
+			{
+				permutations: material_instances.map(texture => ({
+					...(texture.use_rotation ? {
+						condition: `${texture.rules.map(rule => `(${createRotationProperty(rule.rotation)}&&${rule.directions.map(dir => createNeighborProperty(dir)).join('&&')})`).join('||')}`
+					} : {
+						condition: `${texture.rules.map(rule => createNeighborProperty(rule)).join('&&')}`
+					}),
+					components: {
+						'minecraft:material_instances': texture.instances
+					}
+				}))
+			},
+			'minecraft:block'
+		)
 
 		create(
 			{
