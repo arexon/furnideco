@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.dark_oak.table"
 		},
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:table": {},

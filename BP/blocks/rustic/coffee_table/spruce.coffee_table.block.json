@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.spruce.coffee_table"
 		},
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:spruce.coffee_table": {},

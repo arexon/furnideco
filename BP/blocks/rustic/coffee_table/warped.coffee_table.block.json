@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.warped.coffee_table"
 		},
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:warped.coffee_table": {},

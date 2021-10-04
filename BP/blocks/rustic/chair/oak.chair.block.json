@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.oak.chair"
 		},
-		
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:chair": {},

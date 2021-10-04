@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.jungle.table"
 		},
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:table": {},

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.mounted_goat_horn"
 		},
-		
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:mounted_goat_horn": {},

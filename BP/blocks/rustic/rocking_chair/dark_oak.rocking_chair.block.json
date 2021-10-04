@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.dark_oak.rocking_chair"
 		},
-		
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:rocking_chair": {},

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "furnideco:rustic.crimson.stool"
 		},
-		
+		"permutations": [],
 		"components": {
 			"tag:rustic": {},
 			"tag:stool": {},
