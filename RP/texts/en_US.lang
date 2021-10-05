@@ -75,6 +75,7 @@ tile.rustic.warped.cabinet.name=Warped Cabinet
 
 ## Entities
 entity.furnideco:seat.name=Seat
+entity.furnideco:storage.name=Storage
 entity.furnideco:spawn_item.name=Spawn Item
 
 
@@ -83,3 +84,4 @@ action.hint.exit.furnideco:seat=Jump to stand up.
 
 
 ## UI
+ui.cabinet.name=Cabinet

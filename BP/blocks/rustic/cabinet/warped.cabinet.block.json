@@ -33,6 +33,9 @@
 				}
 			},
 			"furnideco:horizontal_facing": {},
+			"furnideco:storage": {
+				"type": "rustic_cabinet"
+			},
 			"furnideco:connectable": {
 				"tag": "warped.cabinet",
 				"directions": [ "north", "east", "south", "west" ],

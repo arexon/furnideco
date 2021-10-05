@@ -34,6 +34,9 @@
 				}
 			},
 			"furnideco:horizontal_facing": {},
+			"furnideco:storage": {
+				"type": "rustic_cabinet"
+			},
 			"furnideco:connectable": {
 				"tag": "oak.cabinet",
 				"directions": [ "north", "east", "south", "west" ],
