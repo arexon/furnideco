@@ -11,7 +11,6 @@
 						"rustic.chair",
 						"rustic.rocking_chair",
 						"rustic.stool",
-						"rustic.bench",
 						"rustic.sofa"
 					]
 				}
@@ -25,9 +24,6 @@
 				},
 				"furnideco:seat.rustic_stool": {
 					"p:seat_type": "rustic.stool"
-				},
-				"furnideco:seat.rustic_bench": {
-					"p:seat_type": "rustic.bench"
 				},
 				"furnideco:seat.rustic_sofa": {
 					"p:seat_type": "rustic.sofa"
@@ -78,24 +74,8 @@
 				}
 			},
 			{
-				"condition": "q.actor_property('p:seat_type') == 'rustic.bench'",
-				"components": {
-					"minecraft:rideable": {
-						"seat_count": 1,
-						"family_types": [ "player" ],
-						"seats": [
-							{
-								"min_rider_count": 0,
-								"position": [ 0, -0.19, -0.2 ]
-							}
-						]
-					}
-				}
-			},
-			{
 				"condition": "q.actor_property('p:seat_type') == 'rustic.sofa'",
 				"components": {
-					"minecraft:is_stunned": {},
 					"minecraft:rideable": {
 						"seat_count": 1,
 						"family_types": [ "player" ],
@@ -103,7 +83,7 @@
 							{
 								"min_rider_count": 0,
 								"max_rider_count": 1,
-								"position": [ 0, -0.185, -0.07 ]
+								"position": [ 0, -0.25, -0.07 ]
 							}
 						]
 					}
@@ -138,35 +118,35 @@
 			"minecraft:inside_block_notifier": {
 				"block_list": [
 					{
-						"block": "furnideco:rustic.oak.stool",
+						"block": "furnideco:rustic.oak.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.spruce.stool",
+						"block": "furnideco:rustic.spruce.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.birch.stool",
+						"block": "furnideco:rustic.birch.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.jungle.stool",
+						"block": "furnideco:rustic.jungle.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.acacia.stool",
+						"block": "furnideco:rustic.acacia.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.dark_oak.stool",
+						"block": "furnideco:rustic.dark_oak.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.crimson.stool",
+						"block": "furnideco:rustic.crimson.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.warped.stool",
+						"block": "furnideco:rustic.warped.chair",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
@@ -202,35 +182,67 @@
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.oak.chair",
+						"block": "furnideco:rustic.oak.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.spruce.chair",
+						"block": "furnideco:rustic.spruce.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.birch.chair",
+						"block": "furnideco:rustic.birch.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.jungle.chair",
+						"block": "furnideco:rustic.jungle.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.acacia.chair",
+						"block": "furnideco:rustic.acacia.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.dark_oak.chair",
+						"block": "furnideco:rustic.dark_oak.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.crimson.chair",
+						"block": "furnideco:rustic.crimson.stool",
 						"exited_block_event": { "event": "e:remove" }
 					},
 					{
-						"block": "furnideco:rustic.warped.chair",
+						"block": "furnideco:rustic.warped.stool",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.oak.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.spruce.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.birch.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.jungle.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.acacia.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.dark_oak.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.crimson.sofa",
+						"exited_block_event": { "event": "e:remove" }
+					},
+					{
+						"block": "furnideco:rustic.warped.sofa",
 						"exited_block_event": { "event": "e:remove" }
 					}
 				]
