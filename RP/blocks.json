@@ -213,5 +213,30 @@
 	},
 	"rustic.warped.cabinet": {
 		"sound": "wood"
+	},
+	// Sofa
+	"rustic.oak.sofa": {
+		"sound": "wood"
+	},
+	"rustic.spruce.sofa": {
+		"sound": "wood"
+	},
+	"rustic.birch.sofa": {
+		"sound": "wood"
+	},
+	"rustic.jungle.sofa": {
+		"sound": "wood"
+	},
+	"rustic.acacia.sofa": {
+		"sound": "wood"
+	},
+	"rustic.dark_oak.sofa": {
+		"sound": "wood"
+	},
+	"rustic.crimson.sofa": {
+		"sound": "wood"
+	},
+	"rustic.warped.sofa": {
+		"sound": "wood"
 	}
 }

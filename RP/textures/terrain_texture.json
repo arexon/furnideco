@@ -454,6 +454,79 @@
 		},
 		"rustic.warped.cabinet.right": {
 			"textures": "textures/blocks/rustic/cabinet/warped/right"
+		},
+		// Sofa
+		"rustic.oak.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/oak"
+		},
+		"rustic.spruce.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/spruce"
+		},
+		"rustic.birch.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/birch"
+		},
+		"rustic.jungle.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/jungle"
+		},
+		"rustic.acacia.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/acacia"
+		},
+		"rustic.dark_oak.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/dark_oak"
+		},
+		"rustic.crimson.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/crimson"
+		},
+		"rustic.warped.sofa": {
+			"textures": "textures/blocks/rustic/sofa/wood/warped"
+		},
+		"rustic.sofa.color_0": {
+			"textures": "textures/blocks/rustic/sofa/colors/0"
+		},
+		"rustic.sofa.color_1": {
+			"textures": "textures/blocks/rustic/sofa/colors/1"
+		},
+		"rustic.sofa.color_2": {
+			"textures": "textures/blocks/rustic/sofa/colors/2"
+		},
+		"rustic.sofa.color_3": {
+			"textures": "textures/blocks/rustic/sofa/colors/3"
+		},
+		"rustic.sofa.color_4": {
+			"textures": "textures/blocks/rustic/sofa/colors/4"
+		},
+		"rustic.sofa.color_5": {
+			"textures": "textures/blocks/rustic/sofa/colors/5"
+		},
+		"rustic.sofa.color_6": {
+			"textures": "textures/blocks/rustic/sofa/colors/6"
+		},
+		"rustic.sofa.color_7": {
+			"textures": "textures/blocks/rustic/sofa/colors/7"
+		},
+		"rustic.sofa.color_8": {
+			"textures": "textures/blocks/rustic/sofa/colors/8"
+		},
+		"rustic.sofa.color_9": {
+			"textures": "textures/blocks/rustic/sofa/colors/9"
+		},
+		"rustic.sofa.color_10": {
+			"textures": "textures/blocks/rustic/sofa/colors/10"
+		},
+		"rustic.sofa.color_11": {
+			"textures": "textures/blocks/rustic/sofa/colors/11"
+		},
+		"rustic.sofa.color_12": {
+			"textures": "textures/blocks/rustic/sofa/colors/12"
+		},
+		"rustic.sofa.color_13": {
+			"textures": "textures/blocks/rustic/sofa/colors/13"
+		},
+		"rustic.sofa.color_14": {
+			"textures": "textures/blocks/rustic/sofa/colors/14"
+		},
+		"rustic.sofa.color_15": {
+			"textures": "textures/blocks/rustic/sofa/colors/15"
 		}
 	}
 }

@@ -1,0 +1,114 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.acacia.sofa"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:acacia.sofa": {},
+			"furnideco:attributes": {
+				"map_color": "acacia",
+				"loot_table": "rustic/sofa/acacia.sofa",
+				"strength": [ 2, 2 ],
+				"flameable": [ 30, 30 ],
+				"solidness": 0,
+				"collision": {
+					"pick": [ -8, 0, -8, 16, 11, 15 ],
+					"entity": [ -8, 0, -8, 16, 7, 15 ]
+				}
+			},
+            "furnideco:horizontal_facing": {},
+            "furnideco:paintable": {
+				"colors": 16,
+				"texture": "rustic.sofa",
+				"base": "rustic.acacia.sofa",
+				"part": "cushion"
+			},
+			"furnideco:sittable": {
+				"name": "rustic_sofa",
+                "directional": true
+			},
+            "furnideco:connectable": {
+				"tag": "acacia.sofa",
+				"directions": [ "north", "east", "south", "west" ],
+				"rotation_property": "p:facing",
+                "geometries": [
+                    {
+                        "name": "rustic.sofa",
+                        "use_rotation": true,
+                        "rules": [
+							{
+								"directions": [ "!east", "!west" ],
+								"rotations": [ 0, 1 ]
+							},
+							{
+								"directions": [ "!north", "!south" ],
+								"rotations": [ 2, 3 ]
+							}
+						]
+                    },
+                    {
+                        "name": "rustic.sofa.left",
+                        "use_rotation": true,
+                        "rules": [
+                            {
+								"directions": [ "east", "!west" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "west", "!east" ],
+								"rotations": [ 1 ]
+							},
+                            {
+								"directions": [ "north", "!south" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "south", "!north" ],
+								"rotations": [ 3 ]
+							}
+						]
+                    },
+                    {
+                        "name": "rustic.sofa.right",
+                        "use_rotation": true,
+                        "rules": [
+							{
+								"directions": [ "west", "!east" ],
+								"rotations": [ 0 ]
+							},
+							{
+								"directions": [ "east", "!west" ],
+								"rotations": [ 1 ]
+							},
+							{
+								"directions": [ "south", "!north" ],
+								"rotations": [ 2 ]
+							},
+							{
+								"directions": [ "north", "!south" ],
+								"rotations": [ 3 ]
+							}
+						]
+                    },
+                    {
+                        "name": "rustic.sofa.middle",
+                        "use_rotation": true,
+                        "rules": [
+							{
+								"directions": [ "east", "west" ],
+								"rotations": [ 0, 1 ]
+							},
+							{
+								"directions": [ "north", "south" ],
+								"rotations": [ 2, 3 ]
+							}
+						]
+                    }
+                ]
+			}
+		}
+	}
+}

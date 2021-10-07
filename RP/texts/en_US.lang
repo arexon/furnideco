@@ -71,6 +71,14 @@ tile.rustic.acacia.cabinet.name=Acacia Cabinet
 tile.rustic.dark_oak.cabinet.name=Dark Oak Cabinet
 tile.rustic.crimson.cabinet.name=Crimson Cabinet
 tile.rustic.warped.cabinet.name=Warped Cabinet
+tile.rustic.oak.sofa.name=Oak Sofa
+tile.rustic.spruce.sofa.name=Spruce Sofa
+tile.rustic.birch.sofa.name=Birch Sofa
+tile.rustic.jungle.sofa.name=Jungle Sofa
+tile.rustic.acacia.sofa.name=Acacia Sofa
+tile.rustic.dark_oak.sofa.name=Dark Oak Sofa
+tile.rustic.crimson.sofa.name=Crimson Sofa
+tile.rustic.warped.sofa.name=Warped Sofa
 
 
 ## Entities
