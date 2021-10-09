@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:paint_brush"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"  B",
+			" A ",
+			"A  "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:lapis_lazuli"
+			}
+		},
+		"result": {
+			"item": "furnideco:paint_brush"
+		}
+	}
+}
