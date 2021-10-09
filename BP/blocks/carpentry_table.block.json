@@ -29,7 +29,7 @@
 			},
             "minecraft:crafting_table": {
                 "crafting_tags": [ "carpentry_table" ],
-                "custom_description": "",
+                "custom_description": "tile.carpentry_table.name",
                 "grid_size": 3
             }
 		}
