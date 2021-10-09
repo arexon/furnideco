@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.scroll"
+		},
+		"permutations": [],
+		"components": {
+			"tag:rustic": {},
+			"tag:scroll": {},
+			"furnideco:attributes": {
+				"map_color": "#e5d6ad",
+				"loot_table": "rustic/scroll",
+				"strength": [ 0, 0 ],
+				"flameable": [ 50, 75 ],
+				"solidness": 0,
+				"geometry": "rustic.scroll",
+				"collision": {
+					"pick": [ -6, 0, -7, 12, 2, 14 ],
+					"entity": false
+				}
+			},
+			"furnideco:horizontal_facing": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.scroll",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

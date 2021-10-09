@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rustic.scroll",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 10, 0],
+					"cubes": [
+						{"origin": [-6, 0, 5], "size": [12, 2, 2], "uv": [0, 10]}, 
+						{"origin": [-4, 0.1, -5], "size": [8, 0, 10], "uv": [0, 0]}, 
+						{"origin": [-6, 0, -7], "size": [12, 2, 2], "uv": [0, 10]}
+					]
+				}
+			]
+		}
+	]
+}

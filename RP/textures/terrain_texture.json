@@ -527,6 +527,10 @@
 		},
 		"rustic.sofa.color_15": {
 			"textures": "textures/blocks/rustic/sofa/colors/15"
+		},
+		// Scroll
+		"rustic.scroll": {
+			"textures": "textures/blocks/rustic/scroll"
 		}
 	}
 }

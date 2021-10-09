@@ -238,5 +238,9 @@
 	},
 	"rustic.warped.sofa": {
 		"sound": "wood"
+	},
+	// Scroll
+	"rustic.scroll": {
+		"sound": "cloth"
 	}
 }
