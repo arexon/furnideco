@@ -4,6 +4,10 @@ export default defineComponent(({ name, template, schema }) => {
 		description: 'Sets the general properties of the block.',
 		type: 'object',
 		properties: {
+			category: {
+				description: 'Specifies which category the block will apear on. (Default: construction)',
+				enum: [ 'construction', 'items' ]
+			},
 			map_color: {
 				description: 'Material name or hex color to use for the map color.',
 				anyOf: [
@@ -80,6 +84,7 @@ export default defineComponent(({ name, template, schema }) => {
 	})
 
 	template(({
+		category = 'construction',
 		map_color,
 		loot_table = false,
 		strength,
@@ -88,6 +93,7 @@ export default defineComponent(({ name, template, schema }) => {
 		geometry,
 		collision = {}
 	}:{
+		category: string,
 		map_color: string,
 		loot_table: boolean|string,
 		strength: number[]
@@ -96,6 +102,8 @@ export default defineComponent(({ name, template, schema }) => {
 		geometry: string
 		collision: any
 	}, { create, identifier }) => {
+
+		const capitalize = (word: string) => word && word[0].toUpperCase() + word.slice(1)
 
 		// List of pre-set map colors
 		const mapColors = new Map([
@@ -113,8 +121,8 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				'minecraft:display_name': identifier.split(':')[1],
 				'minecraft:creative_category': {
-					category: 'Construction',
-					group: 'itemGroup.name.Construction'
+					category: capitalize(category),
+					group: `itemGroup.name.${capitalize(category)}`
 				},
 				'minecraft:map_color': (mapColors.has(map_color) ? mapColors.get(map_color) : map_color),
 				...(loot_table && {
