@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.lamp"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"CCC",
+			"CBC",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:fence"
+			},
+			"B": {
+				"item": "minecraft:redstone_wire"
+			},
+			"C": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.lamp"
+		}
+	}
+}

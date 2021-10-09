@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.vase"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			" B ",
+			"AAA",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:brick"
+			},
+			"B": {
+				"item": "minecraft:dirt",
+				"data": 1
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.vase"
+		}
+	}
+}

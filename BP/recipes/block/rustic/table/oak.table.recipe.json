@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.oak.table"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AA",
+			"BB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 0
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.oak.table"
+		}
+	}
+}

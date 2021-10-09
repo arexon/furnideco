@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.birch.coffee_table"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AAA",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 3
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.birch.coffee_table"
+		}
+	}
+}

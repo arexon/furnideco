@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.grandfather_clock"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AAA",
+			"ABA",
+			" C "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:redstone_wire"
+			},
+			"C": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.grandfather_clock"
+		}
+	}
+}

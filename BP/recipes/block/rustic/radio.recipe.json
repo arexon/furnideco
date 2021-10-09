@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.radio"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"BC",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:redstone_wire"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.radio"
+		}
+	}
+}

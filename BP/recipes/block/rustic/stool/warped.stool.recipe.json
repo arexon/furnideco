@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.warped.stool"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"CC",
+			"AA",
+			"BB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:warped_planks"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:wool"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.warped.stool"
+		}
+	}
+}

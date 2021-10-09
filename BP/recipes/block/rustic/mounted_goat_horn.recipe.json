@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.mounted_goat_horn"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"BCB",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:goat_horn"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.mounted_goat_horn"
+		}
+	}
+}

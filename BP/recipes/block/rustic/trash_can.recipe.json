@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.trash_can"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"BB",
+			"BC",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wooden_slab"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:redstone_wire"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.trash_can"
+		}
+	}
+}

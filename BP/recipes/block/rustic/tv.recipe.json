@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.tv"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AAA",
+			"ACA",
+			"ABA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			},
+			"B": {
+				"item": "minecraft:redstone_wire"
+			},
+			"C": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.tv"
+		}
+	}
+}

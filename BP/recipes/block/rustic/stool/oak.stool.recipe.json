@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.oak.stool"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"CC",
+			"AA",
+			"BB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 0
+			},
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:wool"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.oak.stool"
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.fire_pit"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AAA",
+			"AAA",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.fire_pit"
+		}
+	}
+}

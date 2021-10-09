@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.crimson.rocking_chair"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			" A",
+			"AAB",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:crimson_planks"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.crimson.rocking_chair"
+		}
+	}
+}

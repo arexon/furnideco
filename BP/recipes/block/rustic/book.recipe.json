@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.book"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:book"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.book"
+		}
+	}
+}

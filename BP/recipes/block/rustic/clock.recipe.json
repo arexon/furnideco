@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.clock"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"BA",
+			"AB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:redstone_wire"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.clock"
+		}
+	}
+}

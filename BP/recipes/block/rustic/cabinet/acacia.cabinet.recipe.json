@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.acacia.cabinet"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"AAA",
+			"A A",
+			"BAB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 4
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.acacia.cabinet"
+		}
+	}
+}

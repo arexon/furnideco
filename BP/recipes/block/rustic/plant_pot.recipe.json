@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.plant_pot"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"BB",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks"
+			},
+			"B": {
+				"item": "minecraft:dirt",
+				"data": 1
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.plant_pot"
+		}
+	}
+}

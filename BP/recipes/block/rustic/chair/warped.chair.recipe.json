@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.warped.chair"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			" A",
+			"AA",
+			"BB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:warped_planks"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.warped.chair"
+		}
+	}
+}

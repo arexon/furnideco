@@ -1,0 +1,21 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.bottle"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			"A",
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.bottle"
+		}
+	}
+}

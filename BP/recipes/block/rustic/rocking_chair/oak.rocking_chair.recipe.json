@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:rustic.oak.rocking_chair"
+		},
+		"tags": [ "carpentry_table" ],
+		"pattern": [
+			" A",
+			"AAB",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:planks",
+				"data": 0
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "furnideco:rustic.oak.rocking_chair"
+		}
+	}
+}
