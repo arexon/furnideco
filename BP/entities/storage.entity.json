@@ -4,36 +4,15 @@
 		"description": {
 			"identifier": "furnideco:storage",
 			"is_summonable": true,
-			"is_spawnable": false,
-			"properties": {
-				"p:storage_type": {
-					"values": [
-						"rustic.cabinet",
-						"rustic.dresser"
-					]
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"g:type.rustic_cabinet": {
+				"minecraft:inventory": {
+					"container_type": "hopper",
+					"can_be_siphoned_from": true
 				}
 			},
-			"aliases": {
-				"furnideco:storage.rustic_cabinet": {
-					"p:storage_type": "rustic.cabinet"
-				},
-				"furnideco:storage.rustic_dresser": {
-					"p:storage_type": "rustic.dresser"
-				}
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.actor_property('p:storage_type') == 'rustic.cabinet'",
-				"components": {
-					"minecraft:inventory": {
-						"container_type": "hopper",
-						"can_be_siphoned_from": true
-					}
-				}
-			}
-		],
-		"component_groups": {
 			"g:remove": {
 				"minecraft:instant_despawn": {}
 			}
@@ -97,6 +76,11 @@
 			}
 		},
 		"events": {
+			"e:set_type.rustic_cabinet": {
+				"add": {
+					"component_groups": [ "g:type.rustic_cabinet" ]
+				}
+			},
 			"e:remove": {
 				"add": {
 					"component_groups": [

@@ -26,7 +26,7 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				'e:add.storage': {
 					run_command: {
-						command: `summon furnideco:storage.${type} ui.${type.split(/_(.+)/)[1]}.name ~~~`
+						command: `summon furnideco:storage ~~~ e:set_type.${type} ui.${type.split(/_(.+)/)[1]}.name`
 					}
 				}
 			},
