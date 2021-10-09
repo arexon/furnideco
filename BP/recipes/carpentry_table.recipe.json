@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "furnideco:carpentry_table"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"AAA",
+			"B B",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wool"
+			},
+			"B": {
+				"item": "minecraft:planks"
+			}
+		},
+		"result": {
+			"item": "furnideco:carpentry_table"
+		}
+	}
+}

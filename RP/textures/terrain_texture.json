@@ -4,6 +4,9 @@
 	"num_mip_levels" : 4,
 	"padding" : 8,
 	"texture_data": {
+		"carpentry_table": {
+			"textures": "textures/blocks/carpentry_table"
+		},
 		// Rustic Table
 		"rustic.oak.table": {
 			"textures": "textures/blocks/rustic/table/oak"

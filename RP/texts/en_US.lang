@@ -7,6 +7,8 @@ item.paint_brush.name=Paint Brush
 
 
 ## Blocks
+tile.carpentry_table.name=Carpentry Table
+
 tile.rustic.oak.table.name=Oak Table
 tile.rustic.spruce.table.name=Spruce Table
 tile.rustic.birch.table.name=Birch Table
