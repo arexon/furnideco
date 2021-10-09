@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.17.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "furnideco:seat",
