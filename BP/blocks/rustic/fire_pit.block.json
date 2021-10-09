@@ -1,0 +1,82 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "furnideco:rustic.fire_pit",
+			"properties": {
+				"p:is_lit": [ false, true ]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:is_lit')",
+				"components": {
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [ 1, 1 ],
+						"on_tick": {
+							"event": "e:play.fire"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:rustic": {},
+			"tag:fire_pit": {},
+			"furnideco:attributes": {
+				"map_color": "#2e2e58",
+				"loot_table": "rustic/fire_pit",
+				"strength": [ 3, 3 ],
+				"solidness": 0,
+				"geometry": "rustic.fire_pit",
+				"collision": {
+					"pick": [ -6, 0, -6, 12, 11, 12 ],
+					"entity": [ -6, 0, -6, 12, 4, 12 ]
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rustic.fire_pit",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "e:toggle"
+			}
+		},
+		"events": {
+			"e:toggle": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name == 'flint_and_steel' && !q.is_sneaking",
+                        "set_block_property": {
+                            "p:is_lit": true
+                        },
+                        "run_command": {
+                            "command": "playsound fire.ignite @p ~~~"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name != 'flint_and_steel' && q.is_sneaking",
+                        "set_block_property": {
+                            "p:is_lit": false
+                        },
+                        "run_command": {
+                            "command": "playsound random.fizz @p ~~~"
+                        }
+                    }
+                ]
+			},
+			"e:play.fire": {
+				"run_command": {
+					"command": [
+                        "particle furnideco:fire ~ ~0.25 ~",
+                        "playsound fire.fire @p ~~~"
+                    ]
+				}
+			}
+		}
+	}
+}

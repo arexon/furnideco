@@ -242,5 +242,9 @@
 	// Scroll
 	"rustic.scroll": {
 		"sound": "cloth"
+	},
+	// Fire Pit
+	"rustic.fire_pit": {
+		"sound": "metal"
 	}
 }
