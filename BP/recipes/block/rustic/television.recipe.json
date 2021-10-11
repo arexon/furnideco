@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "furnideco:rustic.tv"
+			"identifier": "furnideco:rustic.television"
 		},
 		"tags": [ "carpentry_table" ],
 		"pattern": [
@@ -22,7 +22,7 @@
 			}
 		},
 		"result": {
-			"item": "furnideco:rustic.tv"
+			"item": "furnideco:rustic.television"
 		}
 	}
 }

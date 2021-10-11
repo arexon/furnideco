@@ -332,9 +332,9 @@
         "rustic.warped.chair": {
 			"textures": "textures/blocks/rustic/chair/warped"
 		},
-		// TV
-		"rustic.tv": {
-			"textures": "textures/blocks/rustic/tv"
+		// Television
+		"rustic.television": {
+			"textures": "textures/blocks/rustic/television"
 		},
 		// Coffee Table
 		"rustic.oak.coffee_table": {

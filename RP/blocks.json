@@ -163,8 +163,8 @@
 	"rustic.warped.chair": {
 		"sound": "wood"
 	},
-	// TV
-	"rustic.tv": {
+	// Television
+	"rustic.television": {
 		"sound": "stone"
 	},
 	// Coffee Table
