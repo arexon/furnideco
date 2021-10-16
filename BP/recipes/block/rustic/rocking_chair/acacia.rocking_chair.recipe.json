@@ -6,7 +6,7 @@
 		},
 		"tags": [ "carpentry_table" ],
 		"pattern": [
-			" A",
+			"  A",
 			"AAB",
 			"BBB"
 		],
