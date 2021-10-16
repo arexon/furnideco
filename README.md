@@ -17,5 +17,5 @@ FurniDeco adds 25 pieces of functional, decorative and unique-looking furniture 
 - 🎨 Fully customizable
 - 🎮 Interactive and functional
 - 🍦 Fits with the Minecraft Vanilla feel
-- 🪓 Craftable in survival mode
+- 🪓 Craft-able in survival mode
 - 🧊 Uses blocks
