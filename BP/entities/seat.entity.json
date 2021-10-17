@@ -278,8 +278,8 @@
 						},
 						"run_command": {
 							"command": [
-								"ride @p[tag=pre_sitting, r=2] start_riding @s teleport_rider",
-								"tag @p[tag=pre_sitting, r=1] remove pre_sit"
+								"ride @p[tag=pre_sitting, r=2.5] start_riding @s teleport_rider",
+								"tag @p[tag=pre_sitting, r=1.75] remove pre_sit"
 							]
 						}
 					}
