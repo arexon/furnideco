@@ -13,7 +13,7 @@
 			"tag:ceiling_fan": {},
 			"furnideco:attributes": {
 				"map_color": "#937131",
-				"loot_table": "rustic/stool/ceiling_fan",
+				"loot_table": "rustic/ceiling_fan",
 				"strength": [ 2, 2 ],
 				"flameable": [ 30, 30 ],
 				"solidness": 0,
