@@ -21,7 +21,7 @@
 				}
 			},
 			"furnideco:horizontal_facing": {},
-			"furnideco:sittable": {
+			"furnideco:seat": {
 				"name": "rustic_chair",
 				"directional": true
 			},

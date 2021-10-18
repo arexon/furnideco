@@ -26,7 +26,7 @@
 					"entity": [ -7, 0, -7, 14, 11, 14 ]
 				}
 			},
-			"furnideco:sittable": {
+			"furnideco:seat": {
 				"name": "rustic_stool"
 			}
 		}

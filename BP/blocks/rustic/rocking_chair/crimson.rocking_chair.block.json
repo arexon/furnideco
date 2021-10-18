@@ -26,7 +26,7 @@
 				"part": "cloth",
 				"base": "rustic.crimson.rocking_chair"
 			},
-			"furnideco:sittable": {
+			"furnideco:seat": {
 				"name": "rustic_rocking_chair",
 				"directional": true
 			}

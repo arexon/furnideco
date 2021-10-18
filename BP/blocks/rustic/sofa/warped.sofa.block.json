@@ -25,7 +25,7 @@
 				"base": "rustic.warped.sofa",
 				"part": "cushion"
 			},
-			"furnideco:sittable": {
+			"furnideco:seat": {
 				"name": "rustic_sofa",
                 "directional": true
 			},

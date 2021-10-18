@@ -1,5 +1,5 @@
 export default defineComponent(({ name, template, schema }) => {
-	name('furnideco:sittable')
+	name('furnideco:seat')
 	schema({
 		description: 'Allows the player to sit on the block.',
 		type: 'object',
