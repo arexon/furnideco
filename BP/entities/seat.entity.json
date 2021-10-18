@@ -91,6 +91,17 @@
 			}
 		],
 		"component_groups": {
+			"g:detect_rider": {
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"test": "rider_count",
+							"value": 0
+						},
+						"event": "e:remove"
+					}
+				}
+			},
 			"g:remove": {
 				"minecraft:instant_despawn": {}
 			}
@@ -115,137 +126,12 @@
 					}
 				]
 			},
-			"minecraft:inside_block_notifier": {
-				"block_list": [
-					{
-						"block": "furnideco:rustic.oak.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.spruce.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.birch.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.jungle.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.acacia.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.dark_oak.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.crimson.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.warped.chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.oak.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.spruce.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.birch.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.jungle.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.acacia.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.dark_oak.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.crimson.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.warped.rocking_chair",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.oak.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.spruce.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.birch.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.jungle.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.acacia.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.dark_oak.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.crimson.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.warped.stool",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.oak.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.spruce.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.birch.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.jungle.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.acacia.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.dark_oak.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.crimson.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					},
-					{
-						"block": "furnideco:rustic.warped.sofa",
-						"exited_block_event": { "event": "e:remove" }
-					}
-				]
+			"minecraft:timer": {
+				"looping": false,
+				"time": [ 0, 0 ],
+				"time_down_event": {
+					"event": "e:add.rider"
+				}
 			}
 		},
 		"events": {
@@ -270,20 +156,12 @@
 				}
 			},
 			"e:add.rider": {
-				"sequence": [
-					{
-						"filters": {
-							"test": "rider_count",
-							"value": 0
-						},
-						"run_command": {
-							"command": [
-								"ride @p[tag=pre_sitting, r=2.5] start_riding @s teleport_rider",
-								"tag @p[tag=pre_sitting, r=1.75] remove pre_sit"
-							]
-						}
-					}
-				]
+				"add": {
+					"component_groups": [ "g:detect_rider" ]
+				},
+				"run_command": {
+					"command": "ride @p[r=2.5] start_riding @s teleport_rider"
+				}
 			},
 			"e:remove": {
 				"add": {

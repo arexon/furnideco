@@ -28,9 +28,6 @@ export default defineComponent(({ name, template, schema }) => {
 			{
 				'minecraft:on_interact': {
 					condition: `q.get_equipped_item_name != 'paint_brush' && !q.is_sneaking`,
-					event: 'e:add.rider'
-				},
-				'minecraft:on_placed': {
 					event: 'e:add.seat'
 				}
 			},
@@ -48,32 +45,15 @@ export default defineComponent(({ name, template, schema }) => {
 							}
 						}))
 					} : {
-						run_command: {
-							command: `summon furnideco:seat.${name} ~~~`
-						}
+						sequence: [
+							{
+								run_command: {
+									command: `summon furnideco:seat.${name} ~~~`
+								}
+							}
+						]
 					}
 				)
-			},
-			'minecraft:block/events'
-		)
-
-		create(
-			{
-				'e:add.rider': {
-					sequence: [
-						{
-							run_command: {
-								command: 'tag @s add pre_sitting',
-								target: 'other'
-							}
-						},
-						{
-							run_command: {
-								command: 'event entity @e[family=seat, r=0.1] e:add.rider'
-							}
-						}
-					]
-				}
 			},
 			'minecraft:block/events'
 		)
