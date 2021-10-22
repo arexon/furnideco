@@ -5,19 +5,19 @@
 		"description": "pack.description",
 		"min_engine_version": [ 1, 17, 30 ],
 		"uuid": "425e64ac-5918-4eed-bc28-6a5891c609e3",
-		"version": [ 1, 0, 0 ]
+		"version": [ 1, 1, 0 ]
 	},
 	"modules": [
 		{
 			"type": "resources",
 			"uuid": "ad1d78e4-1764-4a57-91f0-02591c15d02b",
-			"version": [ 1, 0, 0 ]
+			"version": [ 1, 1, 0 ]
 		}
 	],
 	"dependencies": [
 		{
 			"uuid": "322b0a05-6f50-4596-887a-bc2db4bd695e",
-			"version": [ 1, 0, 0 ]
+			"version": [ 1, 1, 0 ]
 		}
 	],
 	"metadata": {
