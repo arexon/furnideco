@@ -1,0 +1,99 @@
+pack.name=§6FurniDeco RP§r
+pack.description=Adicione 25 peças de móveis funcionais, decorativos e que seguem o estilo Vanilla do Minecraft.
+
+
+## Items
+item.paint_brush.name=Pincel de Tinta
+
+
+## Blocks
+tile.carpentry_table.name=Mesa de Carpintaria
+
+tile.rustic.oak.table.name=Mesa de Carvalho
+tile.rustic.spruce.table.name=Mesa de Pinheiro
+tile.rustic.birch.table.name=Mesa de Bétula
+tile.rustic.jungle.table.name=Mesa de Madeira da Selva
+tile.rustic.acacia.table.name=Mesa de Acácia
+tile.rustic.dark_oak.table.name=Mesa de Carvalho Escuro
+tile.rustic.crimson.table.name=Mesa Carmesim
+tile.rustic.warped.table.name=Mesa Distorcida
+tile.rustic.oak.stool.name=Banco de Carvalho
+tile.rustic.spruce.stool.name=Banco de Pinheiro
+tile.rustic.birch.stool.name=Banco de Bétula
+tile.rustic.jungle.stool.name=Banco de Madeira da Selva
+tile.rustic.acacia.stool.name=Banco de Acácia
+tile.rustic.dark_oak.stool.name=Banco de Carvalho Escuro
+tile.rustic.crimson.stool.name=Banco Carmesim
+tile.rustic.warped.stool.name=Banco Distorcido
+tile.rustic.book.name=Livro
+tile.rustic.radio.name=Rádio
+tile.rustic.lamp.name=Luminária
+tile.rustic.trash_can.name=Lixeira
+tile.rustic.clock.name=Relógio
+tile.rustic.bottle.name=Garrafa
+tile.rustic.vase.name=Vaso
+tile.rustic.curtain.name=Cortina
+tile.rustic.step_ladder.name=Escada Portátil
+tile.rustic.plant_pot.name=Vaso de Planta
+tile.rustic.grandfather_clock.name=Relógio do Vovô
+tile.rustic.ceiling_fan.name=Ventilador de Teto
+tile.rustic.mounted_goat_horn.name=Trófeu de Chifre de Cabra
+tile.rustic.chandelier.name=Lustre
+tile.rustic.shelve.name=Prateleira
+tile.rustic.oak.rocking_chair.name=Cadeira de Balanço de Carvalho
+tile.rustic.spruce.rocking_chair.name=Cadeira de Balanço de Pinheiro
+tile.rustic.birch.rocking_chair.name=Cadeira de Balanço de Bétula
+tile.rustic.jungle.rocking_chair.name=Cadeira de Balanço de Madeira da Selva
+tile.rustic.acacia.rocking_chair.name=Cadeira de Balanço de Acácia
+tile.rustic.dark_oak.rocking_chair.name=Cadeira de Balanço de Carvalho Escuro
+tile.rustic.crimson.rocking_chair.name=Cadeira de Balanço Carmesim
+tile.rustic.warped.rocking_chair.name=Cadeira de Balanço Distorcida
+tile.rustic.oak.chair.name=Cadeira de Carvalho
+tile.rustic.spruce.chair.name=Cadeira de Pinheiro
+tile.rustic.birch.chair.name=Cadeira de Bétula
+tile.rustic.jungle.chair.name=Cadeira de Madeira da Selva
+tile.rustic.acacia.chair.name=Cadeira de Acácia
+tile.rustic.dark_oak.chair.name=Cadeira de Carvalho Escuro
+tile.rustic.crimson.chair.name=Cadeira Carmesim
+tile.rustic.warped.chair.name=Cadeira Distorcida
+tile.rustic.television.name=Televisão
+tile.rustic.oak.coffee_table.name=Mesa de Café de Carvalho
+tile.rustic.spruce.coffee_table.name=Mesa de Café de Pinheiro
+tile.rustic.birch.coffee_table.name=Mesa de Café de Bétula
+tile.rustic.jungle.coffee_table.name=Mesa de Café de Madeira da Selva
+tile.rustic.acacia.coffee_table.name=Mesa de Café de Acácia
+tile.rustic.dark_oak.coffee_table.name=Mesa de Café de Carvalho Escuro
+tile.rustic.crimson.coffee_table.name=Mesa de Café Carmesim
+tile.rustic.warped.coffee_table.name=Mesa de Café Distorcida
+tile.rustic.oak.cabinet.name=Gabinete de Carvalho
+tile.rustic.spruce.cabinet.name=Gabinete de Pinheiro
+tile.rustic.birch.cabinet.name=Gabinete de Bétula
+tile.rustic.jungle.cabinet.name=Gabinete de Madeira da Selva
+tile.rustic.acacia.cabinet.name=Gabinete de Acácia
+tile.rustic.dark_oak.cabinet.name=Gabinete de Carvalho Escuro
+tile.rustic.crimson.cabinet.name=Gabinete de Carmesim
+tile.rustic.warped.cabinet.name=Gabinete Distorcido
+tile.rustic.oak.sofa.name=Sofá de Carvalho
+tile.rustic.spruce.sofa.name=Sofá de Pinheiro
+tile.rustic.birch.sofa.name=Sofá de Bétula
+tile.rustic.jungle.sofa.name=Sofá de Madeira da Selva
+tile.rustic.acacia.sofa.name=Sofá de Acácia
+tile.rustic.dark_oak.sofa.name=Sofá de Carvalho Escuro
+tile.rustic.crimson.sofa.name=Sofá Carmesim
+tile.rustic.warped.sofa.name=Sofá Distorcido
+tile.rustic.scroll.name=Pergaminho
+tile.rustic.fire_pit.name=Fogueira de Metal
+
+
+## Entities
+entity.furnideco:seat.name=Assento
+entity.furnideco:storage.name=Despensa
+entity.furnideco:spawn_item.name=Item de Desova
+
+
+## Interactions
+action.hint.exit.furnideco:seat=Pule para se levantar.
+
+
+## UI
+ui.cabinet.name=Gabinete
