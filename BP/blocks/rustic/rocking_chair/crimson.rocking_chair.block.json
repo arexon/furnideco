@@ -21,7 +21,7 @@
 			},
 			"furnideco:horizontal_facing": {},
 			"furnideco:paintable": {
-				"colors": 4,
+				"colors": 8,
 				"texture": "rustic.rocking_chair",
 				"part": "cloth",
 				"base": "rustic.crimson.rocking_chair"

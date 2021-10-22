@@ -307,6 +307,18 @@
 		"rustic.rocking_chair.color_3": {
 			"textures": "textures/blocks/rustic/rocking_chair/cloth/3"
 		},
+		"rustic.rocking_chair.color_4": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/4"
+		},
+		"rustic.rocking_chair.color_5": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/5"
+		},
+		"rustic.rocking_chair.color_6": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/6"
+		},
+		"rustic.rocking_chair.color_7": {
+			"textures": "textures/blocks/rustic/rocking_chair/cloth/7"
+		},
 		// Chair
 		"rustic.oak.chair": {
 			"textures": "textures/blocks/rustic/chair/oak"
