@@ -3,7 +3,7 @@
 	"header": {
 		"name": "pack.name",
 		"description": "pack.description",
-		"min_engine_version": [ 1, 17, 0 ],
+		"min_engine_version": [ 1, 17, 30 ],
 		"uuid": "322b0a05-6f50-4596-887a-bc2db4bd695e",
 		"version": [ 1, 0, 0 ]
 	},
