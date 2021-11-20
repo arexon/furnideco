@@ -36,7 +36,7 @@
 					"variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
 					"variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
 
-					"v.is_sitting = 0; for_each(v.seat, q.get_nearby_entities(2, 'furnideco:seat'), {v.is_sitting = v.is_sitting + v.seat -> q.has_player_rider;});"
+					"v.is_sitting = (q.get_ride -> q.owner_identifier) == 'furnideco:seat';"
 				],
 				"animate": [
 					"root"
