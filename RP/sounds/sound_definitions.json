@@ -123,5 +123,15 @@
 				"load_on_low_memory": true
 			}
 		]
+	},
+	"furnideco.goat_horn": {
+		"category": "block",
+		"sounds": [
+			{
+				"name": "sounds/interactivity/goat_horn",
+				"volume": 1,
+				"load_on_low_memory": true
+			}
+		]
 	}
 }

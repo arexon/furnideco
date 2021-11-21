@@ -34,6 +34,19 @@
 						"allowed_faces": [ "side" ]
 					}
 				]
+			},
+			"minecraft:on_interact": {
+				"event": "e:play.goat_horn"
+			}
+		},
+		"events": {
+			"e:play.goat_horn": {
+				"run_command": {
+					"command": [
+						"playsound furnideco.goat_horn @p ~~~",
+						"particle furnideco:wave ~~~"
+					]
+				}
 			}
 		}
 	}
