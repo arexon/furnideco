@@ -1,5 +1,6 @@
 .DS_Store 
 !.bridge/
 .bridge/*
+!.bridge/compiler/
 !.bridge/extensions
 builds
