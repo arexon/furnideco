@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.mounted_goat_horn",
 				"collision": {
-					"pick": [ -6, 4, 3, 12, 6, 5 ],
-					"entity": [ -6, 4, 3, 12, 6, 5 ]
+					"aim": [ -6, 4, 3, 12, 6, 5 ],
+					"block": [ -6, 4, 3, 12, 6, 5 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

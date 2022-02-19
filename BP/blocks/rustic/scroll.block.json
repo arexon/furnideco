@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.scroll",
 				"collision": {
-					"pick": [ -6, 0, -7, 12, 2, 14 ],
-					"entity": false
+					"aim": [ -6, 0, -7, 12, 2, 14 ],
+					"block": false
 				}
 			},
 			"furnideco:horizontal_facing": {},

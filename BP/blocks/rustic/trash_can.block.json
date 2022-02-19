@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.trash_can",
 				"collision": {
-					"pick": [ -5, 0, -5, 10, 14, 10 ],
-					"entity": [ -6, 0, -6, 12, 2, 12 ]
+					"aim": [ -5, 0, -5, 10, 14, 10 ],
+					"block": [ -6, 0, -6, 12, 2, 12 ]
 				}
 			},
 			"minecraft:material_instances": {

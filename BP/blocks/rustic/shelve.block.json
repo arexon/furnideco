@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.shelve",
 				"collision": {
-					"pick": [ -8, 11, -4, 16, 5, 12 ],
-					"entity": [ -8, 11, -4, 16, 5, 12 ]
+					"aim": [ -8, 11, -4, 16, 5, 12 ],
+					"block": [ -8, 11, -4, 16, 5, 12 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

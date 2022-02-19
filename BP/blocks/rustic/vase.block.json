@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.vase",
 				"collision": {
-					"pick": [ -4.5, 0, -4.5, 9, 14, 9 ],
-					"entity": [ -4.5, 0, -4.5, 9, 14, 9 ]
+					"aim": [ -4.5, 0, -4.5, 9, 14, 9 ],
+					"block": [ -4.5, 0, -4.5, 9, 14, 9 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

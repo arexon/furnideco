@@ -14,8 +14,8 @@
 				"flameable": [ 40, 50 ],
 				"solidness": 0,
 				"collision": {
-					"pick": [ -5, 0, -5, 10, 11, 10 ],
-					"entity": [ -5, 0, -5, 10, 11, 10 ]
+					"aim": [ -5, 0, -5, 10, 11, 10 ],
+					"block": [ -5, 0, -5, 10, 11, 10 ]
 				}
 			},
 			"furnideco:plantable": {

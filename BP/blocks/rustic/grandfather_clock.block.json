@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.grandfather_clock",
 				"collision": {
-					"pick": [ -7, 0, 2, 14, 12, 6 ],
-					"entity": [ -7, 0, 2, 14, 12, 6 ]
+					"aim": [ -7, 0, 2, 14, 12, 6 ],
+					"block": [ -7, 0, 2, 14, 12, 6 ]
 				}
 			},
 			"furnideco:animate": {

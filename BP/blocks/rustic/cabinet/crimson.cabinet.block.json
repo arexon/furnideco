@@ -28,8 +28,8 @@
 				"solidness": 0,
 				"geometry": "rustic.cabinet",
 				"collision": {
-					"pick": [ -8, 2, -4, 16, 14, 12 ],
-					"entity": [ -8, 2, -4, 16, 14, 12 ]
+					"aim": [ -8, 2, -4, 16, 14, 12 ],
+					"block": [ -8, 2, -4, 16, 14, 12 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

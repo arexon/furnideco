@@ -21,8 +21,8 @@
 				"solidness": 0,
 				"geometry": "rustic.stool",
 				"collision": {
-					"pick": [ -7, 0, -7, 14, 11, 14 ],
-					"entity": [ -7, 0, -7, 14, 11, 14 ]
+					"aim": [ -7, 0, -7, 14, 11, 14 ],
+					"block": [ -7, 0, -7, 14, 11, 14 ]
 				}
 			},
 			"furnideco:seat": {

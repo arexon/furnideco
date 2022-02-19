@@ -17,8 +17,8 @@
 				"solidness": 1,
 				"geometry": "cube",
 				"collision": {
-					"pick": [ -8, 0, -8, 16, 16, 16 ],
-					"entity": [ -8, 0, -8, 16, 16, 16 ]
+					"aim": [ -8, 0, -8, 16, 16, 16 ],
+					"block": [ -8, 0, -8, 16, 16, 16 ]
 				}
 			},
 			"minecraft:material_instances": {

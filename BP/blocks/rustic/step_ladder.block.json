@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.step_ladder",
 				"collision": {
-					"pick": [ -8, 0, -6, 16, 16, 12 ],
-					"entity": [ -8, 0, -6, 16, 16, 12 ]
+					"aim": [ -8, 0, -6, 16, 16, 12 ],
+					"block": [ -8, 0, -6, 16, 16, 12 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

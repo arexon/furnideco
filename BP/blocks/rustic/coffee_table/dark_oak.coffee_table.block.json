@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.coffee_table",
 				"collision": {
-					"pick": [ -8, 0, -7, 16, 9, 14 ],
-					"entity": [ -8, 0, -7, 16, 9, 14 ]
+					"aim": [ -8, 0, -7, 16, 9, 14 ],
+					"block": [ -8, 0, -7, 16, 9, 14 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

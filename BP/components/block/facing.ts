@@ -18,8 +18,8 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Collision of the geometry.',
 							type: 'object',
 							properties: {
-								pick: {
-									description: 'The pick collision. Gets disabled if set to false.',
+								aim: {
+									description: 'The aim collision. Gets disabled if set to false.',
 									anyOf: [
 										{
 											type: 'array',
@@ -72,13 +72,13 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('p:facing') == ${i}`,
 					components: {
 						'minecraft:geometry': `geometry.${face.name}`,
-						'minecraft:pick_collision': (!face.collision.pick ? false : {
-							origin: face.collision.pick.slice(0, 3),
-							size: face.collision.pick.slice(3, 6)
+						'minecraft:aim_collision': (!face.collision.aim ? false : {
+							origin: face.collision.aim.slice(0, 3),
+							size: face.collision.aim.slice(3, 6)
 						}),
-						'minecraft:entity_collision': (!face.collision.entity ? false : {
-							origin: face.collision.entity.slice(0, 3),
-							size: face.collision.entity.slice(3, 6)
+						'minecraft:entity_collision': (!face.collision.block ? false : {
+							origin: face.collision.block.slice(0, 3),
+							size: face.collision.block.slice(3, 6)
 						}),
 						...(i > 1 && {
 							'minecraft:rotation': [ 0, directions[i - 2], 0 ]

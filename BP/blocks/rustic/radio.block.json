@@ -32,8 +32,8 @@
 				"solidness": 0,
 				"geometry": "rustic.radio",
 				"collision": {
-					"pick": [ -7, 0, -3, 14, 9, 6 ],
-					"entity": [ -7, 0, -3, 14, 9, 6 ]
+					"aim": [ -7, 0, -3, 14, 9, 6 ],
+					"block": [ -7, 0, -3, 14, 9, 6 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

@@ -36,15 +36,15 @@
 					{
 						"name": "untied",
 						"collision": {
-							"pick": [ -8, 0, 6, 16, 16, 2 ],
-							"entity": false
+							"aim": [ -8, 0, 6, 16, 16, 2 ],
+							"block": false
 						}
 					},
 					{
 						"name": "tied",
 						"collision": {
-							"pick": [ -8, 0, 6, 16, 16, 2 ],
-							"entity": false
+							"aim": [ -8, 0, 6, 16, 16, 2 ],
+							"block": false
 						}
 					}
 				]

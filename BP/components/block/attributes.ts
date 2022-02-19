@@ -50,8 +50,8 @@ export default defineComponent(({ name, template, schema }) => {
 				description: 'Sets the collision of the block.',
 				type: 'object',
 				properties: {
-					pick: {
-						description: 'The pick collision. Disabled if set to false.',
+					aim: {
+						description: 'The aim collision. Disabled if set to false.',
 						anyOf: [
 							{
 								type: 'array',
@@ -141,16 +141,16 @@ export default defineComponent(({ name, template, schema }) => {
 				...(geometry && {
 					'minecraft:geometry': `geometry.${geometry}`
 				}),
-				...(collision.pick !== undefined && {
-					'minecraft:pick_collision': (!collision.pick ? false : {
-						origin: collision.pick.slice(0, 3),
-						size: collision.pick.slice(3, 6)
+				...(collision.aim !== undefined && {
+					'minecraft:aim_collision': (!collision.aim ? false : {
+						origin: collision.aim.slice(0, 3),
+						size: collision.aim.slice(3, 6)
 					})
 				}),
-				...(collision.entity !== undefined && {
-					'minecraft:entity_collision': (!collision.entity ? false : {
-						origin: collision.entity.slice(0, 3),
-						size: collision.entity.slice(3, 6)
+				...(collision.block !== undefined && {
+					'minecraft:entity_collision': (!collision.block ? false : {
+						origin: collision.block.slice(0, 3),
+						size: collision.block.slice(3, 6)
 					})
 				})
 			},

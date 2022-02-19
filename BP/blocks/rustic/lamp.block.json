@@ -20,22 +20,22 @@
 					{
 						"name": "rustic.lamp.hung",
 						"collision": {
-							"pick": [ -4, 0, -4, 8, 16, 8 ],
-							"entity": [ -4, 0, -4, 8, 8, 8 ]
+							"aim": [ -4, 0, -4, 8, 16, 8 ],
+							"block": [ -4, 0, -4, 8, 8, 8 ]
 						}
 					},
 					{
 						"name": "rustic.lamp",
 						"collision": {
-							"pick": [ -4, 0, -4, 8, 12, 8 ],
-							"entity": [ -4, 0, -4, 8, 12, 8 ]
+							"aim": [ -4, 0, -4, 8, 12, 8 ],
+							"block": [ -4, 0, -4, 8, 12, 8 ]
 						}
 					},
 					{
 						"name": "rustic.lamp.mounted",
 						"collision": {
-							"pick": [ -4, 0, -4, 8, 16, 12 ],
-							"entity": [ -4, 0, -4, 8, 8, 8 ]
+							"aim": [ -4, 0, -4, 8, 16, 12 ],
+							"block": [ -4, 0, -4, 8, 8, 8 ]
 						}
 					}
 				]

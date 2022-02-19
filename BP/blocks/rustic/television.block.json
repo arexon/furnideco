@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.television",
 				"collision": {
-					"pick": [ -8, 0, -5, 16, 13, 10 ],
-					"entity": [ -8, 0, -5, 16, 13, 10 ]
+					"aim": [ -8, 0, -5, 16, 13, 10 ],
+					"block": [ -8, 0, -5, 16, 13, 10 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

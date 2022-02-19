@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.clock",
 				"collision": {
-					"pick": [ -5.5, 2.5, 6, 11, 11, 2 ],
-					"entity": [ -5.5, 2.5, 6, 11, 11, 2 ]
+					"aim": [ -5.5, 2.5, 6, 11, 11, 2 ],
+					"block": [ -5.5, 2.5, 6, 11, 11, 2 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

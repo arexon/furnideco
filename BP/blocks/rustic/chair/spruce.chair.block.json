@@ -16,8 +16,8 @@
 				"solidness": 0,
 				"geometry": "rustic.chair",
 				"collision": {
-					"pick": [ -7, 0, -7, 14, 9, 14 ],
-					"entity": [ -7, 0, -7, 14, 9, 14 ]
+					"aim": [ -7, 0, -7, 14, 9, 14 ],
+					"block": [ -7, 0, -7, 14, 9, 14 ]
 				}
 			},
 			"furnideco:horizontal_facing": {},

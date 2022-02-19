@@ -19,8 +19,8 @@
 				"solidness": 0,
 				"geometry": "rustic.ceiling_fan",
 				"collision": {
-					"pick": [ -4, 2, -4, 8, 14, 8 ],
-					"entity": [ -4, 2, -4, 8, 14, 8 ]
+					"aim": [ -4, 2, -4, 8, 14, 8 ],
+					"block": [ -4, 2, -4, 8, 14, 8 ]
 				}
 			},
 			"furnideco:animate": {

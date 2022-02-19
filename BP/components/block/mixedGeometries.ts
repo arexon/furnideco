@@ -22,8 +22,8 @@ export default defineComponent(({ name, template, schema }) => {
 							description: 'Collision of the geometry.',
 							type: 'object',
 							properties: {
-								pick: {
-									description: 'The pick collision. Gets disabled if set to false.',
+								aim: {
+									description: 'The aim collision. Gets disabled if set to false.',
 									anyOf: [
 										{
 											type: 'array',
@@ -85,13 +85,13 @@ export default defineComponent(({ name, template, schema }) => {
 					condition: `q.block_property('${property}') == ${i}`,
 					components: {
 						'minecraft:geometry': `geometry.${name}.${geo.name}`,
-						'minecraft:pick_collision': (!geo.collision.pick ? false : {
-							origin: geo.collision.pick.slice(0, 3),
-							size: geo.collision.pick.slice(3, 6)
+						'minecraft:aim_collision': (!geo.collision.aim ? false : {
+							origin: geo.collision.aim.slice(0, 3),
+							size: geo.collision.aim.slice(3, 6)
 						}),
-						'minecraft:entity_collision': (!geo.collision.entity ? false : {
-							origin: geo.collision.entity.slice(0, 3),
-							size: geo.collision.entity.slice(3, 6)
+						'minecraft:entity_collision': (!geo.collision.block ? false : {
+							origin: geo.collision.block.slice(0, 3),
+							size: geo.collision.block.slice(3, 6)
 						}),
 						...(loot_table && {
 							'minecraft:loot': `loot_tables/block/${loot_table}/${geo.name}.loot.json`
