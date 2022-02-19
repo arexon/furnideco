@@ -1,0 +1,23 @@
+{
+	"plugins": [
+		[
+			"typeScript",
+			{
+				"inlineSourceMap": true
+			}
+		],
+		"entityIdentifierAlias",
+		"customEntityComponents",
+		"customItemComponents",
+		"customBlockComponents",
+		"customCommands",
+		"moLang",
+		[
+			"rewriteForPackaging",
+			{
+				"packName": "furnideco",
+				"format": "mcaddon"
+			}
+		]
+	]
+}

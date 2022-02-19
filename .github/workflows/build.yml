@@ -1,0 +1,29 @@
+name: Build Project
+
+on:
+    release:
+        types:
+            - created
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout 🔔
+              uses: actions/checkout@v2
+
+            - name: Build 🛠
+              uses: bridge-core/build-mc-project@main
+              with:
+                  project-name: furnideco
+                  package-type: mcaddon
+                  compiler-config: .bridge/compiler/build.json
+
+            - name: Release 🔖
+              uses: softprops/action-gh-release@v1
+              if: startsWith(github.ref, 'refs/tags/')
+              with:
+                  files: furnideco.mcaddon
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
