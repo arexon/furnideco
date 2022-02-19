@@ -5,7 +5,7 @@
 	"authors": [
 		"Arexon"
 	],
-	"targetVersion": "1.17.30",
+	"targetVersion": "1.18.10",
 	"description": "Adds 25 pieces of functional, decorative and unique furniture that fit with the Minecraft vanilla style.",
 	"experimentalGameplay": {
 		"enableGameTestFramework": false,
