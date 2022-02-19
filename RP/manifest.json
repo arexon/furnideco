@@ -3,28 +3,65 @@
     "header": {
         "name": "pack.name",
         "description": "pack.description",
-        "min_engine_version": [ 1, 18, 10 ],
+        "min_engine_version": [
+            1,
+            18,
+            10
+        ],
         "uuid": "425e64ac-5918-4eed-bc28-6a5891c609e3",
-        "version": [ 1, 1, 0 ]
+        "version": [
+            1,
+            1,
+            0
+        ]
     },
     "modules": [
         {
             "type": "resources",
             "uuid": "ad1d78e4-1764-4a57-91f0-02591c15d02b",
-            "version": [ 1, 1, 0 ]
+            "version": [
+                1,
+                1,
+                0
+            ]
         }
     ],
     "dependencies": [
-        { "uuid": "322b0a05-6f50-4596-887a-bc2db4bd695e", "version": [ 1, 1, 0 ]},
-        { "uuid": "008f2e56-7e74-48b4-8f6b-457208e24e63", "version": [ 1, 0, 0 ]}
+        {
+            "uuid": "322b0a05-6f50-4596-887a-bc2db4bd695e",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        },
+        {
+            "uuid": "008f2e56-7e74-48b4-8f6b-457208e24e63",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
     ],
     "metadata": {
-        "authors": [ "Arexon" ],
+        "authors": [
+            "Arexon"
+        ],
         "license": "Apache 2.0",
         "url": "https://arexon.dev/project/furnideco/",
         "generated_with": {
-            "bridge": [ "2.1.5", "2.2.1", "2.2.3", "2.2.4" ],
-            "dash": [ "0.5.0", "0.7.0", "0.7.1" ]
+            "bridge": [
+                "2.1.5",
+                "2.2.1",
+                "2.2.3",
+                "2.2.4"
+            ],
+            "dash": [
+                "0.5.0",
+                "0.7.0",
+                "0.7.1"
+            ]
         }
     }
 }
