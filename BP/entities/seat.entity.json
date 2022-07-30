@@ -7,12 +7,14 @@
 			"is_summonable": true,
 			"properties": {
 				"p:seat_type": {
+					"type": "enum",
 					"values": [
 						"rustic.chair",
 						"rustic.rocking_chair",
 						"rustic.stool",
 						"rustic.sofa"
-					]
+					],
+					"default": "rustic.chair"
 				}
 			},
 			"aliases": {
@@ -30,16 +32,23 @@
 				}
 			}
 		},
+		"do_not_upgrade": {},
 		"permutations": [
 			{
 				"condition": "q.actor_property('p:seat_type') == 'rustic.chair'",
 				"components": {
 					"minecraft:rideable": {
 						"seat_count": 1,
-						"family_types": [ "player" ],
+						"family_types": [
+							"player"
+						],
 						"seats": [
 							{
-								"position": [ 0, -0.13, -0.15 ]
+								"position": [
+									0,
+									-0.13,
+									-0.15
+								]
 							}
 						]
 					}
@@ -50,10 +59,16 @@
 				"components": {
 					"minecraft:rideable": {
 						"seat_count": 1,
-						"family_types": [ "player" ],
+						"family_types": [
+							"player"
+						],
 						"seats": [
 							{
-								"position": [ 0, -0.2, -0.12 ]
+								"position": [
+									0,
+									-0.2,
+									-0.12
+								]
 							}
 						]
 					}
@@ -64,10 +79,16 @@
 				"components": {
 					"minecraft:rideable": {
 						"seat_count": 1,
-						"family_types": [ "player" ],
+						"family_types": [
+							"player"
+						],
 						"seats": [
 							{
-								"position": [ 0, -0.07, 0 ]
+								"position": [
+									0,
+									-0.07,
+									0
+								]
 							}
 						]
 					}
@@ -78,12 +99,18 @@
 				"components": {
 					"minecraft:rideable": {
 						"seat_count": 1,
-						"family_types": [ "player" ],
+						"family_types": [
+							"player"
+						],
 						"seats": [
 							{
 								"min_rider_count": 0,
 								"max_rider_count": 1,
-								"position": [ 0, -0.25, -0.07 ]
+								"position": [
+									0,
+									-0.25,
+									-0.07
+								]
 							}
 						]
 					}
@@ -128,7 +155,10 @@
 			},
 			"minecraft:timer": {
 				"looping": false,
-				"time": [ 0, 0 ],
+				"time": [
+					0,
+					0
+				],
 				"time_down_event": {
 					"event": "e:add.rider"
 				}
@@ -157,7 +187,9 @@
 			},
 			"e:add.rider": {
 				"add": {
-					"component_groups": [ "g:detect_rider" ]
+					"component_groups": [
+						"g:detect_rider"
+					]
 				},
 				"run_command": {
 					"command": "ride @p[r=2.5] start_riding @s teleport_rider"
